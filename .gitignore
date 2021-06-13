@@ -3,6 +3,8 @@
 
 # Dependency directories
 node_modules/
+# dist
+packages/*/dist
 
 # Optional npm cache directory
 .npm
