@@ -1,0 +1,23 @@
+{
+  "name": "@vechaiui/core",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "vechai <getvechai@gmail.com>",
+  "homepage": "https://github.com/vechai/vechaiui#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "files": [
+    "src/*.js",
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vechai/vechaiui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/vechai/vechaiui/issues"
+  }
+}
