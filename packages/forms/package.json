@@ -1,5 +1,5 @@
 {
-  "name": "@vechaiui/button",
+  "name": "@vechaiui/forms",
   "version": "0.1.0",
   "sideEffects": false,
   "license": "MIT",
@@ -37,7 +37,6 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@vechaiui/spinner": "^0.1.0",
     "@vechaiui/theme": "^0.1.0",
     "@vechaiui/utils": "^0.1.0"
   },

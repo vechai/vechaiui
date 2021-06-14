@@ -37,6 +37,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
+    "@vechaiui/theme": "^0.1.0",
     "@vechaiui/utils": "^0.1.0"
   },
   "peerDependencies": {

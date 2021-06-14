@@ -1,5 +1,5 @@
 ## Installation
 
 ```sh
-yarn add @vechaiui/button
+yarn add @vechaiui/forms
 ```

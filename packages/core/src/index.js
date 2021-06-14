@@ -14,17 +14,18 @@ module.exports = plugin.withOptions(
       theme,
       addUtilities,
     }) {
-      const colors = [...defaultColors, ...options.colors];
+      const optionColors = [...defaultColors, ...options.colors];
 
       active({ addVariant, variants, e, theme, addUtilities });
       selected({ addVariant, variants, e, theme, addUtilities });
       disabled({ addVariant, variants, e, theme, addUtilities });
       colorize({ addVariant, variants, e, theme, addUtilities });
-
+      
       addComponents([
-        require("./components/button.js")(colors),
+        require("./components/button.js")(optionColors),
         require("./components/button-group.js")(),
         require("./components/icon-button.js")(),
+        require("./components/forms.js")(optionColors),
       ]);
     };
   },
