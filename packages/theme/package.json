@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/lodash.set": "^4.3.6",
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   },
   "dependencies": {
     "@vechaiui/utils": "^0.1.0",

@@ -9,7 +9,8 @@ export default {
 };
 
 export const basic = () => (
-  <>
+  <div className="space-x-2">
     <Button>Button</Button>
-  </>
+    <Button color="primary">Button</Button>
+  </div>
 );

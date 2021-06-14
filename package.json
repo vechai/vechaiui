@@ -14,15 +14,14 @@
     "doc": "docs"
   },
   "scripts": {
-    "clean": "run-p clean:*",
-    "clean:build": "lerna run clean:build --parallel",
-    "clean:node_modules": "lerna run clean:node_modules --parallel && rimraf node_modules",
+    "clean": "lerna clean --yes && rm -rf node_modules",
+    "clean-dist": "yarn lerna exec -- rimraf dist",
     "prestart": "yarn && yarn bootstrap",
     "boot": "yarn prestart && yarn build",
     "start": "yarn build && yarn storybook",
     "start:all": "yarn build && concurrently \"yarn docs dev\"  \"yarn storybook\" ",
     "build": "lerna run build --no-private --stream",
-    "bootstrap": "lerna bootstrap --use-workspaces",
+    "bootstrap": "yarn install && lerna bootstrap --use-workspaces",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -32,8 +31,8 @@
     "docs:start": "yarn docs start"
   },
   "resolutions": {
-    "**/react": "17.0.1",
-    "**/react-dom": "17.0.1"
+    "**/react": "17.0.2",
+    "**/react-dom": "17.0.2"
   },
   "author": "pepelele",
   "license": "MIT",
@@ -49,11 +48,16 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.2.9",
     "@tailwindcss/forms": "^0.3.3",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
     "autoprefixer": "^10.2.6",
     "cross-env": "^7.0.3",
     "lerna": "^4.0.0",
     "postcss": "^8.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
+    "storybook-addon-performance": "^0.15.2",
     "tailwindcss": "^2.1.4",
     "typescript": "^4.3.2"
   }

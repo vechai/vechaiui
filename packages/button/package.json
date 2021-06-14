@@ -34,7 +34,7 @@
     "lint:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   },
   "dependencies": {
     "@vechaiui/spinner": "^0.1.0",

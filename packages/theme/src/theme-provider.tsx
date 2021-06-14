@@ -6,6 +6,7 @@ import {
   WithCSSVar,
   Dict,
 } from "@vechaiui/utils";
+import * as React from "react";
 import { createContext, useContext, useLayoutEffect, useMemo } from "react";
 import set from "lodash.set";
 
@@ -26,8 +27,8 @@ ThemeContext.displayName = "ThemeContext";
 
 export interface VechaiProviderProps {
   children: React.ReactNode;
-  theme: VechaiTheme;
-  colorScheme: string;
+  theme?: VechaiTheme;
+  colorScheme?: string;
 }
 
 export function ThemeProvider({

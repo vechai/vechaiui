@@ -6,6 +6,8 @@ node_modules/
 # dist
 packages/*/dist
 
+docs/.next
+
 # Optional npm cache directory
 .npm
 
