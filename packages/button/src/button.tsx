@@ -3,9 +3,9 @@ import { DefaultProps } from "@vechaiui/theme";
 import { cx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
 
-import useButtonClass from "./styles";
+import { useButtonClass } from "./styles";
 
-export interface IButtonProps extends DefaultProps {
+interface IButtonProps extends DefaultProps {
   /* Shows loading spinner */
   loading?: boolean;
   /* Makes button disabled */
@@ -25,7 +25,7 @@ export interface IButtonProps extends DefaultProps {
   /* Size of the button */
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   /** Controls button appearance */
-  variant?: "link" | "solid" | "outline" | "light" | "ghost" | "unstyled";
+  variant?: "link" | "solid" | "outline" | "light" | "ghost";
   /* React node */
   children?: React.ReactNode;
 }

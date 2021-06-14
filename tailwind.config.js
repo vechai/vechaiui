@@ -10,6 +10,6 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
-    require("./packages/core"),
+    require("@vechaiui/core"),
   ],
 }

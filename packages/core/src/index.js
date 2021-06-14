@@ -21,7 +21,11 @@ module.exports = plugin.withOptions(
       disabled({ addVariant, variants, e, theme, addUtilities });
       colorize({ addVariant, variants, e, theme, addUtilities });
 
-      addComponents([require("./components/button.js")(colors)]);
+      addComponents([
+        require("./components/button.js")(colors),
+        require("./components/button-group.js")(),
+        require("./components/icon-button.js")(),
+      ]);
     };
   },
   function() {
