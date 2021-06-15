@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply text-sm antialiased;
+}
+
+body {
+  text-rendering: optimizelegibility;
+  user-select: none;
+  text-size-adjust: none;
+  cursor: default;
+}
