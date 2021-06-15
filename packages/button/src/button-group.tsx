@@ -4,7 +4,7 @@ import * as React from "react";
 
 import { ButtonProps } from "./button";
 
-export interface IButtonGroupProps extends DefaultProps {
+interface IButtonGroupProps extends DefaultProps {
   /**
    * If `true`, the borderRadius of button that are direct children will be altered
    * to look flushed together

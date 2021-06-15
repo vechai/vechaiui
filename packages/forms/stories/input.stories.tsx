@@ -11,6 +11,12 @@ export default {
 
 export const basic = () => <Input placeholder="jon@gmail.com" />;
 
+export const disabled = () => <Input disabled placeholder="jon@gmail.com" />;
+
+export const invalid = () => <Input invalid placeholder="jon@gmail.com" />;
+
+export const colored = () => <Input color="orange" placeholder="jon@gmail.com" />;
+
 export const size = () => (
   <div className="flex space-x-2">
     <Input placeholder="jon@gmail.com" size="xs" />
@@ -29,11 +35,11 @@ export const element = () => (
         className="pointer-events-none text-neutral-300"
       />
       <Input placeholder="ben@gmail.com" />
-      {/* <Input.RightElement
+      <Input.RightElement
         children={<Check className="text-green-500" size={14} />}
-      /> */}
+      />
     </Input.Group>
-{/* 
+
     <Input.Group size="sm">
       <Input.LeftElement
         children="$"
@@ -76,6 +82,40 @@ export const element = () => (
       <Input.RightElement
         children={<Check className="text-green-500" size={32} />}
       />
-    </Input.Group> */}
+    </Input.Group>
+  </div>
+);
+
+export const addon = () => (
+  <div className="flex flex-wrap items-center w-full">
+    <Input.Group size="xs" className="mb-2 mr-2">
+      <Input.LeftAddon children="https://" />
+      <Input placeholder="mysite" />
+      <Input.RightAddon children=".com" />
+    </Input.Group>
+
+    <Input.Group size="sm" className="mb-2 mr-2">
+      <Input.LeftAddon children="https://" />
+      <Input placeholder="mysite" />
+      <Input.RightAddon children=".com" />
+    </Input.Group>
+
+    <Input.Group size="md" className="mb-2 mr-2">
+      <Input.LeftAddon children="https://" />
+      <Input placeholder="mysite" />
+      <Input.RightAddon children=".com" />
+    </Input.Group>
+
+    <Input.Group size="lg" className="mb-2 mr-2">
+      <Input.LeftAddon children="https://" />
+      <Input placeholder="mysite" />
+      <Input.RightAddon children=".com" />
+    </Input.Group>
+
+    <Input.Group size="xl">
+      <Input.LeftAddon children="https://" />
+      <Input placeholder="mysite" />
+      <Input.RightAddon children=".com" />
+    </Input.Group>
   </div>
 );

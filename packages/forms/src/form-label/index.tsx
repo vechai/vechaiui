@@ -7,6 +7,7 @@ import { useFormControl } from "../form-control";
 interface IFormLabelProps extends DefaultProps {
   disabled?: boolean;
   children?: React.ReactNode;
+  htmlFor?: string;
 }
 
 export interface FormLabelProps

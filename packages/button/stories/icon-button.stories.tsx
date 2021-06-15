@@ -19,6 +19,10 @@ export const outline = () => (
       <Announcement size={16} />
     </IconButton>
 
+    <IconButton color="orange">
+      <Announcement size={16} />
+    </IconButton>
+
     <IconButton className="rounded-full">
       <Announcement size={16} />
     </IconButton>
@@ -36,6 +40,10 @@ export const solid = () => (
     </IconButton>
 
     <IconButton variant="solid" color="primary">
+      <Announcement size={16} />
+    </IconButton>
+
+    <IconButton variant="solid" color="orange">
       <Announcement size={16} />
     </IconButton>
 
@@ -59,6 +67,10 @@ export const light = () => (
       <Announcement size={16} />
     </IconButton>
 
+    <IconButton variant="light" color="orange">
+      <Announcement size={16} />
+    </IconButton>
+
     <IconButton variant="light" className="rounded-full">
       <Announcement size={16} />
     </IconButton>
@@ -76,6 +88,10 @@ export const ghost = () => (
     </IconButton>
 
     <IconButton variant="ghost" color="primary">
+      <Announcement size={16} />
+    </IconButton>
+
+    <IconButton variant="ghost" color="orange">
       <Announcement size={16} />
     </IconButton>
 

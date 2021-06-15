@@ -1,19 +1,23 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   mode: "jit",
-  purge: [
-    "./public/**/*.html", 
-    "./packages/*/**/*.{js,jsx,ts,tsx,vue}",
-    "./packages/*/**/**/*.{js,jsx,ts,tsx,vue}",
-  ],
+  purge: ["./public/**/*.html", "./packages/*/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: colors.orange,
+      }
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [
     require("@tailwindcss/forms"),
-    require("@vechaiui/core"),
+    require("@vechaiui/core")({
+      colors: ["orange"],
+    }),
   ],
-}
+};

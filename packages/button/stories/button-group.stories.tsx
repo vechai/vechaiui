@@ -22,6 +22,15 @@ export const basic = () => (
     </div>
 
     <div>
+      <Button.Group variant="solid" color="orange" className="space-x-2">
+        <Button>Button</Button>
+        <Button>Button</Button>
+        <Button>Button</Button>
+        <Button>Button</Button>
+      </Button.Group>
+    </div>
+
+    <div>
       <Button.Group variant="solid" color="primary" className="space-x-2">
         <IconButton>
           <Announcement size={16} />
