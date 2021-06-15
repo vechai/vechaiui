@@ -29,6 +29,8 @@ module.exports = plugin.withOptions(
         require("./components/checkbox.js")(optionColors),
         require("./components/radio.js")(optionColors),
         require("./components/switch.js")(optionColors),
+        require("./components/link.js")(),
+        require("./components/breadcrumb.js")(),
       ]);
     };
   },
