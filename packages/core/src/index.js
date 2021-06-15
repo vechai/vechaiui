@@ -26,6 +26,8 @@ module.exports = plugin.withOptions(
         require("./components/button-group.js")(),
         require("./components/icon-button.js")(),
         require("./components/forms.js")(optionColors),
+        require("./components/checkbox.js")(optionColors),
+        require("./components/radio.js")(optionColors),
       ]);
     };
   },

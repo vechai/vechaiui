@@ -2,19 +2,40 @@ function fieldOutline(colors) {
   return {
     "&-outline": {
       "@apply border shadow-sm border-neutral-200": {},
-      "@apply text-neutral-900": {},
-      "backgroundColor": "inherit",
+      "@apply text-neutral-900 bg-white": {},
       "@apply hover:border-neutral-300": {},
       "&[aria-invalid=true]": {
-        "@apply border-red-600 ring-1 ring-red-600": {},
+        // "@apply border-red-600 ring-1 ring-red-600": {},
+        "--tw-border-opacity": "1",
+        borderColor: "rgba(220, 38, 38, var(--tw-border-opacity))",
+        "--tw-ring-offset-shadow":
+          "var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)",
+        "--tw-ring-shadow":
+          "var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)",
+        boxShadow:
+          "var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)",
+        "--tw-ring-opacity": "1",
+        "--tw-ring-color": "rgba(220, 38, 38, var(--tw-ring-opacity))",
       },
       "focus:ring-1": {},
       /* dark mode */
       "@apply dark:border-neutral-700": {},
-      "@apply dark:text-neutral-100": {},
+      "@apply dark:text-neutral-100 dark:bg-base": {},
       "@apply dark:hover:border-neutral-600": {},
-      " &[aria-invalid=true]": {
-        "@apply dark:border-red-400 dark:ring-red-400": {},
+      ".dark &[aria-invalid=true]": {
+        // "@apply dark:border-red-400 dark:ring-red-400": {},
+        "--tw-border-opacity": "1",
+        borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
+        "--tw-ring-opacity": "1",
+        "--tw-ring-color": "rgba(248, 113, 113, var(--tw-ring-opacity))",
+      },
+      "@media (prefers-color-scheme: dark)": {
+        "&[aria-invalid=true]": {
+          "--tw-border-opacity": "1",
+          borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
+          "--tw-ring-opacity": "1",
+          "--tw-ring-color": "rgba(248, 113, 113, var(--tw-ring-opacity))",
+        },
       },
 
       ...colors.reduce(
@@ -51,11 +72,11 @@ function formControl() {
 
 function formInputGroup() {
   return {
-    "form-input-group": {
+    ".form-input-group": {
       "@apply flex relative": {},
     },
 
-    "form-input-element": {
+    ".form-input-element": {
       "@apply flex items-center justify-center absolute z-base top-0": {},
 
       "&-xs": {
