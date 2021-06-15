@@ -28,6 +28,7 @@ module.exports = plugin.withOptions(
         require("./components/forms.js")(optionColors),
         require("./components/checkbox.js")(optionColors),
         require("./components/radio.js")(optionColors),
+        require("./components/switch.js")(optionColors),
       ]);
     };
   },
