@@ -21,6 +21,15 @@ module.exports = Switch = (colors) => ({
         "@apply translate-x-7": {},
       },
     },
+    // "input[type=checkbox]:focus + &": {
+    //   "@apply focus:ring-2 focus:ring-neutral-400": {},
+    // },
+    // "input[type=checkbox]:checked:focus + &, input[type=checkbox][aria-checked=mixed]:focus + &": {
+    //   "@apply ring-primary-400": {},
+    // },
+    // ".dark input[type=checkbox]:checked:focus + &,.dark input[type=checkbox][aria-checked=mixed]:focus + &": {
+    //   "@apply ring-primary-800": {},
+    // },
     "input[type=checkbox]:checked:hover:not(:disabled) + &, input[type=checkbox][aria-checked=mixed]:hover:not(:disabled) + &": {
       "@apply cursor-default": {},
     },
@@ -61,7 +70,7 @@ module.exports = Switch = (colors) => ({
   },
 
   ".form-switch-box": {
-    "@apply transition-transform ease-in-out duration-150 transform bg-white rounded-full translate-x-0": {},
+    "@apply transition-transform ease-in-out duration-150 transform bg-white rounded-full shadow translate-x-0": {},
 
     // sizing
     "&-sm": {
