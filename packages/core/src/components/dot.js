@@ -33,6 +33,7 @@ module.exports = Dot = (colors) => ({
 
     "&-outline": {
       "@apply bg-white border-2 border-neutral-500": {},
+      "@apply dark:bg-neutral-800": {},
       ...colors.reduce(
         (styles, color) => ({
           ...styles,
