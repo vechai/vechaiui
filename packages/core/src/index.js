@@ -22,15 +22,26 @@ module.exports = plugin.withOptions(
       colorize({ addVariant, variants, e, theme, addUtilities });
       
       addComponents([
-        require("./components/button.js")(optionColors),
+        require("./components/alert.js")(optionColors),
+        require("./components/avatar.js")(),
+        require("./components/badge.js")(optionColors),
+        require("./components/breadcrumb.js")(),
         require("./components/button-group.js")(),
-        require("./components/icon-button.js")(),
-        require("./components/forms.js")(optionColors),
+        require("./components/button.js")(optionColors),
         require("./components/checkbox.js")(optionColors),
+        require("./components/code.js")(),
+        require("./components/divider.js")(),
+        require("./components/dot.js")(optionColors),
+        require("./components/forms.js")(optionColors),
+        require("./components/icon-button.js")(),
+        require("./components/icon.js")(),
+        require("./components/kbd.js")(),
+        require("./components/link.js")(),
+        require("./components/message.js")(),
+        require("./components/notification.js")(),
         require("./components/radio.js")(optionColors),
         require("./components/switch.js")(optionColors),
-        require("./components/link.js")(),
-        require("./components/breadcrumb.js")(),
+        require("./components/tag.js")(optionColors),
       ]);
     };
   },

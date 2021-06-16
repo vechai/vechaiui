@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-sm antialiased;
+  @apply text-sm antialiased border-neutral-200 dark:border-neutral-700;
 }
 
 body {

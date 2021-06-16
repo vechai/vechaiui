@@ -173,7 +173,7 @@ export default class ToastManager extends React.Component<Props, State> {
           style={this.getStyle(pos)}
         >
           {toasts.map((toast: ToastArgs) => {
-            return <Message position={pos} key={toast.id} {...toast} />;
+            return <Message {...toast} position={pos} key={toast.id} />;
           })}
         </span>
       );
