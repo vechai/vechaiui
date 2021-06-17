@@ -10,7 +10,7 @@
       "conventionalCommits": true,
       "message": "chore(release): publish",
       "ignoreChanges": ["**/stories/**", "**/tests/**"],
-      "allowBranch": "master"
+      "allowBranch": "main"
     }
   }
 }
