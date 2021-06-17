@@ -15,7 +15,8 @@
     "url": "git+https://github.com/vechai/vechaiui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "node scripts/build.js",
+    "version": "yarn build"
   },
   "bugs": {
     "url": "https://github.com/vechai/vechaiui/issues"
@@ -25,7 +26,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
+    "clean-css": "^5.1.2",
     "postcss": "^8.3.4",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^2.1.4"
   }
 }

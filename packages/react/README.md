@@ -1,5 +1,5 @@
 ## Installation
 
 ```sh
-yarn add @vechaiui/theme
+yarn add @vechaiui/react
 ```

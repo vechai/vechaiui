@@ -1,6 +1,50 @@
 const plugin = require("tailwindcss/plugin");
 
 const colors = require("./colors");
+// components
+const Alert = require("./components/alert");
+const Avatar = require("./components/avatar");
+const Badge = require("./components/badge");
+const Breadcrumb = require("./components/breadcrumb");
+const ButtonGroup = require("./components/button-group");
+const Button = require("./components/button");
+const Checkbox = require("./components/checkbox");
+const Code = require("./components/code");
+const Divider = require("./components/divider");
+const Dot = require("./components/dot");
+const Forms = require("./components/forms");
+const IconButton = require("./components/icon-button");
+const Icon = require("./components/icon");
+const Kbd = require("./components/kbd");
+const Link = require("./components/link");
+const Message = require("./components/message");
+const Notification = require("./components/notification");
+const Radio = require("./components/radio");
+const Switch = require("./components/switch");
+const Tag = require("./components/tag");
+
+const components = [
+  Alert,
+  Avatar,
+  Badge,
+  Breadcrumb,
+  ButtonGroup,
+  Button,
+  Checkbox,
+  Code,
+  Divider,
+  Dot,
+  Forms,
+  IconButton,
+  Icon,
+  Kbd,
+  Link,
+  Message,
+  Notification,
+  Radio,
+  Switch,
+  Tag,
+];
 
 const defaultColors = ["primary"];
 
@@ -21,28 +65,12 @@ module.exports = plugin.withOptions(
       disabled({ addVariant, variants, e, theme, addUtilities });
       colorize({ addVariant, variants, e, theme, addUtilities });
       
-      addComponents([
-        require("./components/alert.js")(optionColors),
-        require("./components/avatar.js")(),
-        require("./components/badge.js")(optionColors),
-        require("./components/breadcrumb.js")(),
-        require("./components/button-group.js")(),
-        require("./components/button.js")(optionColors),
-        require("./components/checkbox.js")(optionColors),
-        require("./components/code.js")(),
-        require("./components/divider.js")(),
-        require("./components/dot.js")(optionColors),
-        require("./components/forms.js")(optionColors),
-        require("./components/icon-button.js")(),
-        require("./components/icon.js")(),
-        require("./components/kbd.js")(),
-        require("./components/link.js")(),
-        require("./components/message.js")(),
-        require("./components/notification.js")(),
-        require("./components/radio.js")(optionColors),
-        require("./components/switch.js")(optionColors),
-        require("./components/tag.js")(optionColors),
-      ]);
+      addComponents(
+        components.map((component) => component(optionColors)),
+        {
+          respectPrefix: false,
+        }
+      );
     };
   },
   function() {
@@ -78,6 +106,17 @@ module.exports = plugin.withOptions(
           },
         },
       },
+      variants: {
+        extend: {
+          boxShadow: ["disabled"],
+          cursor: ["disabled"],
+          opacity: ["active", "disabled"],
+          textColor: ["active", "disabled:hover"],
+          textDecoration: ["disabled"],
+          backgroundColor: ["disabled"],
+          borderColor: ["disabled"],
+        },
+      },
     };
   }
 );
@@ -104,6 +143,13 @@ function disabled({ addVariant, e }) {
   addVariant("disabled", ({ modifySelectors, separator }) => {
     modifySelectors(({ className }) => {
       return `.${e(`disabled${separator}${className}`)}[aria-disabled=true]`;
+    });
+  });
+  addVariant("disabled:hover", ({ modifySelectors, separator }) => {
+    modifySelectors(({ className }) => {
+      return `.${e(
+        `disabled:hover${separator}${className}`
+      )}[aria-disabled=true]`;
     });
   });
 }
