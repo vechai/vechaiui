@@ -49,10 +49,11 @@ const components = [
 const defaultColors = ["primary"];
 
 module.exports = plugin.withOptions(
-  function(options = { colors: [] }) {
+  function(options = { colors: [], reset: false }) {
     return function({
       addComponents,
       addVariant,
+      addBase,
       variants,
       e,
       theme,
@@ -64,13 +65,23 @@ module.exports = plugin.withOptions(
       selected({ addVariant, variants, e, theme, addUtilities });
       disabled({ addVariant, variants, e, theme, addUtilities });
       colorize({ addVariant, variants, e, theme, addUtilities });
-      
+
       addComponents(
         components.map((component) => component(optionColors)),
         {
           respectPrefix: false,
         }
       );
+
+      if (options.reset) {
+        addBase({
+          html: {
+            "@apply text-sm text-base antialiased border-neutral-200 dark:border-neutral-700 bg-base": {},
+            textRendering: "optimizeLegibility",
+            textSizeAdjust: "none",
+          },
+        });
+      }
     };
   },
   function() {

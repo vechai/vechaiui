@@ -18,6 +18,7 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@vechaiui/core")({
       colors: ["orange"],
+      reset: true
     }),
   ],
 };

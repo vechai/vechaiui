@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "src/index.js",
   "files": [
-    "src/*.js",
+    "src/",
     "dist/"
   ],
   "repository": {
