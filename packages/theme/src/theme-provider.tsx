@@ -7,11 +7,13 @@ import {
   Dict,
 } from "@vechaiui/utils";
 import * as React from "react";
-import { createContext, useContext, useLayoutEffect, useMemo } from "react";
+import { createContext, useContext, useMemo } from "react";
 import set from "lodash.set";
 
 import { defaultTheme } from "./default-theme";
 import { toCSSVar } from "./create-theme-vars";
+import { useSafeEffect } from "./use-safe-effect";
+import { isBrowser } from "./utils";
 import { VechaiTheme, VechaiThemeOverride } from "./types";
 
 interface DictVechaiTheme extends Dict {}
@@ -39,8 +41,10 @@ export function ThemeProvider({
   const computedTheme = useMemo(() => {
     const omittedTheme = omit(theme, ["colorSchemes"]);
     const { colors, type } = theme.colorSchemes[colorScheme] || {};
-    if (type === "dark") document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
+    if (isBrowser) {
+      if (type === "dark") document.documentElement.classList.add("dark");
+      else document.documentElement.classList.remove("dark");
+    }
 
     walkObject(colors, (value, path) => {
       if (typeof value !== "string") return;
@@ -55,8 +59,8 @@ export function ThemeProvider({
     return toCSSVar(normalizedTheme);
   }, [theme, colorScheme]);
 
-  useLayoutEffect(() => {
-    updateThemeVariables(computedTheme.__cssVars);
+  useSafeEffect(() => {
+    if (isBrowser) updateThemeVariables(computedTheme.__cssVars);
   }, [computedTheme]);
 
   const value = useMemo(
