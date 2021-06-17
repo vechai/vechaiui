@@ -34,10 +34,10 @@
     "lint:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@reach/auto-id": "^0.15.0",
     "react": "^17.0.2"
   },
   "dependencies": {
+    "@reach/auto-id": "^0.15.0",
     "@vechaiui/forms": "^0.1.0",
     "@vechaiui/theme": "^0.1.0",
     "@vechaiui/utils": "^0.1.0"
