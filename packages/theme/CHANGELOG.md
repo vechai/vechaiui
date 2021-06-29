@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.2.0...@vechaiui/theme@0.2.1) (2021-06-29)
+
+
+### Bug Fixes
+
+* **theme:** theme variable not re-set ([4cfcb3a](https://github.com/vechai/vechaiui/commit/4cfcb3ab9c674f958af6b272a9390b750b0564b1))
+
+
+
+
+
 # [0.2.0](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.1.1...@vechaiui/theme@0.2.0) (2021-06-29)
 
 

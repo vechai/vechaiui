@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.3.1...@vechaiui/docs@0.3.2) (2021-06-29)
+
+
+### Bug Fixes
+
+* **docs:** dev not working ([82ce8c8](https://github.com/vechai/vechaiui/commit/82ce8c8f5253a44d1a936491f1c62d7375d9e2da))
+* **theme:** theme variable not re-set ([4cfcb3a](https://github.com/vechai/vechaiui/commit/4cfcb3ab9c674f958af6b272a9390b750b0564b1))
+
+
+
+
+
 ## [0.3.1](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.3.0...@vechaiui/docs@0.3.1) (2021-06-29)
 
 **Note:** Version bump only for package @vechaiui/docs
