@@ -104,7 +104,7 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     return (
       <label
         className={cx(
-          "inline-flex align-top items-center",
+          "inline-flex align-top items-center cursor-base",
           disabled && "cursor-not-allowed"
         )}
       >

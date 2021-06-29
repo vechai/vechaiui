@@ -1,6 +1,6 @@
 module.exports = Link = () => ({
   ".link": {
-    "@apply cursor-default no-underline outline-none hover:underline": {},
+    "@apply cursor-base no-underline outline-none hover:underline": {},
     "@apply text-primary-500 dark:text-primary-400": {},
 
     "&-disabled": {

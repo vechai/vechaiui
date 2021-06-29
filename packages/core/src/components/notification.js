@@ -1,6 +1,6 @@
 module.exports = Notification = () => ({
   ".notification": {
-    "@apply relative flex p-4 text-sm w-96 m-2 max-w-full rounded-md shadow-sm sm:max-w-md": {},
+    "@apply relative flex p-4 text-sm w-96 m-2 max-w-full rounded-base shadow-sm sm:max-w-md": {},
     "@apply text-neutral-900 bg-white border border-neutral-200": {},
     // dark
     "@apply dark:text-neutral-100 dark:bg-neutral-700 dark:border-neutral-600": {},
@@ -49,7 +49,7 @@ module.exports = Notification = () => ({
     },
 
     "&-close-button": {
-      "@apply cursor-default text-neutral-700 hover:text-neutral-900": {},
+      "@apply cursor-base text-neutral-700 hover:text-neutral-900": {},
       "@apply dark:text-neutral-400 dark:hover:text-neutral-100": {},
     },
   },

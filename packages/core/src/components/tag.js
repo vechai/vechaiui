@@ -70,7 +70,7 @@ function tagLight(colors) {
 
 module.exports = Tag = (colors) => ({
   ".tag": {
-    "@apply inline-flex items-center max-h-full rounded-full font-medium outline-none cursor-default whitespace-nowrap": {},
+    "@apply inline-flex items-center max-h-full rounded-full font-medium outline-none cursor-base whitespace-nowrap": {},
 
     "&-sm": {
       "@apply px-2 h-5 text-xs": {},
@@ -99,7 +99,7 @@ module.exports = Tag = (colors) => ({
   ...tagLight(colors),
 
   ".tag-close-button": {
-    "@apply flex items-center justify-center transition-all duration-150 rounded-full outline-none ml-1 -mr-1 opacity-50 cursor-default": {},
+    "@apply flex items-center justify-center transition-all duration-150 rounded-full outline-none ml-1 -mr-1 opacity-50 cursor-base": {},
     "@apply hover:opacity-80 focus:outline-none active:opacity-100": {},
 
     "&-disabled": {

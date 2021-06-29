@@ -1,6 +1,7 @@
 const plugin = require("tailwindcss/plugin");
 
 const colors = require("./colors");
+const withOpacity = require("./with-opacity");
 // components
 const Alert = require("./components/alert");
 const Avatar = require("./components/avatar");
@@ -49,7 +50,7 @@ const components = [
 const defaultColors = ["primary"];
 
 module.exports = plugin.withOptions(
-  function(options = { colors: [], reset: false }) {
+  function(options = { colors: [], cssBase: false }) {
     return function({
       addComponents,
       addVariant,
@@ -64,7 +65,6 @@ module.exports = plugin.withOptions(
       active({ addVariant, variants, e, theme, addUtilities });
       selected({ addVariant, variants, e, theme, addUtilities });
       disabled({ addVariant, variants, e, theme, addUtilities });
-      colorize({ addVariant, variants, e, theme, addUtilities });
 
       addComponents(
         components.map((component) => component(optionColors)),
@@ -73,12 +73,19 @@ module.exports = plugin.withOptions(
         }
       );
 
-      if (options.reset) {
+      if (options.cssBase) {
         addBase({
           html: {
-            "@apply text-sm text-base antialiased border-neutral-200 dark:border-neutral-700 bg-base": {},
+            "@apply text-foreground antialiased border-neutral-200 dark:border-neutral-700 bg-base": {},
+            lineHeight: "1.5",
             textRendering: "optimizeLegibility",
-            textSizeAdjust: "none",
+            textSizeAdjust: "100%",
+            touchAction: "manipulation",
+          },
+          body: {
+            position: "relative",
+            minHeight: "100%",
+            fontFeatureSettings: "'kern'",
           },
         });
       }
@@ -89,16 +96,22 @@ module.exports = plugin.withOptions(
       theme: {
         extend: {
           colors,
+          cursor: {
+            base: "var(--vc-cursor)",
+          },
           opacity: {
             15: "0.15",
           },
           backgroundColor: {
-            base: "rgb(var(--colors-bg-base))",
-            fill: "rgb(var(--colors-bg-fill))",
+            base: withOpacity("--vc-colors-bg-base"),
+            fill: withOpacity("--vc-colors-bg-fill"),
           },
           textColor: {
-            base: "rgb(var(--colors-text-base))",
-            muted: "rgb(var(--colors-text-muted))",
+            foreground: withOpacity("--vc-colors-text-foreground"),
+            muted: withOpacity("--vc-colors-text-muted"),
+          },
+          borderRadius: {
+            base: "var(--vc-rounded)",
           },
           zIndex: {
             hide: -1,
@@ -163,44 +176,4 @@ function disabled({ addVariant, e }) {
       )}[aria-disabled=true]`;
     });
   });
-}
-
-function colorize({ addUtilities, theme, variants }) {
-  const fn = (prefix, key, prop, opacity) => {
-    const t = theme(prop);
-
-    addUtilities(
-      Object.keys(t).reduce(
-        (_o, _k) => ({
-          ..._o,
-          ...Object.keys(t[_k])
-            .filter((x) => /^rgb\(.*\)$/i.test(t[_k][x]))
-            .reduce(
-              (o, k) => ({
-                ...o,
-                [`.${prefix}-${_k}-${k}`]: {
-                  [opacity]: "1",
-                  [key]: t[_k][k].replace(
-                    /^rgb\((.*)\)$/i,
-                    `rgba($1, var(${opacity}))`
-                  ),
-                },
-              }),
-              {}
-            ),
-        }),
-        {}
-      ),
-      {
-        respectImportant: false,
-        variants: variants(prop),
-      }
-    );
-  };
-
-  // add more utils here...
-  fn("bg", "background-color", "backgroundColor", "--tw-bg-opacity");
-  fn("text", "color", "textColor", "--tw-text-opacity");
-  fn("border", "border-color", "borderColor", "--tw-border-opacity");
-  fn("ring", "--tw-ring-color", "ringColor", "--tw-ring-opacity");
 }

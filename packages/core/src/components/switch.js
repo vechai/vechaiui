@@ -3,7 +3,7 @@ module.exports = Switch = (colors) => ({
     "@apply inline-block align-middle": {},
   },
   ".form-switch": {
-    "@apply rounded-full p-0.5 cursor-default focus:outline-none": {},
+    "@apply rounded-full p-0.5 cursor-base focus:outline-none": {},
     "@apply bg-neutral-200 dark:bg-neutral-700": {},
     "@apply hover:bg-neutral-300 dark:hover:bg-neutral-600": {},
     "input[type=checkbox]:checked + &, input[type=checkbox][aria-checked=mixed] + &": {
@@ -31,7 +31,7 @@ module.exports = Switch = (colors) => ({
     //   "@apply ring-primary-800": {},
     // },
     "input[type=checkbox]:checked:hover:not(:disabled) + &, input[type=checkbox][aria-checked=mixed]:hover:not(:disabled) + &": {
-      "@apply cursor-default": {},
+      "@apply cursor-base": {},
     },
 
     // colors

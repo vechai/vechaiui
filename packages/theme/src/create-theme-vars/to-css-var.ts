@@ -13,7 +13,7 @@ export function toCSSVar<T extends Dict>(rawTheme: T) {
   // omit components and breakpoints from css variable map
   const tokens = extractTokens(theme);
 
-  const cssVarPrefix = theme.config?.cssVarPrefix;
+  const cssVarPrefix = theme.config?.cssVarPrefix || "vc";
 
   const {
     /**

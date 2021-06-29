@@ -1,14 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* body {
-  @apply text-sm text-base antialiased border-neutral-200 dark:border-neutral-700 bg-base;
-}
-
-body {
-  text-rendering: optimizelegibility;
-  user-select: none;
-  text-size-adjust: none;
-  cursor: default;
-} */

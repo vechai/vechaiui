@@ -11,7 +11,7 @@ export const light: ColorScheme = {
       fill: colors.gray["100"],
     },
     text: {
-      base: colors.gray["900"],
+      foreground: colors.gray["900"],
       muted: colors.gray["700"],
     },
     primary: colors.indigo,
@@ -29,7 +29,7 @@ export const dark: ColorScheme = {
       fill: colors.gray["900"],
     },
     text: {
-      base: colors.gray["100"],
+      foreground: colors.gray["100"],
       muted: colors.gray["300"],
     },
     primary: colors.indigo,
@@ -39,6 +39,7 @@ export const dark: ColorScheme = {
 
 export const defaultTheme: VechaiTheme = {
   cursor: "default",
+  rounded: "0.375rem", // md
   colorSchemes: {
     light,
     dark,

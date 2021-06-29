@@ -1,10 +1,9 @@
 module.exports = Checkbox = (colors) => ({
   ".form-checkbox": {
-    "@apply rounded shadow-sm": {},
+    "@apply rounded-base shadow-sm": {},
     backgroundColor: "inherit",
     "@apply border-neutral-200 hover:border-neutral-300": {},
     "&[aria-invalid=true]": {
-      // "@apply border-red-600 hover:border-red-600": {},
       "--tw-border-opacity": "1",
       "borderColor": "rgba(220, 38, 38, var(--tw-border-opacity))",
     },
@@ -16,7 +15,6 @@ module.exports = Checkbox = (colors) => ({
     "@apply dark:border-neutral-700": {},
     "@apply dark:hover:border-neutral-600": {},
     ".dark &[aria-invalid=true]": {
-      // "@apply dark:border-red-400 dark:hover:border-red-400": {},
       "--tw-border-opacity": "1",
       "borderColor": "rgba(248, 113, 113, var(--tw-border-opacity))",
     },
@@ -27,7 +25,6 @@ module.exports = Checkbox = (colors) => ({
 
     "@media (prefers-color-scheme: dark)": {
       "&[aria-invalid=true]": {
-        // "@apply border-red-600 hover:border-red-600": {},
         "--tw-border-opacity": "1",
         "borderColor": "rgba(220, 38, 38, var(--tw-border-opacity))",
       },

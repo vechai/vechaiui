@@ -1,7 +1,7 @@
 function alertSubtle(colors) {
   return {
     ".alert-subtle": {
-      "@apply border rounded-md": {},
+      "@apply border rounded-base": {},
       "@apply text-neutral-900": {},
 
       ...colors.reduce(
@@ -24,7 +24,7 @@ function alertSubtle(colors) {
 function alertSolid(colors) {
   return {
     ".alert-solid": {
-      "@apply border rounded-md": {},
+      "@apply border rounded-base": {},
       "@apply text-white": {},
 
       ...colors.reduce(
@@ -67,7 +67,7 @@ function alertLeftAccent(colors) {
 function alertCloseButton(colors) {
   return {
     ".alert-close-button": {
-      "@apply absolute right-16 cursor-default focus:outline-none": {},
+      "@apply absolute right-4 cursor-base focus:outline-none": {},
       "@apply text-neutral-600 hover:text-neutral-700": {},
 
       ...colors.reduce(

@@ -242,32 +242,32 @@ module.exports = Button = (colors) => ({
     "@apply font-medium leading-tight": {},
     transitionProperty:
       "background-color, border-color, color, fill, stroke, box-shadow",
-    "@apply outline-none appearance-none cursor-default select-none whitespace-nowrap": {},
+    "@apply outline-none appearance-none cursor-base select-none whitespace-nowrap": {},
     "@apply focus:outline-none": {},
 
     // sizing
     "&-xs": {
-      "@apply px-2 text-xs rounded-md h-6": {},
+      "@apply px-2 text-xs rounded-base h-6": {},
       minWidth: "1.5rem",
     },
 
     "&-sm": {
-      "@apply px-3 text-xs rounded-md h-7": {},
+      "@apply px-3 text-xs rounded-base h-7": {},
       minWidth: "1.75rem",
     },
 
     "&-md": {
-      "@apply h-8 px-4 text-sm rounded-md": {},
+      "@apply h-8 px-4 text-sm rounded-base": {},
       minWidth: "2rem",
     },
 
     "&-lg": {
-      "@apply h-10 px-4 text-base rounded-md": {},
+      "@apply h-10 px-4 text-base rounded-base": {},
       minWidth: "2.5rem",
     },
 
     "&-xl": {
-      "@apply h-12 px-6 text-lg rounded-md": {},
+      "@apply h-12 px-6 text-lg rounded-base": {},
       minWidth: "3rem",
     },
 

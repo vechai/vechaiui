@@ -101,7 +101,7 @@ function formInputGroup() {
     },
 
     ".form-input-addon": {
-      "@apply flex items-center w-auto rounded-md shadow-sm whitespace-nowrap": {},
+      "@apply flex items-center w-auto rounded-base shadow-sm whitespace-nowrap": {},
       "@apply border border-neutral-300": {},
       "@apply text-neutral-600 bg-neutral-50": {},
       // dark colors
@@ -141,26 +141,26 @@ function formInputGroup() {
 
 module.exports = Forms = (colors) => ({
   ".form-field": {
-    "@apply relative inline-flex items-center appearance-none focus:outline-none": {},
+    "@apply relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
 
     "&-xs": {
-      "@apply h-6 px-2 py-0 text-xs rounded-md": {},
+      "@apply h-6 px-2 py-0 text-xs rounded-base": {},
     },
 
     "&-sm": {
-      "@apply px-3 py-0 text-xs rounded-md h-7": {},
+      "@apply px-3 py-0 text-xs rounded-base h-7": {},
     },
 
     "&-md": {
-      "@apply h-8 px-3 py-0 text-sm rounded-md": {},
+      "@apply h-8 px-3 py-0 text-sm rounded-base": {},
     },
 
     "&-lg": {
-      "@apply h-10 px-4 py-0 text-base rounded-md": {},
+      "@apply h-10 px-4 py-0 text-base rounded-base": {},
     },
 
     "&-xl": {
-      "@apply h-12 px-4 py-0 text-lg rounded-md": {},
+      "@apply h-12 px-4 py-0 text-lg rounded-base": {},
     },
 
     "&-disabled": {
