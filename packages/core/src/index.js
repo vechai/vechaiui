@@ -60,7 +60,7 @@ module.exports = plugin.withOptions(
       theme,
       addUtilities,
     }) {
-      const optionColors = [...defaultColors, ...options.colors];
+      const optionColors = [...defaultColors, ...(options.colors || [])];
 
       active({ addVariant, variants, e, theme, addUtilities });
       selected({ addVariant, variants, e, theme, addUtilities });
