@@ -1,5 +1,5 @@
 import { DefaultProps } from "@vechaiui/theme";
-import { Icon, X } from "@vechaiui/icon";
+import { Icon, XIcon } from "@vechaiui/icon";
 import { cx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
 
@@ -10,14 +10,13 @@ export interface TagCloseButtonProps
     React.HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean;
   iconClassName?: string;
-  size?: string;
 }
 
 // FIXME
 export const TagCloseButton = React.forwardRef<
   HTMLButtonElement,
   TagCloseButtonProps
->(({ disabled, className, size = "14", iconClassName, ...props }, ref) => (
+>(({ disabled, className, iconClassName, ...props }, ref) => (
   <button
     ref={ref}
     className={cx("tag-close-button", className)}
@@ -25,7 +24,7 @@ export const TagCloseButton = React.forwardRef<
     aria-disabled={disabled}
     {...props}
   >
-    <Icon as={X} size={size} className={iconClassName} />
+    <Icon as={XIcon} label="x" className={cx("w-3.5 h-3.5", iconClassName)} />
   </button>
 ));
 

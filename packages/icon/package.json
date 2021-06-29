@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@vechaiui/theme": "0.2.0",
-    "@vechaiui/utils": "^0.1.0"
+    "@vechaiui/utils": "^0.1.0",
+    "@vechaiui/visually-hidden": "^0.1.0"
   },
   "peerDependencies": {
     "react": ">=16.8.6"

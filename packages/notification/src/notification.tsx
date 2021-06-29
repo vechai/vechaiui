@@ -1,21 +1,29 @@
 import { Button } from "@vechaiui/button";
 import {
   Icon,
-  Info,
-  X,
-  XCricle,
-  CheckCircle,
-  Exclamation,
+  InfoIcon,
+  XIcon,
+  XCricleIcon,
+  CheckCircleIcon,
+  ExclamationIcon,
 } from "@vechaiui/icon";
 import { createToast, useToastOptions } from "@vechaiui/toast";
 import { cx as clsx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
 
 const statuses = {
-  info: { icon: Info, cx: "notification-icon-info" },
-  success: { icon: CheckCircle, cx: "notification-icon-success" },
-  error: { icon: XCricle, cx: "notification-icon-error" },
-  warning: { icon: Exclamation, cx: "notification-icon-warning" },
+  info: { icon: InfoIcon, cx: "notification-icon-info", label: "info" },
+  success: { icon: XCricleIcon, cx: "notification-icon-success", label: "x-circle" },
+  error: {
+    icon: CheckCircleIcon,
+    cx: "notification-icon-error",
+    label: "check-circle",
+  },
+  warning: {
+    icon: ExclamationIcon,
+    cx: "notification-icon-warning",
+    label: "exclamationIcon",
+  },
 };
 
 type OmittedTypes = "message";
@@ -37,7 +45,7 @@ const Notification = React.forwardRef<HTMLDivElement, NotificationProps>(
       onUndo,
       undoText = "Undo",
     } = props;
-    const { icon, cx } = statuses[status] || {};
+    const { icon, cx, label } = statuses[status] || {};
 
     return (
       <div ref={ref} className={clsx("notification", className)}>
@@ -46,7 +54,7 @@ const Notification = React.forwardRef<HTMLDivElement, NotificationProps>(
             {customIcon ? (
               customIcon
             ) : (
-              <Icon as={customIcon || icon} size={20} />
+              <Icon label={label} as={customIcon || icon} className="w-5 h-5" />
             )}
           </span>
         )}
@@ -79,9 +87,9 @@ const Notification = React.forwardRef<HTMLDivElement, NotificationProps>(
                 customCloseIcon
               ) : (
                 <Icon
-                  as={X}
-                  size={14}
-                  className="text-current align-text-bottom"
+                  as={XIcon}
+                  label="x"
+                  className="text-current align-text-bottom h-3.5 w-3.5"
                 />
               )}
             </button>

@@ -1,14 +1,13 @@
+/* @heroicons/react/outline */
 import * as React from "react";
 import { IconProps } from "./icon";
 
-export const QuestionCircle = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const QuestionCircleIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -25,14 +24,12 @@ export const QuestionCircle = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const Info = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -49,14 +46,12 @@ export const Info = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const CheckCircle = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const CheckCircleIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -73,14 +68,12 @@ export const CheckCircle = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const XCricle = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const XCricleIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -97,14 +90,12 @@ export const XCricle = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const X = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const XIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -121,14 +112,12 @@ export const X = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const Exclamation = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const ExclamationIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -145,14 +134,12 @@ export const Exclamation = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const Selector = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const SelectorIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}
@@ -169,14 +156,12 @@ export const Selector = React.forwardRef<SVGSVGElement, IconProps>(
   }
 );
 
-export const ChevronUp = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ size = 16, color = "currentColor", ...rest }, ref) => {
+export const ChevronUpIcon = React.forwardRef<SVGSVGElement, IconProps>(
+  ({ color = "currentColor", ...rest }, ref) => {
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         fill="none"
         viewBox="0 0 24 24"
         stroke={color}

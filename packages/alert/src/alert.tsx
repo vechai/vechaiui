@@ -1,5 +1,5 @@
 import { cx, __DEV__ } from "@vechaiui/utils";
-import { Icon, X } from "@vechaiui/icon";
+import { Icon, XIcon } from "@vechaiui/icon";
 import { DefaultProps } from "@vechaiui/theme";
 import * as React from "react";
 
@@ -41,9 +41,9 @@ export const AlertCloseButton = React.forwardRef<
       className={cx(classes, className)}
     >
       <Icon
-        as={X}
-        size={16}
-        className="inline-block text-current align-text-bottom fill-current"
+        as={XIcon}
+        label="x"
+        className="inline-block w-4 h-4 text-current align-text-bottom fill-current"
       />
     </button>
   );
