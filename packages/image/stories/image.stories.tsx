@@ -10,6 +10,7 @@ export default {
 
 export const basic = () => (
   <Image
+    alt="Dan Abramov"
     htmlWidth={100}
     htmlHeight={100}
     className="object-cover"

@@ -39,7 +39,7 @@ if (__DEV__) {
   NativeImage.displayName = "NativeImage";
 }
 
-interface IImageProps extends INativeImageProps {
+interface IImageProps extends Omit<NativeImageProps, "onError"> {
   fallbackSrc?: string;
   fallback?: React.ReactElement;
   loading?: "eager" | "lazy";
