@@ -1,0 +1,18 @@
+.lineNumber {
+  counter-increment: line 1;
+}
+
+.lineNumber::before {
+  position: absolute;
+  left: -3.5rem;
+  flex-shrink: 0;
+  content: counter(line, decimal-leading-zero);
+  display: grid;
+  place-items: center;
+  margin-right: 16px;
+  transform: translateY(1px);
+  width: 40px;
+  font-size: inherit;
+  color: rgb(161, 167, 179);
+  border-right: 1px solid rgb(39, 41, 46);
+}
