@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/message",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,9 +37,9 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@vechaiui/icon": "0.1.1",
-    "@vechaiui/theme": "0.1.1",
-    "@vechaiui/toast": "0.1.1",
+    "@vechaiui/icon": "0.1.2",
+    "@vechaiui/theme": "0.2.0",
+    "@vechaiui/toast": "0.1.2",
     "@vechaiui/utils": "^0.1.0"
   },
   "peerDependencies": {
