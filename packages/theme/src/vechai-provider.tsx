@@ -18,14 +18,14 @@ import { VechaiTheme, VechaiThemeOverride } from "./types";
 
 interface DictVechaiTheme extends Dict {}
 
-export const ThemeContext = createContext<
+export const VechaiContext = createContext<
   | {
       theme: WithCSSVar<DictVechaiTheme>;
     }
   | undefined
 >(undefined);
 
-ThemeContext.displayName = "ThemeContext";
+VechaiContext.displayName = "VechaiContext";
 
 export interface VechaiProviderProps {
   children: React.ReactNode;
@@ -33,7 +33,7 @@ export interface VechaiProviderProps {
   colorScheme?: string;
 }
 
-export function ThemeProvider({
+export function VechaiProvider({
   theme = defaultTheme,
   colorScheme = "light",
   children,
@@ -56,6 +56,7 @@ export function ThemeProvider({
       ...omittedTheme,
       colors,
     };
+
     return toCSSVar(normalizedTheme);
   }, [theme, colorScheme]);
 
@@ -71,7 +72,7 @@ export function ThemeProvider({
   );
 
   return (
-    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+    <VechaiContext.Provider value={value}>{children}</VechaiContext.Provider>
   );
 }
 
@@ -91,13 +92,13 @@ function updateThemeVariables(vars: Record<string, string>) {
   });
 }
 
-export function useTheme<T extends object = Dict>() {
+export function useVechai<T extends object = Dict>() {
   const theme = useContext(
-    (ThemeContext as unknown) as React.Context<T | undefined>
+    (VechaiContext as unknown) as React.Context<T | undefined>
   );
   if (!theme) {
     throw Error(
-      "useTheme: `theme` is undefined. Seems you forgot to wrap your app in `<ThemeProvider />`"
+      "useVechai: `theme` is undefined. Seems you forgot to wrap your app in `<VechaiProvider />`"
     );
   }
 
@@ -105,5 +106,5 @@ export function useTheme<T extends object = Dict>() {
 }
 
 export function extendTheme(themeOverride: VechaiThemeOverride): VechaiTheme {
-  return deepmerge(defaultTheme, themeOverride) as VechaiTheme;
+  return deepmerge(defaultTheme, themeOverride, { clone: true }) as VechaiTheme;
 }

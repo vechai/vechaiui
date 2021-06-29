@@ -1,5 +1,5 @@
-import { ThemeProvider, extendTheme } from "@vechaiui/react";
-import { useState } from "react";
+import { VechaiProvider, extendTheme } from "@vechaiui/react";
+import { useState, useMemo } from "react";
 import { withPerformance } from "storybook-addon-performance";
 import { light, dark, midnight, pale, dawn, bee, cool } from "./themes";
 
@@ -9,25 +9,33 @@ export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 };
 
-const theme = extendTheme({
-  cursor: "pointer",
-  rounded: "none",
-  colorSchemes: {
-    light,
-    dark,
-    midnight,
-    pale,
-    dawn,
-    bee,
-    cool,
-  },
-});
-
 const withVechai = (StoryFn: Function) => {
   const [colorScheme, setColorScheme] = useState("light");
+  const theme = useMemo(
+    () =>
+      extendTheme({
+        cursor: colorScheme === "light" ? "pointer" : "default",
+        rounded: "none",
+        colorSchemes: {
+          light,
+          dark,
+          midnight,
+          pale,
+          dawn,
+          bee,
+          cool,
+        },
+      }),
+    [colorScheme]
+  );
+
   return (
-    <ThemeProvider theme={theme} colorScheme={colorScheme}>
-      <div id="story-wrapper" className="space-y-4" style={{ minHeight: "100vh" }}>
+    <VechaiProvider theme={theme} colorScheme={colorScheme}>
+      <div
+        id="story-wrapper"
+        className="space-y-4"
+        style={{ minHeight: "100vh" }}
+      >
         <div className="flex mb-4 justify-items-end">
           <button
             onClick={() =>
@@ -39,7 +47,7 @@ const withVechai = (StoryFn: Function) => {
         </div>
         <StoryFn />
       </div>
-    </ThemeProvider>
+    </VechaiProvider>
   );
 };
 

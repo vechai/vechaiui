@@ -1,6 +1,6 @@
 import * as React from "react";
 import {
-  ThemeProvider as VechaiThemeProvider,
+  VechaiProvider,
   extendTheme,
 } from "@vechaiui/react";
 
@@ -113,9 +113,9 @@ function ThemeController({ children }: any) {
         setCursorPointer,
       }}
     >
-      <VechaiThemeProvider theme={theme} colorScheme={colorScheme}>
+      <VechaiProvider theme={theme} colorScheme={colorScheme}>
         {children}
-      </VechaiThemeProvider>
+      </VechaiProvider>
     </ThemeContext.Provider>
   );
 }
