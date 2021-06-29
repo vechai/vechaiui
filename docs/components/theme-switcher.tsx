@@ -77,8 +77,8 @@ export function ThemSwitcher() {
                     <span className="text-smm">Pointer Cursors</span>
                     <Switch
                       size="md"
-                      value={cursorPointer}
-                      onChange={setCursorPointer}
+                      checked={cursorPointer}
+                      onChange={() => setCursorPointer(!cursorPointer)}
                     />
                   </div>
                 </div>

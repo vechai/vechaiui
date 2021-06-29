@@ -6,7 +6,7 @@ import {
 
 import { light, dark, midnight, pale, dawn, bee, cool } from "@utils/themes";
 
-type ThemeContextType = {
+export type ThemeContextType = {
   colorScheme?: string;
   radius?: string;
   cursorPointer?: boolean;
@@ -120,6 +120,13 @@ function ThemeController({ children }: any) {
   );
 }
 
-export const useTheme = () => React.useContext(ThemeContext);
+export const useTheme = (): ThemeContextType => React.useContext(ThemeContext) || {
+  colorScheme: "light",
+  radius: "0.375rem",
+  cursorPointer: false,
+  setColorScheme: () => null,
+  setRadius: () => null,
+  setCursorPointer: () => null,
+};
 
 export default ThemeController;

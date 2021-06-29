@@ -2,7 +2,7 @@ import * as React from "react";
 import { isBrowser } from "@utils/isBrowser";
 import { isMatchMedia, LG } from "@utils/mediaQuery";
 
-type NavigationContextType = {
+export type NavigationContextType = {
   open: boolean;
   slideMode: boolean;
   setOpen: (open: boolean) => void;

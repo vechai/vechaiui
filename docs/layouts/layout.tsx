@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import { mainNavigation, Navigation } from "@components/navigation";
-import { NaviationContext } from "@components/navigation-context";
+import { NavigationContext, NavigationContextType } from "@components/navigation-provider";
 import components from "@components/components";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -51,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 
 function Header() {
-  const { setOpen } = React.useContext(NaviationContext);
+  const { setOpen } = React.useContext(NavigationContext) as NavigationContextType;
   return (
     <nav className="w-full lg:hidden">
       <div className="flex items-center w-full px-4 dark h-14">

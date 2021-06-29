@@ -4,7 +4,7 @@ import { cx } from "@vechaiui/react";
 import * as React from "react";
 
 import { NavLink } from "./nav-link";
-import { NavigationContext } from "./navigation-provider";
+import { NavigationContext, NavigationContextType } from "./navigation-provider";
 import { ThemSwitcher } from "./theme-switcher";
 import components from "./components";
 
@@ -26,8 +26,8 @@ export const mainNavigation = [
   },
 ];
 
-export default function SideNav() {
-  const { open, slideMode, setOpen } = React.useContext(NavigationContext);
+export function Navigation() {
+  const { open, slideMode, setOpen } = React.useContext(NavigationContext) as NavigationContextType;
 
   return (
     <Transition.Root show={open} as={React.Fragment}>
@@ -85,7 +85,7 @@ export default function SideNav() {
                             : "hover:text-white"
                         )}
                       >
-                        <Icon size={18} className="mr-2 text-primary-500" />
+                        <Icon className="w-5 h-5 mr-2 text-primary-500" />
                         <span>{link.title}</span>
                       </a>
                     )}
