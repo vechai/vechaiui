@@ -10,8 +10,11 @@ import MDXComponents from "@components/mdx-components";
 import NavigationProvider from "@components/navigation-provider";
 import ThemeController from "@components/theme-controller";
 import Layout from "@layouts/layout";
+import { getSeo } from "utils/seo"
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const seo = getSeo();
+
   return (
     <>
       <Head>
@@ -19,10 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" />
       </Head>
-      <DefaultSeo
-        title="Simple Usage Example"
-        description="A short description goes here."
-      />
+      <DefaultSeo {...seo} />
       <NavigationProvider>
         <ThemeController>
           <IdProvider>
