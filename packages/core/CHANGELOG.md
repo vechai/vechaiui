@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.3](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.1...@vechaiui/core@0.3.3) (2021-06-30)
+
+
+### Features
+
+* docs ([752b055](https://github.com/vechai/vechaiui/commit/752b055c0041b8762630cd0b5eef695fcad6a887))
+
+
+
+
+
 ## [0.3.1](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.0...@vechaiui/core@0.3.1) (2021-06-29)
 
 
