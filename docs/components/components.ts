@@ -115,10 +115,6 @@ const headless = [
     title: "Dialog",
   },
   {
-    key: "popover",
-    title: "Popover",
-  },
-  {
     key: "radio-button-group",
     title: "Radio Button",
   },
@@ -130,6 +126,10 @@ const headless = [
 ];
 
 const radix = [
+  {
+    key: "popover",
+    title: "Popover",
+  },
   {
     key: "tooltip",
     title: "Tooltip",

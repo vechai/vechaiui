@@ -35,8 +35,6 @@ import {
   Menu,
   Listbox,
   Dialog,
-  Popover,
-  Portal,
   RadioGroup,
   Disclosure,
   Transition,
@@ -61,6 +59,7 @@ import {
   BellIcon,
   ShieldCheckIcon,
 } from "@heroicons/react/outline";
+import * as Popover from "@radix-ui/react-popover";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import * as Tabs from "@radix-ui/react-tabs";
 import * as ContextMenu from "@radix-ui/react-context-menu";
@@ -120,12 +119,11 @@ const scope = {
   Menu,
   Listbox,
   Dialog,
-  Popover,
-  Portal,
   RadioGroup,
   Disclosure,
   Transition,
   // Radix
+  Popover,
   Tooltip,
   Tabs,
   ContextMenu,

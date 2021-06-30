@@ -105,7 +105,6 @@ const demoList = [
                         className={cx(
                           "flex items-center w-full px-3 h-8 border-0 flex-shrink-0 text-sm text-left cursor-default font-normal focus:outline-none rounded",
                           active && "bg-neutral-100 dark:bg-neutral-700",
-                          disabled && "listbox-option-disabled"
                         )}
                       >
                         <span
@@ -227,7 +226,6 @@ const demoList = [
                           active && "bg-neutral-100 dark:bg-neutral-700",
                           selected &&
                             "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-teal-200",
-                          disabled && "listbox-option-disabled"
                         )}
                       >
                         <span

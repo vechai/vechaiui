@@ -286,7 +286,7 @@ const demoList = [
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
                 <span className="flex-1">Fullscreen</span>
-                <Kbd className="font-sans">⌘F</Kbd>
+                <Kbd>⌘F</Kbd>
               </button>
             )}
           </Menu.Item>
@@ -307,7 +307,7 @@ const demoList = [
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
                 <span className="flex-1">Copy</span>
-                <Kbd className="font-sans">⌘⇧C</Kbd>
+                <Kbd>⌘⇧C</Kbd>
               </button>
             )}
           </Menu.Item>
@@ -352,7 +352,7 @@ const demoList = [
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
                 <span className="flex-1">Due Date</span>
-                <Kbd className="font-sans">⌘D</Kbd>
+                <Kbd>⌘D</Kbd>
               </button>
             )}
           </Menu.Item>
@@ -393,7 +393,7 @@ const demoList = [
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
                 <span className="flex-1">Unsubscribe</span>
-                <Kbd className="font-sans">⌘⇧U</Kbd>
+                <Kbd>⌘⇧U</Kbd>
               </button>
             )}
           </Menu.Item>

@@ -17,6 +17,7 @@
     "@next/mdx": "^11.0.1",
     "@radix-ui/react-context-menu": "^0.0.23",
     "@radix-ui/react-id": "^0.0.6",
+    "@radix-ui/react-popover": "^0.0.19",
     "@radix-ui/react-slider": "^0.0.16",
     "@radix-ui/react-tabs": "^0.0.15",
     "@radix-ui/react-tooltip": "^0.0.20",

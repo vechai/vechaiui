@@ -45,7 +45,7 @@ const demoList = [
       >
         <Icon as={ArrowsExpandIcon} className={cx("w-4 h-4 mr-2")} />
         <span className="flex-1">Fullscreen</span>
-        <Kbd className="font-sans">⌘F</Kbd>
+        <Kbd>⌘F</Kbd>
       </ContextMenu.Item>
       <ContextMenu.Item
         className={cx(
@@ -55,7 +55,7 @@ const demoList = [
       >
         <Icon as={DuplicateIcon} className={cx("w-4 h-4 mr-2")} />
         <span className="flex-1">Copy</span>
-        <Kbd className="font-sans">⌘⇧C</Kbd>
+        <Kbd>⌘⇧C</Kbd>
       </ContextMenu.Item>
       <ContextMenu.Item
         className={cx(
@@ -75,7 +75,7 @@ const demoList = [
       >
         <Icon as={CalendarIcon} className={cx("w-4 h-4 mr-2")} />
         <span className="flex-1">Due Date</span>
-        <Kbd className="font-sans">⌘D</Kbd>
+        <Kbd>⌘D</Kbd>
       </ContextMenu.Item>
 
       <ContextMenu.Root>
@@ -135,7 +135,7 @@ const demoList = [
       >
         <Icon as={HashtagIcon} className={cx("w-4 h-4 mr-2")} />
         <span className="flex-1">Unsubscribe</span>
-        <Kbd className="font-sans">⌘⇧U</Kbd>
+        <Kbd>⌘⇧U</Kbd>
       </ContextMenu.Item>
     </ContextMenu.Content>
   </ContextMenu.Root>

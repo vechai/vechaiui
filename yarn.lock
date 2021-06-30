@@ -2607,6 +2607,29 @@
   resolved "https://registry.npmjs.org/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.12.tgz#bf4ae516669b68e059549538104d97322f7c876b"
   integrity sha512-/GYNMicBnGzjD1d2fCAuzql1VeFrp8mqM3xfzT1kxhnV85TKdURO45jBfMgqo17XNXoNhWIAProUsCO4qFAAIg==
 
+"@radix-ui/react-popover@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.npmjs.org/@radix-ui/react-popover/-/react-popover-0.0.19.tgz#7656bb2071ec695d1626c0ca56fa53d12c4258e7"
+  integrity sha512-pGkikTKCZYGAD9X9o8cv5z/jb3/rdAW15T9fa2C+w1hiCkkg2H27MI6JOXZWWqSszuvqI8DdwLqRSpTvSF6i9Q==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "0.0.5"
+    "@radix-ui/react-compose-refs" "0.0.5"
+    "@radix-ui/react-context" "0.0.5"
+    "@radix-ui/react-dismissable-layer" "0.0.14"
+    "@radix-ui/react-focus-guards" "0.0.7"
+    "@radix-ui/react-focus-scope" "0.0.14"
+    "@radix-ui/react-id" "0.0.6"
+    "@radix-ui/react-polymorphic" "0.0.12"
+    "@radix-ui/react-popper" "0.0.17"
+    "@radix-ui/react-portal" "0.0.14"
+    "@radix-ui/react-presence" "0.0.14"
+    "@radix-ui/react-primitive" "0.0.14"
+    "@radix-ui/react-slot" "0.0.12"
+    "@radix-ui/react-use-controllable-state" "0.0.6"
+    aria-hidden "^1.1.1"
+    react-remove-scroll "^2.4.0"
+
 "@radix-ui/react-popper@0.0.17":
   version "0.0.17"
   resolved "https://registry.npmjs.org/@radix-ui/react-popper/-/react-popper-0.0.17.tgz#a73486e19a628cb3fecaf3fb6eecf6e2cab9d0be"
