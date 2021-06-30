@@ -58,7 +58,7 @@ export function Highlight({
           })}
         </div>
       </code>
-      {showClipBoard && <ClipBoardButton />}
+      {showClipBoard && <ClipBoardButton value={code} className="absolute z-10 opacity-0 -top-1 -right-4 group-hover:opacity-100" />}
     </div>
   );
 }

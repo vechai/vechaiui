@@ -1,7 +1,7 @@
 import { Highlight } from "./highlight";
 
 function getLanguage(language: string) {
-  const map = {
+  const map: any = {
     bash: "text",
     tsx: "tsx",
     jsx: "tsx",

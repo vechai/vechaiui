@@ -58,7 +58,10 @@ module.exports = {
           },
         },
       }),
-      colors: {},
+      colors: {
+        teal: colors.teal,
+        orange: colors.orange,
+      },
       fontSize: {
         xss: ["0.6875rem", { lineHeight: "1rem" }],
         smm: ["0.8125rem", { lineHeight: "1rem" }],
@@ -77,6 +80,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@vechaiui/core")({
+      colors: ["orange"],
       cssBase: true,
     }),
   ],

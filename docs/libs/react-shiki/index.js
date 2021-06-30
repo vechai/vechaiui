@@ -19,7 +19,6 @@ export default function useShiki(props = {}) {
 
   useEffect(() => {
     async function fetchHljs() {
-      console.log(getHighlighter);
       const hljs = await getHighlighter({
         theme: "material-theme-ocean",
         langs: ["tsx"],

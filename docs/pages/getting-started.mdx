@@ -1,0 +1,61 @@
+# Getting Started
+
+## Installation
+
+VechaiUI works out of the box with create-react-app (including TypeScript version), Preact cli (with compat), Next.js, Gatsby and any other environment.
+
+To install the VechaiUI run the following within your project directory.
+
+```bash
+npm i @vechaiui/core @vechaiui/react
+
+# OR
+
+yarn add @vechaiui/core @vechaiui/react
+```
+
+## Configuration
+
+The default theme of this library depends on the `@tailwindcss/forms` plugin. To use it, follow the steps on the plugin source page. https://github.com/tailwindlabs/tailwindcss-forms
+
+Vechai UI can be configed in `tailwind.config.js`:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    mode: "jit",
+    purge: [
+      //
+      "./node_modules/@vechaiui/**/*.{js,ts,jsx,tsx}", // path to vechaiui
+    ],
+    darkMode: "class",
+    // ...
+  },
+  // add VechaiUI plugin
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@vechaiui/core"),
+    // ...
+  ],
+};
+```
+
+**Note**: VechaiUI required `jit` mode and `tailwindcss` version `2.1.4` or higher (`basic` mode seems buggy when compiling some plugin)
+
+## Quick start
+
+Here's a quick example to get you started, **it's literally all you need:**
+
+```jsx
+import React from "react";
+import { ThemeProvider, Button } from "@vechaiui/react";
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Button>Hello Vechai</Button>
+    </ThemeProvider>
+  );
+}
+```

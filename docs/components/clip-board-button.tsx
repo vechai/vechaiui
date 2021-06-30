@@ -1,11 +1,24 @@
-import { DuplicateIcon } from "@heroicons/react/outline";
-import { cx, IconButton } from "@vechaiui/react";
+import { DuplicateIcon, CheckIcon } from "@heroicons/react/outline";
+import { IconButton, Icon, IconButtonProps } from "@vechaiui/react";
 import * as React from "react";
+import useClipboard from "react-use-clipboard";
 
-export function ClipBoardButton({ className }: any) {
+interface ClipBoardButtonProps extends IconButtonProps {
+  value: string;
+}
+
+export function ClipBoardButton({ value, ...props }: ClipBoardButtonProps) {
+  const [isCopied, setCopied] = useClipboard(value, {
+    successDuration: 1000
+  });
+
   return(
-    <IconButton variant="solid" className={cx("absolute opacity-0 top-2 -right-4 z-10 group-hover:opacity-100", className)}>
-      <DuplicateIcon className="w-5 h-5" />
+    <IconButton variant="solid" onClick={setCopied} {...props}>
+      {isCopied ? (
+        <Icon as={CheckIcon} className="w-5 h-5 text-teal-200" label="check" />
+      ) : (
+        <Icon as={DuplicateIcon} className="w-5 h-5" label="duplicate" />
+      )}
     </IconButton>
   )
 }

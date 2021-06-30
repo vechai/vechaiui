@@ -10,7 +10,7 @@ import components from "@components/components";
 export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
-  let classes = "";
+  let classes = "w-full h-full";
   const isMainNavigation = !!mainNavigation.find(
     (nav) => nav.path === router.pathname
   );

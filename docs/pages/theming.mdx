@@ -1,0 +1,127 @@
+# Theming
+
+By default all Vechai components use the default theme. You can extend and customize theme on top level with VechaiProvider.
+
+## VechaiProvider
+
+VechaiProvider component allows you to change theme globally. It is not required if you decide to stick with default theme:
+
+```jsx
+import * as React from "react";
+
+// 1. import `VechaiProvider` component
+import { VechaiProvider, Button } from "@vechaiui/react";
+
+function App() {
+  return <Button>Button</Button>;
+}
+
+function ThemedApp() {
+  // 2. Use at the root of your app
+  return (
+    <VechaiProvider>
+      <App />
+    </VechaiProvider>
+  )
+}
+```
+
+## Theme structure
+
+```tsx
+interface ColorScheme {
+  id: string;
+  type: "light" | "dark";
+  colors: {
+    bg: {
+      base: string,
+      fill: string;
+    },
+    text: {
+      foreground: string;
+      muted: string;
+    },
+    primary: Colors,
+    neutral: Colors,
+  }
+}
+
+interface VechaiTheme {
+  cursor: "default" | "pointer";
+  rounded: '0.375rem';
+  colorSchemes: Record<string, ColorScheme>;
+}
+```
+
+For a complete reference of available theme properties and their default values, see the default theme configuration.
+
+
+## Customize Theme
+
+```jsx
+// 1. Import `extendTheme`
+import { extendTheme } from "@vechaiui/react";
+import colors from "@vechaiui/colors";
+
+// 2.Define new color scheme
+const cool: ColorScheme = {
+  id: "cool",
+  type: "dark",
+  colors: {
+    bg: {
+      base: colors.coolGray["900"],
+      fill: colors.coolGray["900"],
+    },
+    text: {
+      base: colors.coolGray["100"],
+      muted: colors.coolGray["300"],
+    },
+    primary: colors.cyan,
+    neutral: colors.coolGray,
+  },
+}
+
+// or custom default color scheme
+const light: ColorScheme = {
+  id: "light",
+  type: "light",
+  colors: {
+    bg: {
+      base: colors.gray["800"],
+      fill: colors.gray["900"],
+    },
+    text: {
+      foreground: colors.gray["100"],
+      muted: colors.gray["300"],
+    },
+    primary: colors.teal,
+    neutral: colors.gray,
+  },
+}
+
+// 3. Call `extendTheme` and pass your custom values
+const theme = extendTheme({
+  cursor: "pointer",
+  colorSchemes: {
+    light,
+    cool
+  },
+});
+
+// 4. Pass the new theme to `VechaiProvider`
+<VechaiProvider theme={theme} colorScheme="cool">
+  <App />
+</VechaiProvider>
+// 4. Now you can use these colors in your components
+function Usage() {
+  return <Button color="primary">Welcome</Button>
+}
+```
+
+## TypeScript
+
+@vechaiui/react package exports types:
+
+- VechaiTheme – theme object interface
+- VechaiThemeOverride – theme override options
+- ColorScheme - color scheme object interface

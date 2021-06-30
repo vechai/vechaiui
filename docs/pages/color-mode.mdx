@@ -1,0 +1,68 @@
+# Color
+
+## Default Color
+
+Basiclly VechaiUI supports 2 `dynamic colors` that are neutral and primary color.
+
+*<b>Dynamic colors</b>: They are used in css variable...meaning you can change their value by adding color scheme in theme.*
+
+The default color of all components will be neutral ... Add prop `color="colorName"` to change color.
+
+```tsx
+import React from "react";
+import { ThemeProvider, Button } from "@vechaiui/react";
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Button>Neutral</Button> // neutral color
+      <Button color="primary">Primary</Button> // primary color
+    </ThemeProvider>
+  );
+}
+```
+
+## Adding Color
+
+To add other colors edit the `colors` option in the @vechaiui/core plugin of tailwindcss.
+
+```js
+// tailwind.config.js
+import colors from "tailwindcss/colors";
+
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        red: colors.red,
+        // name your color
+        warning: colors.yellow,
+      }
+    }
+  },
+  // add VechaiUI plugin
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@vechaiui/core")({
+      colors: ["red", "warning"]
+    }),
+    // ...
+  ],
+};
+```
+
+```tsx
+import React from "react";
+import { ThemeProvider, Button } from "@vechaiui/react";
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Button color="warning">Primary</Button> // warning color
+      <Button color="red">Primary</Button> // error color
+    </ThemeProvider>
+  );
+}
+```
+
+[See live exemple]()

@@ -1,5 +1,5 @@
 import * as React from "react";
-import ClipBoardButton from "../../components/ClipBoardButton";
+import { ClipBoardButton } from "@components/clip-board-button";
 
 import { fromTextarea } from "../codex";
 
@@ -72,7 +72,7 @@ export default class Editor extends React.Component {
         lineNumber: this.props.lineNumber,
         language: this.props.language,
         editor: this._editor,
-        showClipBoard: this.props.showClipBoard,
+        showClipBoard: false,
       }),
     });
     this.syncScroll();
@@ -98,7 +98,7 @@ export default class Editor extends React.Component {
           lineNumber: this.props.lineNumber,
           language: this.props.language,
           editor: this._editor,
-          showClipBoard: this.props.showClipBoard,
+          showClipBoard: false,
         }),
       });
     }
@@ -121,9 +121,18 @@ export default class Editor extends React.Component {
   _highlight = React.createRef();
 
   render() {
-    const { style, lineNumber, lineWrap, className, language, readOnly } = this.props;
+    const {
+      style,
+      value,
+      lineNumber,
+      showClipBoard,
+      lineWrap,
+      className,
+      language,
+      readOnly,
+    } = this.props;
     const { highlighted } = this.state;
-    console.log(lineWrap)
+
     const lineWrapStyle = lineWrap
       ? {
           overflowX: "hidden",
@@ -174,6 +183,9 @@ export default class Editor extends React.Component {
             ? { dangerouslySetInnerHTML: { __html: highlighted + "<br />" } }
             : { children: highlighted })}
         />
+        {showClipBoard && (
+          <ClipBoardButton value={this._editor?.getValue?.() || value} className="absolute z-10 opacity-0 top-6 right-4 group-hover:opacity-100" />
+        )}
       </div>
     );
   }

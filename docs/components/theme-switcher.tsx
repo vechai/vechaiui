@@ -95,7 +95,7 @@ export function ThemSwitcher() {
                       <RadioGroup.Label className="sr-only">
                         Radius
                       </RadioGroup.Label>
-                      <div className="inline-flex p-1 space-x-0 rounded bg-neutral-200 dark:bg-neutral-700">
+                      <div className="inline-flex p-0.5 space-x-0 rounded bg-neutral-200 dark:bg-neutral-700">
                         {radiusItems.map((item) => (
                           <RadioGroup.Option
                             key={item.name}
@@ -107,7 +107,7 @@ export function ThemSwitcher() {
                               checked,
                             }) => `inline-flex appearance-none items-center justify-center rounded
                               select-none relative whitespace-nowrap align-middle outline-none font-semibold
-                              text-xs px-2 py-1
+                              text-xs px-2 py-0.5
                               focus:outline-none
                               ${
                                 checked

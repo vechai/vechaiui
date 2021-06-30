@@ -45,7 +45,6 @@ export default class Codex {
 
     config.reset(this);
     if (options) this.setOptions(options);
-    console.log(this);
   }
 
   /************************* Core ***********************/

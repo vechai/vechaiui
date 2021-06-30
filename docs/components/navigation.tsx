@@ -79,7 +79,7 @@ export function Navigation() {
                           "relative flex items-center w-full px-2 py-1.5 transition-colors duration-150 ease-in-out font-medium bg-transparent border-0 rounded cursor-default text-sm",
                           active
                             ? cx(
-                                "bg-indigo-200 text-primary-200",
+                                "bg-primary-200 text-primary-200",
                                 "bg-opacity-15"
                               )
                             : "hover:text-white"
