@@ -39,7 +39,7 @@ const demoList = [
     >
       <Menu.Items
         className={cx(
-          "absolute left-0 z-40 w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
+          "absolute left-0 z-dropdown w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
           "bg-white border border-gray-200",
           "dark:bg-neutral-800 dark:border-gray-700"
         )}
@@ -151,7 +151,7 @@ const demoList = [
     >
       <Menu.Items
         className={cx(
-          "absolute left-0 z-40 w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
+          "absolute left-0 z-dropdown w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
           "bg-white border border-gray-200",
           "dark:bg-neutral-800 dark:border-gray-700"
         )}
@@ -263,7 +263,7 @@ const demoList = [
     >
       <Menu.Items
         className={cx(
-          "absolute left-0 z-40 w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
+          "absolute left-0 z-dropdown w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
           "bg-white border border-gray-200",
           "dark:bg-neutral-800 dark:border-gray-700"
         )}
