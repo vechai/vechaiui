@@ -23,7 +23,7 @@ export function ThemSwitcher() {
               <span className="relative inline-flex items-center justify-center flex-shrink-0 w-8 h-8 align-top rounded-md bg-neutral-800">
                 <img
                   className="object-cover w-full h-full rounded-md"
-                  src="/logo.svg"
+                  src="/vechai.svg"
                   alt="logo"
                 />
               </span>

@@ -6,7 +6,6 @@ import NextDocument, {
   NextScript,
 } from "next/document";
 import React from "react";
-
 class Document extends NextDocument {
   static getInitialProps(ctx: DocumentContext) {
     return NextDocument.getInitialProps(ctx);
