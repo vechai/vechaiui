@@ -1,3 +1,4 @@
+// @ts-ignore
 import colors from "tailwindcss/colors";
 import { ColorScheme } from "@vechaiui/react";
 // light theme

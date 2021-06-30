@@ -76,12 +76,12 @@ export const radiusItems = [
     value: "0.375rem",
   },
   {
-    name: "xl",
-    value: "0.75rem",
+    name: "full",
+    value: "9999px",
   },
 ];
 
-function ThemeController({ children }: any) {
+function ThemeController({ children }: { children: React.ReactNode }) {
   const [cursorPointer, setCursorPointer] = React.useState(false);
   const [radius, setRadius] = React.useState(radiusItems[2].value);
   const [colorScheme, setColorScheme] = React.useState(themes[0].id);

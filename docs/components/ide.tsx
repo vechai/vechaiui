@@ -88,7 +88,7 @@ function Editor({
               !openEditor ? "rounded-b-lg" : ""
             )}
           >
-            {files.map((file: any) => (
+            {files.map((file: File) => (
               <Tabs.Trigger
                 key={file.name}
                 value={file.name}

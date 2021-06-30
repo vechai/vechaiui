@@ -4,10 +4,10 @@ import * as React from "react";
 import useClipboard from "react-use-clipboard";
 
 interface ClipBoardButtonProps extends IconButtonProps {
-  value: string;
+  value?: string;
 }
 
-export function ClipBoardButton({ value, ...props }: ClipBoardButtonProps) {
+export function ClipBoardButton({ value = "", ...props }: ClipBoardButtonProps) {
   const [isCopied, setCopied] = useClipboard(value, {
     successDuration: 1000
   });

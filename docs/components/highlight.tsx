@@ -10,7 +10,12 @@ export function Highlight({
   language,
   lineNumber,
   showClipBoard,
-}: any) {
+}: {
+  code?: string;
+  language?: string;
+  lineNumber?: boolean;
+  showClipBoard?: boolean;
+}) {
   const { tokens, getLineProps, getTokenProps } = useShiki({
     code,
     language,
@@ -40,7 +45,6 @@ export function Highlight({
                   line,
                   key: i,
                   className: lineNumber ? s.lineNumber : "",
-                  // className: s.lineNumber,
                 })}
               >
                 {line.length === 0 && <span>&#8203;</span>}
