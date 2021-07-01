@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.2.1...@vechaiui/theme@0.2.2) (2021-07-01)
+
+
+### Bug Fixes
+
+* **theme & link:** add tw colors & support focus ring link ([5065202](https://github.com/vechai/vechaiui/commit/5065202c07616ad1b69e0b07f9391e395e55f409))
+
+
+
+
+
 ## [0.2.1](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.2.0...@vechaiui/theme@0.2.1) (2021-06-29)
 
 

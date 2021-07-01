@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.3.3...@vechaiui/docs@0.4.0) (2021-07-01)
+
+
+### Bug Fixes
+
+* **docs:** type ([f08a101](https://github.com/vechai/vechaiui/commit/f08a1013d91b4b0cba40161f3af3800888097a3a))
+* **docs:** z-index menu component ([c8ae257](https://github.com/vechai/vechaiui/commit/c8ae257479c302d00e0fa7376684003c00dba30e))
+* **theme & link:** add tw colors & support focus ring link ([5065202](https://github.com/vechai/vechaiui/commit/5065202c07616ad1b69e0b07f9391e395e55f409))
+
+
+### Features
+
+* **docs:** add logo ([e748cde](https://github.com/vechai/vechaiui/commit/e748cdea8c076add396f43a61c2b2f20dda73745))
+* **docs:** add radix popover component ([3004dad](https://github.com/vechai/vechaiui/commit/3004dad509cbf3519817f97fdb76b7843242c3b1))
+* **docs:** basic seo ([b1dd40d](https://github.com/vechai/vechaiui/commit/b1dd40d1d58228d6ccc3e433404f0616429fd269))
+
+
+
+
+
 ## [0.3.3](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.3.2...@vechaiui/docs@0.3.3) (2021-06-30)
 
 

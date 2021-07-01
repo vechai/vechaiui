@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/badge",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,7 +37,7 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@vechaiui/theme": "0.2.1",
+    "@vechaiui/theme": "0.2.2",
     "@vechaiui/utils": "^0.1.0"
   },
   "peerDependencies": {
