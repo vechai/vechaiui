@@ -27,6 +27,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   )
     classes = "w-full h-full";
 
+  if (router.pathname === "/gallery") return children;
+
   return (
     <div className="flex flex-col h-screen overflow-hidden lg:flex-row bg-neutral-900 dark:bg-fill">
       <Header />
