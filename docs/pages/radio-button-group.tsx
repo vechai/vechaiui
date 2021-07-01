@@ -26,14 +26,14 @@ const demo = `function App() {
     <div className="flex flex-col p-8 space-y-8">
       <RadioGroup value={value} onChange={setValue}>
         <RadioGroup.Label className="sr-only">Radius</RadioGroup.Label>
-        <div className="inline-flex p-0.5 space-x-0 rounded-md bg-neutral-200 dark:bg-neutral-700">
+        <div className="inline-flex p-0.5 space-x-0 rounded-base bg-neutral-200 dark:bg-neutral-700">
           {items.map((item) => (
             <RadioGroup.Option
               key={item.name}
               value={item.value}
               className={({
                 checked,
-              }) => \`inline-flex appearance-none items-center justify-center rounded-md
+              }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
                   text-xs px-4 py-1.5
                   focus:outline-none` + "\n" 
@@ -56,14 +56,14 @@ const demo = `function App() {
 
       <RadioGroup value={value} onChange={setValue}>
         <RadioGroup.Label className="sr-only">Radius</RadioGroup.Label>
-        <div className="inline-flex p-0.5 space-x-0 rounded-md bg-neutral-200 dark:bg-neutral-700">
+        <div className="inline-flex p-0.5 space-x-0 rounded-base bg-neutral-200 dark:bg-neutral-700">
           {items.map((item) => (
             <RadioGroup.Option
               key={item.name}
               value={item.value}
               className={({
                 checked,
-              }) => \`inline-flex appearance-none items-center justify-center rounded-md
+              }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
                   text-xs px-4 py-1.5
                   focus:outline-none` + "\n" 
@@ -113,14 +113,14 @@ const demo2 = `function App() {
     <div className="flex flex-col p-8 space-y-8">
       <RadioGroup value={value} onChange={setValue}>
         <RadioGroup.Label className="sr-only">Radius</RadioGroup.Label>
-        <div className="inline-flex p-0.5 space-x-0 rounded-md bg-neutral-200 dark:bg-neutral-700">
+        <div className="inline-flex p-0.5 space-x-0 rounded-base bg-neutral-200 dark:bg-neutral-700">
           {themes.map((item) => (
             <RadioGroup.Option
               key={item.name}
               value={item.value}
               className={({
                 checked,
-              }) => \`inline-flex appearance-none items-center justify-center rounded-md
+              }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
                   text-xs px-4 py-1.5
                   focus:outline-none` + "\n" 
