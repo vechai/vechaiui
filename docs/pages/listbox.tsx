@@ -47,7 +47,7 @@ const demoList = [
             <Listbox.Button
               className={cx(
                 "relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none",
-                "h-8 px-3 py-0 text-sm rounded-md pr-6 cursor-default",
+                "h-8 px-3 py-0 text-sm rounded-base pr-6 cursor-base",
                 "border shadow-sm border-neutral-200",
                 "text-neutral-900 bg-white",
                 "hover:border-neutral-300",
@@ -86,7 +86,7 @@ const demoList = [
               <Listbox.Options
                 static
                 className={cx(
-                  "absolute left-0 z-40 max-h-64 w-full mt-2 origin-top-left rounded-md shadow-sm outline-none overflow-auto",
+                  "absolute left-0 z-40 max-h-64 w-full mt-2 origin-top-left rounded-base shadow-sm outline-none overflow-auto",
                   "bg-white border border-gray-200",
                   "dark:bg-neutral-800 dark:border-gray-700",
                   "py-1.5 px-1.5"
@@ -103,7 +103,7 @@ const demoList = [
                         disabled={disabled}
                         aria-disabled={disabled}
                         className={cx(
-                          "flex items-center w-full px-3 h-8 border-0 flex-shrink-0 text-sm text-left cursor-default font-normal focus:outline-none rounded",
+                          "flex items-center w-full px-3 h-8 border-0 flex-shrink-0 text-sm text-left cursor-base font-normal focus:outline-none rounded-base",
                           active && "bg-neutral-100 dark:bg-neutral-700",
                         )}
                       >
@@ -166,7 +166,7 @@ const demoList = [
             <Listbox.Button
               className={cx(
                 "relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none",
-                "h-8 px-3 py-0 text-sm rounded-md pr-6 cursor-default",
+                "h-8 px-3 py-0 text-sm rounded-base pr-6 cursor-base",
                 "border shadow-sm border-neutral-200",
                 "text-neutral-900 bg-white",
                 "hover:border-neutral-300",
@@ -205,7 +205,7 @@ const demoList = [
               <Listbox.Options
                 static
                 className={cx(
-                  "absolute left-0 z-40 max-h-64 w-full mt-2 origin-top-left rounded-md shadow-sm outline-none overflow-auto",
+                  "absolute left-0 z-40 max-h-64 w-full mt-2 origin-top-left rounded-base shadow-sm outline-none overflow-auto",
                   "bg-white border border-gray-200",
                   "dark:bg-neutral-800 dark:border-gray-700",
                   "py-1.5 px-1.5 space-y-1"
@@ -222,7 +222,7 @@ const demoList = [
                         disabled={disabled}
                         aria-disabled={disabled}
                         className={cx(
-                          "flex items-center w-full px-4 pl-10 h-8 border-0 flex-shrink-0 text-sm text-left cursor-default font-normal focus:outline-none rounded",
+                          "flex items-center w-full px-4 pl-10 h-8 border-0 flex-shrink-0 text-sm text-left cursor-base font-normal focus:outline-none rounded-base",
                           active && "bg-neutral-100 dark:bg-neutral-700",
                           selected &&
                             "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-teal-200",

@@ -58,7 +58,7 @@ return (
             key={tab.value}
             value={tab.value}
             className={cx(
-              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-default focus:outline-none",
+              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
               "text-neutral-900 bg-transparent border-b-2 border-transparent",
               "hover:border-neutral-300",
               "selected:border-primary-500 selected:text-primary-600",
@@ -131,7 +131,7 @@ return (
             key={tab.value}
             value={tab.value}
             className={cx(
-              "flex items-center justify-center px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-default focus:outline-none",
+              "flex items-center justify-center px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
               "text-neutral-900 bg-transparent border-b-2 border-transparent",
               "hover:border-neutral-300",
               "selected:border-primary-500",
@@ -208,7 +208,7 @@ return (
             key={tab.value}
             value={tab.value}
             className={cx(
-              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-default focus:outline-none",
+              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
               "flex-shrink-0 inline-block",
               "text-neutral-600 bg-transparent border border-transparent",
               "hover:text-neutral-900",
@@ -283,7 +283,7 @@ return (
             key={tab.value}
             value={tab.value}
             className={cx(
-              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-default focus:outline-none",
+              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
               "flex-shrink-0 inline-block",
               "text-neutral-600 bg-transparent border border-transparent",
               "hover:text-neutral-900",
@@ -361,7 +361,7 @@ return (
             key={tab.value}
             value={tab.value}
             className={cx(
-              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-default focus:outline-none",
+              "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
               "flex-shrink-0 inline-block rounded-md",
               "text-neutral-600 bg-transparent",
               "hover:text-neutral-900",

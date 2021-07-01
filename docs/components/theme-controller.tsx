@@ -75,10 +75,10 @@ export const radiusItems = [
     name: "md",
     value: "0.375rem",
   },
-  {
-    name: "full",
-    value: "9999px",
-  },
+  // {
+  //   name: "full",
+  //   value: "9999px",
+  // },
 ];
 
 function ThemeController({ children }: { children: React.ReactNode }) {

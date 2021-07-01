@@ -26,8 +26,8 @@ const demoList = [
     <Disclosure defaultOpen>
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex items-center justify-between w-full px-4 py-2 rounded-md cursor-default hover:bg-neutral-100 dark:hover:bg-blackAlpha-50 focus:outline-none">
-            <span>What is your refund policy?</span>
+          <Disclosure.Button className="flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base hover:bg-neutral-100 dark:hover:bg-blackAlpha-50 focus:outline-none">
+            <span>What is Lorem Ipsum?</span>
             <span
               className={cx(
                 "w-5 h-5 rounded-full flex justify-center items-center text-primary-500 dark:text-primary-600",
@@ -43,8 +43,8 @@ const demoList = [
             </span>
           </Disclosure.Button>
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-muted">
-            If you're unhappy with your purchase for any reason, email us
-            within 90 days and we'll refund you in full, no questions asked.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </Disclosure.Panel>
         </>
       )}
@@ -56,8 +56,8 @@ const demoList = [
     >
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex items-center justify-between w-full px-4 py-2 rounded-md cursor-default hover:bg-neutral-100 dark:hover:bg-blackAlpha-50 focus:outline-none">
-            <span>Do you offer technical support?</span>
+          <Disclosure.Button className="flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base hover:bg-neutral-100 dark:hover:bg-blackAlpha-50 focus:outline-none">
+            <span>Where does it come from?</span>
             <span
               className={cx(
                 "w-5 h-5 rounded-full flex justify-center items-center text-primary-500 dark:text-primary-600",
@@ -73,8 +73,8 @@ const demoList = [
             </span>
           </Disclosure.Button>
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-muted">
-            If you're unhappy with your purchase for any reason, email us
-            within 90 days and we'll refund you in full, no questions asked.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </Disclosure.Panel>
         </>
       )}
@@ -97,11 +97,11 @@ const demoList = [
         <>
           <Disclosure.Button
             className={cx(
-              "flex items-center justify-between w-full px-4 py-2 rounded-md cursor-default focus:outline-none",
+              "flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base focus:outline-none",
               "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-primary-200"
             )}
           >
-            <span>What is your refund policy?</span>
+            <span>What is Lorem Ipsum?</span>
             <Icon
               as={ChevronUpIcon}
               className={cx(
@@ -111,8 +111,8 @@ const demoList = [
             />
           </Disclosure.Button>
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-muted">
-            If you're unhappy with your purchase for any reason, email us
-            within 90 days and we'll refund you in full, no questions asked.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </Disclosure.Panel>
         </>
       )}
@@ -123,11 +123,11 @@ const demoList = [
         <>
           <Disclosure.Button
             className={cx(
-              "flex items-center justify-between w-full px-4 py-2 rounded-md cursor-default focus:outline-none",
+              "flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base focus:outline-none",
               "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-primary-200"
             )}
           >
-            <span>Do you offer technical support?</span>
+            <span>Where does it come from?</span>
             <Icon
               as={ChevronUpIcon}
               className={cx(
@@ -137,8 +137,8 @@ const demoList = [
             />
           </Disclosure.Button>
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-muted">
-            If you're unhappy with your purchase for any reason, email us
-            within 90 days and we'll refund you in full, no questions asked.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </Disclosure.Panel>
         </>
       )}
@@ -161,10 +161,10 @@ const demoList = [
         <>
           <Disclosure.Button
             className={cx(
-              "flex items-center justify-between w-full px-4 py-2 rounded-md cursor-default focus:outline-none bg-primary-500 text-white"
+              "flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base focus:outline-none bg-primary-500 text-white"
             )}
           >
-            <span>What is your refund policy?</span>
+            <span>What is Lorem Ipsum?</span>
             <Icon
               as={ChevronUpIcon}
               className={cx(
@@ -174,8 +174,8 @@ const demoList = [
             />
           </Disclosure.Button>
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-muted">
-            If you're unhappy with your purchase for any reason, email us
-            within 90 days and we'll refund you in full, no questions asked.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </Disclosure.Panel>
         </>
       )}
@@ -186,10 +186,10 @@ const demoList = [
         <>
           <Disclosure.Button
             className={cx(
-              "flex items-center justify-between w-full px-4 py-2 rounded-md cursor-default focus:outline-none bg-primary-500 text-white"
+              "flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base focus:outline-none bg-primary-500 text-white"
             )}
           >
-            <span>Do you offer technical support?</span>
+            <span>Where does it come from?</span>
             <Icon
               as={ChevronUpIcon}
               className={cx(
@@ -199,8 +199,8 @@ const demoList = [
             />
           </Disclosure.Button>
           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-muted">
-            If you're unhappy with your purchase for any reason, email us
-            within 90 days and we'll refund you in full, no questions asked.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </Disclosure.Panel>
         </>
       )}

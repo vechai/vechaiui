@@ -28,7 +28,7 @@ const demoList = [
       <div>Please confirm deletion</div>
       <div className="flex justify-end mt-2 space-x-2">
         <Button size="xs">No</Button>
-        <Button size="xs" variant="solid" color="primary">
+        <Button size="xs" variant="solid" color="red">
           Yes
         </Button>
       </div>

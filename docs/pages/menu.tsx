@@ -53,7 +53,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -70,7 +70,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -93,7 +93,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -110,7 +110,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -165,7 +165,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-primary-500 text-white",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -182,7 +182,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-primary-500 text-white",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -205,7 +205,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-primary-500 text-white",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -222,7 +222,7 @@ const demoList = [
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-primary-500 text-white",
                     disabled &&
                     "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -275,7 +275,7 @@ const demoList = [
                 disabled={disabled}
                 aria-disabled={disabled}
                 className={cx(
-                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                   active && "bg-neutral-100 dark:bg-neutral-700",
                   disabled &&
                   "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -296,7 +296,7 @@ const demoList = [
                 disabled={disabled}
                 aria-disabled={disabled}
                 className={cx(
-                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                   active && "bg-neutral-100 dark:bg-neutral-700",
                   disabled &&
                   "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -317,7 +317,7 @@ const demoList = [
                 disabled={disabled}
                 aria-disabled={disabled}
                 className={cx(
-                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                   active && "bg-neutral-100 dark:bg-neutral-700",
                   disabled &&
                   "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -341,7 +341,7 @@ const demoList = [
                 disabled={disabled}
                 aria-disabled={disabled}
                 className={cx(
-                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                   active && "bg-neutral-100 dark:bg-neutral-700",
                   disabled &&
                   "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -362,7 +362,7 @@ const demoList = [
                 disabled={disabled}
                 aria-disabled={disabled}
                 className={cx(
-                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                   active && "bg-neutral-100 dark:bg-neutral-700",
                   disabled &&
                   "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -382,7 +382,7 @@ const demoList = [
                 disabled={disabled}
                 aria-disabled={disabled}
                 className={cx(
-                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                  "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                   active && "bg-neutral-100 dark:bg-neutral-700",
                   disabled &&
                   "disabled:opacity-60 disabled:cursor-not-allowed"

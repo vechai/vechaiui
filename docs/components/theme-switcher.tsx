@@ -18,11 +18,11 @@ export function ThemSwitcher() {
     <Popover className="relative">
       {({ open }) => (
         <>
-          <Popover.Button className="flex items-center w-full px-3 py-2 text-sm border rounded-md outline-none cursor-default border-neutral-600 bg-neutral-800 focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500">
+          <Popover.Button className="flex items-center w-full px-3 py-2 text-sm border outline-none rounded-base cursor-base border-neutral-600 bg-neutral-800 focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500">
             <div className="flex flex-row items-center flex-1 space-x-2">
-              <span className="relative inline-flex items-center justify-center flex-shrink-0 w-8 h-8 align-top rounded-md bg-neutral-800">
+              <span className="relative inline-flex items-center justify-center flex-shrink-0 w-8 h-8 align-top rounded-base bg-neutral-800">
                 <img
-                  className="object-cover w-full h-full rounded-md"
+                  className="object-cover w-full h-full rounded-base"
                   src="/vechai.svg"
                   alt="logo"
                 />
@@ -73,7 +73,7 @@ export function ThemSwitcher() {
               />
               <div className="">
                 <div role="group">
-                  <div className="flex items-center justify-between flex-shrink-0 w-full h-8 text-sm text-left rounded cursor-default focus:outline-none">
+                  <div className="flex items-center justify-between flex-shrink-0 w-full h-8 text-sm text-left rounded cursor-base focus:outline-none">
                     <span className="text-smm">Pointer Cursors</span>
                     <Switch
                       size="md"
@@ -89,13 +89,13 @@ export function ThemSwitcher() {
                 />
 
                 <div role="group">
-                  <div className="flex flex-col flex-shrink-0 w-full space-y-2 text-sm text-left rounded cursor-default focus:outline-none">
+                  <div className="flex flex-col flex-shrink-0 w-full space-y-2 text-sm text-left rounded-base cursor-base focus:outline-none">
                     <span className="text-smm">Radius</span>
                     <RadioGroup value={radius} onChange={setRadius}>
                       <RadioGroup.Label className="sr-only">
                         Radius
                       </RadioGroup.Label>
-                      <div className="inline-flex p-0.5 space-x-0 rounded bg-neutral-200 dark:bg-neutral-700">
+                      <div className="inline-flex p-0.5 space-x-0 rounded-base bg-neutral-200 dark:bg-neutral-700">
                         {radiusItems.map((item) => (
                           <RadioGroup.Option
                             key={item.name}
@@ -105,7 +105,7 @@ export function ThemSwitcher() {
                             }}
                             className={({
                               checked,
-                            }) => `inline-flex appearance-none items-center justify-center rounded
+                            }) => `inline-flex appearance-none items-center justify-center rounded-base
                               select-none relative whitespace-nowrap align-middle outline-none font-semibold
                               text-xs px-2 py-0.5
                               focus:outline-none
@@ -131,7 +131,7 @@ export function ThemSwitcher() {
               />
 
               <div className="" role="group">
-                <div className="flex flex-col flex-shrink-0 w-full space-y-2 text-sm text-left rounded cursor-default focus:outline-none">
+                <div className="flex flex-col flex-shrink-0 w-full space-y-2 text-sm text-left cursor-base focus:outline-none">
                   <span className="text-smm">Color</span>
                   <RadioGroup value={colorScheme} onChange={setColorScheme}>
                     <RadioGroup.Label className="sr-only">

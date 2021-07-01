@@ -38,7 +38,7 @@ const demoList = [
     >
       <ContextMenu.Item
         className={cx(
-          "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+          "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
           "focus:bg-neutral-100",
           "dark:focus:bg-neutral-700"
         )}
@@ -49,7 +49,7 @@ const demoList = [
       </ContextMenu.Item>
       <ContextMenu.Item
         className={cx(
-          "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+          "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
@@ -59,7 +59,7 @@ const demoList = [
       </ContextMenu.Item>
       <ContextMenu.Item
         className={cx(
-          "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+          "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
@@ -69,7 +69,7 @@ const demoList = [
       <ContextMenu.Separator className="h-px my-1 bg-neutral-200 dark:bg-neutral-700" />
       <ContextMenu.Item
         className={cx(
-          "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+          "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
@@ -81,7 +81,7 @@ const demoList = [
       <ContextMenu.Root>
         <ContextMenu.TriggerItem
           className={cx(
-            "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+            "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
             "focus:bg-neutral-100 dark:focus:bg-neutral-700"
           )}
         >
@@ -100,7 +100,7 @@ const demoList = [
         >
           <ContextMenu.Item
             className={cx(
-              "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+              "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
               "focus:bg-neutral-100 dark:focus:bg-neutral-700"
             )}
           >
@@ -109,7 +109,7 @@ const demoList = [
           </ContextMenu.Item>
           <ContextMenu.Item
             className={cx(
-              "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+              "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
               "focus:bg-neutral-100 dark:focus:bg-neutral-700"
             )}
           >
@@ -118,7 +118,7 @@ const demoList = [
           </ContextMenu.Item>
           <ContextMenu.Item
             className={cx(
-              "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+              "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
               "focus:bg-neutral-100 dark:focus:bg-neutral-700"
             )}
           >
@@ -129,7 +129,7 @@ const demoList = [
       </ContextMenu.Root>
       <ContextMenu.Item
         className={cx(
-          "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+          "flex items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >

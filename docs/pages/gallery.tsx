@@ -147,7 +147,7 @@ function Complexity() {
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                       "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -172,7 +172,7 @@ function Complexity() {
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                       "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -197,7 +197,7 @@ function Complexity() {
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                       "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -225,7 +225,7 @@ function Complexity() {
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                       "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -250,7 +250,7 @@ function Complexity() {
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                       "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -274,7 +274,7 @@ function Complexity() {
                   disabled={disabled}
                   aria-disabled={disabled}
                   className={cx(
-                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-default focus:outline-none",
+                    "flex rounded items-center w-full px-3 h-8 flex-shrink-0 text-sm text-left cursor-base focus:outline-none",
                     active && "bg-neutral-100 dark:bg-neutral-700",
                     disabled &&
                       "disabled:opacity-60 disabled:cursor-not-allowed"
@@ -315,7 +315,7 @@ function DialogDemo() {
       </header>
       <button
         className={cx(
-          "absolute text-sm cursor-default text-gray-600 dark:text-gray-400 hover:text-primary-400 hover:text-primary-500 top-4 right-4"
+          "absolute text-sm cursor-base text-gray-600 dark:text-gray-400 hover:text-primary-400 hover:text-primary-500 top-4 right-4"
         )}
       >
         <XIcon className="w-4 h-4" />
@@ -387,7 +387,7 @@ function TabsDemo() {
             key={tab.value}
             value={tab.value}
             className={cx(
-              "flex items-center justify-center px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-default focus:outline-none",
+              "flex items-center justify-center px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
               "text-neutral-900 bg-transparent border-b-2 border-transparent",
               "hover:border-neutral-300",
               "selected:border-primary-500",
@@ -426,7 +426,7 @@ export default function Gallery() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-auto">
+    <div className="relative w-screen h-screen overflow-hidden">
       <div className="relative w-full max-w-5xl py-20 mx-auto">
         <Button
           className="absolute righ-0 top-2"

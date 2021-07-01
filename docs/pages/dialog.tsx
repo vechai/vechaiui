@@ -60,19 +60,19 @@ const demoList = [
               )}
             >
               <header
-                className={cx("px-6 py-5 relative text-lg font-semibold")}
+                className="relative px-6 py-5 text-lg font-semibold"
               >
                 Modal Title
               </header>
               <button
                 onClick={handleClose}
                 className={cx(
-                  "absolute text-sm cursor-default text-gray-600 dark:text-gray-400 hover:text-primary-400 hover:text-primary-500 top-4 right-4"
+                  "absolute text-sm cursor-base text-gray-600 dark:text-gray-400 hover:text-primary-500 top-4 right-4"
                 )}
               >
                 <XIcon className="w-4 h-4" />
               </button>
-              <div className={cx("px-6 py-2 flex-1")}>
+              <div className="flex-1 px-6 py-2">
                 <p className="text-base font-normal text-neutral-500">
                   Sit nulla est ex deserunt exercitation anim occaecat. Nostrud
                   ullamco deserunt aute id consequat veniam incididunt duis in
@@ -80,7 +80,7 @@ const demoList = [
                   nostrud elit officia tempor esse quis.
                 </p>
               </div>
-              <footer className={cx("px-6 py-4")}>
+              <footer className="px-6 py-4">
                 <Button ref={completeButtonRef} variant="light" color="primary" onClick={handleClose}>
                   Complete
                 </Button>
@@ -138,15 +138,13 @@ const demoList = [
               )}
             >
               <header
-                className={cx("px-3 pt-3 pb-2 relative text-lg font-semibold")}
+                className="relative px-3 pt-3 pb-2 text-lg font-semibold"
               >
                 Confirm deletion
               </header>
               <button
                 onClick={handleClose}
-                className={cx(
-                  "absolute text-sm cursor-default text-gray-600 dark:text-gray-400 hover:text-primary-400 hover:text-primary-500 top-4 right-4"
-                )}
+                className="absolute text-sm text-gray-600 cursor-base dark:text-gray-400 hover:text-primary-500 top-4 right-4"
               >
                 <XIcon className="w-4 h-4" />
               </button>
@@ -154,7 +152,7 @@ const demoList = [
                 orientation="horizontal"
                 className="border-neutral-200 dark:border-neutral-700"
               />
-              <div className={cx("px-3 py-2 flex-1")}>
+              <div className="flex-1 px-3 py-2">
                 <p className="mb-4 text-sm font-normal text-muted">
                   To delete your project, please enter the name of your project <b>pepelele</b>. 
                   Once deleted this project will be unrecoverable.
@@ -164,18 +162,18 @@ const demoList = [
                   <FormLabel htmlFor="name" id="name-label">
                     Confirm name
                   </FormLabel>
-                  <Input ref={inputRef} id="name" />
+                  <Input ref={inputRef} id="name" color="red" />
                 </FormControl>
               </div>
               <Divider
                 orientation="horizontal"
                 className="border-neutral-200 dark:border-neutral-700"
               />
-              <footer className={cx("flex space-x-4 justify-end px-3 py-2")}>
+              <footer className="flex justify-end px-3 py-2 space-x-4">
                 <Button onClick={handleClose}>
                   Cancel
                 </Button>
-                <Button variant="solid" color="primary" onClick={handleClose}>
+                <Button variant="solid" color="red" onClick={handleClose}>
                   Delete
                 </Button>
               </footer>

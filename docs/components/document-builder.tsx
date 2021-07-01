@@ -94,7 +94,7 @@ export default function DocumentBuilder({ component }: DocumentBuilderProps) {
                   <Tabs.Trigger
                     key={prop.value}
                     value={prop.value}
-                    className="flex items-center h-full pl-4 pr-6 -mb-0.5 border-b-4 border-transparent cursor-default focus:outline-none min-w-6 selected:border-primary-500"
+                    className="flex items-center h-full pl-4 pr-6 -mb-0.5 border-b-4 border-transparent cursor-base focus:outline-none min-w-6 selected:border-primary-500"
                   >
                     <span className="flex flex-wrap items-center pt-3 mt-3 text-lg font-bold leading-10">
                       {prop.name}

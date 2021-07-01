@@ -76,7 +76,7 @@ export function Navigation() {
                     {(active: boolean) => (
                       <a
                         className={cx(
-                          "relative flex items-center w-full px-2 py-1.5 transition-colors duration-150 ease-in-out font-medium bg-transparent border-0 rounded cursor-default text-sm",
+                          "relative flex items-center w-full px-2 py-1.5 transition-colors duration-150 ease-in-out font-medium bg-transparent border-0 rounded cursor-base text-sm",
                           active
                             ? cx(
                                 "bg-primary-200 text-primary-200",
@@ -104,7 +104,7 @@ export function Navigation() {
                         {(active: boolean) => (
                           <a
                             className={cx(
-                              "relative flex items-center w-full px-2 py-1 bg-transparent border-0 rounded cursor-default text-sm",
+                              "relative flex items-center w-full px-2 py-1 bg-transparent border-0 rounded cursor-base text-sm",
                               active ? "text-primary-500" : "hover:text-white"
                             )}
                           >
