@@ -1,7 +1,7 @@
 function fieldOutline(colors) {
   return {
     "&-outline": {
-      "@apply border shadow-sm border-neutral-200": {},
+      "@apply border shadow-sm border-neutral-300": {},
       "@apply text-neutral-900 bg-white": {},
       "@apply hover:border-neutral-300": {},
       "&[aria-invalid=true]": {
@@ -64,7 +64,7 @@ function formControl() {
       "@apply text-sm font-medium text-left align-middle block mb-2": {},
 
       "&-disabled": {
-        "@apply opacity-40": {},
+        "@apply opacity-60": {},
       },
     },
   };
@@ -165,6 +165,8 @@ module.exports = Forms = (colors) => ({
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},
+      "@apply disabled:border-neutral-200 disabled:bg-neutral-200": {},
+      "@apply dark:disabled:border-transparent dark:disabled:bg-whiteAlpha-200": {},
     },
 
     // variants

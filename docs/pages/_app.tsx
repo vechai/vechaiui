@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+// import "@vechaiui/core/dist/vechaiui.css";
 import * as React from "react";
 import { AppProps } from "next/app";
 import { MDXProvider } from "@mdx-js/react";

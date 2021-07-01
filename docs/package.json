@@ -5,6 +5,7 @@
   "scripts": {
     "type-check": "tsc",
     "dev": "next dev",
+    "deploy": "vercel --prod",
     "build": "next build",
     "start": "next start"
   },

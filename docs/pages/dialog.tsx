@@ -155,7 +155,7 @@ const demoList = [
                 className="border-neutral-200 dark:border-neutral-700"
               />
               <div className={cx("px-3 py-2 flex-1")}>
-                <p className="mb-4 text-sm font-normal text-neutral-700">
+                <p className="mb-4 text-sm font-normal text-muted">
                   To delete your project, please enter the name of your project <b>pepelele</b>. 
                   Once deleted this project will be unrecoverable.
                 </p>
@@ -164,7 +164,7 @@ const demoList = [
                   <FormLabel htmlFor="name" id="name-label">
                     Confirm name
                   </FormLabel>
-                  <Input ref={inputRef} id="name" className="w-full" />
+                  <Input ref={inputRef} id="name" />
                 </FormControl>
               </div>
               <Divider
