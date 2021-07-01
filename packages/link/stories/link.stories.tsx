@@ -10,10 +10,10 @@ export default {
 
 export const basic = () => (
   <div className="flex flex-col space-y-2">
-    <Link>Vechai UI</Link>
+    <Link href="#">I'm Link</Link>
     <p>
-      Did you know that <Link href="#">links can live inline with text</Link>
+      <Link href="#">Lorem Ipsum</Link>  is simply dummy text of the printing and typesetting industry.
     </p>
-    <Link disabled>Vechai UI</Link>
+    <Link disabled>I'm Link</Link>
   </div>
 );
