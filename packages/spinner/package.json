@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/spinner",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,7 +37,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@vechaiui/theme": "0.2.2",
+    "@vechaiui/theme": "0.3.0",
     "@vechaiui/utils": "^0.1.0"
   },
   "peerDependencies": {

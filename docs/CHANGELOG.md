@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.4.0...@vechaiui/docs@0.5.0) (2021-07-02)
+
+
+### Bug Fixes
+
+* **docs:** cursor and border raidus ([4ac5190](https://github.com/vechai/vechaiui/commit/4ac5190ed830c92e2feea28aa0e4b536eea1cec6))
+* **docs:** cursor and radio group rounded ([b2302ad](https://github.com/vechai/vechaiui/commit/b2302ad2c2ea77d03df4f93d8a235a66c52f9fe2))
+
+
+### Features
+
+* **docs:** components gallery ([f86c31a](https://github.com/vechai/vechaiui/commit/f86c31ab0c2e0b8be952748d0eb4d51d5049c02e))
+* **theme:** add tailwind color ([050b845](https://github.com/vechai/vechaiui/commit/050b845bf6dc4d5c999d212ce69378e389a49a74))
+
+
+
+
+
 # [0.4.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.3.3...@vechaiui/docs@0.4.0) (2021-07-01)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.2.2...@vechaiui/theme@0.3.0) (2021-07-02)
+
+
+### Features
+
+* **theme:** add tailwind color ([050b845](https://github.com/vechai/vechaiui/commit/050b845bf6dc4d5c999d212ce69378e389a49a74))
+
+
+
+
+
 ## [0.2.2](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.2.1...@vechaiui/theme@0.2.2) (2021-07-01)
 
 

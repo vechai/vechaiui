@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/notification",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,10 +37,10 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@vechaiui/button": "0.1.4",
-    "@vechaiui/icon": "0.1.5",
-    "@vechaiui/theme": "0.2.2",
-    "@vechaiui/toast": "0.1.4",
+    "@vechaiui/button": "0.1.5",
+    "@vechaiui/icon": "0.1.6",
+    "@vechaiui/theme": "0.3.0",
+    "@vechaiui/toast": "0.1.5",
     "@vechaiui/utils": "^0.1.0"
   },
   "peerDependencies": {
