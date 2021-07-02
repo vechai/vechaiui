@@ -9,7 +9,7 @@ import {
 } from "@components/navigation-provider";
 import components from "@components/components";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactElement }) {
   const router = useRouter();
 
   let classes = "w-full h-full";
