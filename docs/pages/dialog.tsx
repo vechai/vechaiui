@@ -110,7 +110,7 @@ const demoList = [
 
   return (
     <div className="p-8">
-      <Button onClick={hanldeOpen}>Delete Account</Button>
+      <Button onClick={hanldeOpen} color="red">Delete Account</Button>
       <Transition show={showDialog} as={React.Fragment}>
         <Dialog
           initialFocus={inputRef}

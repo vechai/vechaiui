@@ -79,7 +79,10 @@ const demoList = [
             <Transition
               show={open}
               as={React.Fragment}
-              leave="transition ease-in duration-100"
+              enter="transition ease-in-out duration-100"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition ease-out duration-75"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
@@ -198,7 +201,10 @@ const demoList = [
             <Transition
               show={open}
               as={React.Fragment}
-              leave="transition ease-in duration-100"
+              enter="transition ease-in-out duration-100"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition ease-out duration-75"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
