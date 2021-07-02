@@ -8,6 +8,8 @@ Collection of Accessible React UI Components using TailwindCSS.
 
 </div>
 
+![](docs/public/themes/screenshot.png)
+
 -   Documentation: [docs.vechai.dev](https://docs.vechai.dev)
 -   NPM: [@vechaiui/react](https://www.npmjs.com/package/@vechaiui/react)
 -   License: [MIT](./LICENSE)

@@ -2,7 +2,7 @@
 
 let warned = false;
 
-const colors = {
+export const colors = {
   black: "#000",
   white: "#fff",
   rose: {
@@ -293,5 +293,3 @@ const colors = {
     900: "#0f172a",
   },
 };
-
-export default colors;

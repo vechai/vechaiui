@@ -1,8 +1,8 @@
-import colors from "./colors";
+import { colors } from "./colors";
 import { VechaiTheme, ColorScheme } from "./types";
 
 // light theme
-export const light: ColorScheme = {
+export const lightScheme: ColorScheme = {
   id: "light",
   type: "light",
   colors: {
@@ -14,13 +14,13 @@ export const light: ColorScheme = {
       foreground: colors.gray["900"],
       muted: colors.gray["700"],
     },
-    primary: colors.indigo,
+    primary: colors.teal,
     neutral: colors.gray,
   },
 };
 
 // dark theme
-export const dark: ColorScheme = {
+export const darkScheme: ColorScheme = {
   id: "light",
   type: "dark",
   colors: {
@@ -32,7 +32,7 @@ export const dark: ColorScheme = {
       foreground: colors.gray["100"],
       muted: colors.gray["300"],
     },
-    primary: colors.indigo,
+    primary: colors.teal,
     neutral: colors.gray,
   },
 };
@@ -41,8 +41,8 @@ export const defaultTheme: VechaiTheme = {
   cursor: "default",
   rounded: "0.375rem", // md
   colorSchemes: {
-    light,
-    dark,
+    light: lightScheme,
+    dark: darkScheme,
   },
   config: {},
 };
