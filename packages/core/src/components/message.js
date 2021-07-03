@@ -1,6 +1,6 @@
 module.exports = Message = () => ({
   ".message": {
-    "@apply flex items-center px-3 py-1.5 m-1 text-sm rounded-base shadow-sm w-max break-words": {},
+    "@apply flex items-center px-3 py-1.5 m-2 text-sm rounded-base shadow-sm w-max break-words": {},
     "@apply text-neutral-900 bg-white border border-neutral-200": {},
     // dark
     "@apply dark:text-neutral-100 dark:bg-neutral-700 dark:border-neutral-600": {},

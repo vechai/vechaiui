@@ -2,7 +2,7 @@ module.exports = Radio = (colors) => ({
   ".form-radio": {
     "@apply shadow-sm": {},
     backgroundColor: "inherit",
-    "@apply border-neutral-200 hover:border-neutral-300": {},
+    "@apply border-neutral-300 hover:border-neutral-300": {},
     "&[aria-invalid=true]": {
       // "@apply border-red-600 hover:border-red-600": {},
       "--tw-border-opacity": "1",

@@ -2,7 +2,7 @@ module.exports = Checkbox = (colors) => ({
   ".form-checkbox": {
     "@apply rounded-base shadow-sm": {},
     backgroundColor: "inherit",
-    "@apply border-neutral-200 hover:border-neutral-300": {},
+    "@apply border-neutral-300 hover:border-neutral-300": {},
     "&[aria-invalid=true]": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(220, 38, 38, var(--tw-border-opacity))",
