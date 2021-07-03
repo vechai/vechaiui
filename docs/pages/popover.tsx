@@ -1,4 +1,5 @@
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -50,6 +51,13 @@ const popoverComponent = {
 };
 
 export default function Popover() {
-  return <DocumentBuilder component={popoverComponent} />;
+  return (
+    <>
+      <SEO
+        title="Popover"
+        description="A means of displaying a description or extra information about an element, usually on hover, but can also be on click or tap."
+      />
+      <DocumentBuilder component={popoverComponent} />
+    </>
+  );
 }
-

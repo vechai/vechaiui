@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -35,5 +36,10 @@ const codeComponent = {
 };
 
 export default function Code() {
-  return <DocumentBuilder component={codeComponent} />;
+  return (
+    <>
+      <SEO title="Code" />
+      <DocumentBuilder component={codeComponent} />
+    </>
+  )
 }

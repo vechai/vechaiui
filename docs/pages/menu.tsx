@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -417,5 +418,10 @@ const menuComponent = {
 };
 
 export default function Menu() {
-  return <DocumentBuilder component={menuComponent} />;
+  return (
+    <>
+      <SEO title="Menu" description="A menu in which options are hidden by default, but can be shown by interacting with a button." />
+      <DocumentBuilder component={menuComponent} />
+    </>
+  );
 }

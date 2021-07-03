@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -9,10 +10,10 @@ const propList = [
     propTypes: [
       {
         extend: true,
-        path: 'https://headlessui.dev/react/dialog',
+        path: "https://headlessui.dev/react/dialog",
         external: true,
-        label: "See more `Dialog` props."
-      }
+        label: "See more `Dialog` props.",
+      },
     ],
   },
 ];
@@ -198,5 +199,13 @@ const dialogComponent = {
 };
 
 export default function Dialog() {
-  return <DocumentBuilder component={dialogComponent} />;
+  return (
+    <>
+      <SEO
+        title="Dialog"
+        description="A modal is an interface element that appears over other content. It requires an interaction from the user before they can return to whatever is underneath."
+      />
+      <DocumentBuilder component={dialogComponent} />
+    </>
+  );
 }

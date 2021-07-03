@@ -1,4 +1,5 @@
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -67,6 +68,14 @@ const tooltipComponent = {
   propList,
 };
 
-export default function Kbd() {
-  return <DocumentBuilder component={tooltipComponent} />;
+export default function Tooltip() {
+  return (
+    <>
+      <SEO
+        title="Tooltip"
+        description="A means of displaying a description or extra information about an element, usually on hover, but can also be on click or tap."
+      />
+      <DocumentBuilder component={tooltipComponent} />
+    </>
+  );
 }

@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const imagePropTypes = [
   {
@@ -77,6 +78,11 @@ const imageComponent = {
   propList,
 };
 
-export default function Avatar() {
-  return <DocumentBuilder component={imageComponent} />;
+export default function Image() {
+  return (
+    <>
+      <SEO title="Image" description="An element for embedding images." />
+      <DocumentBuilder component={imageComponent} />
+    </>
+  );
 }

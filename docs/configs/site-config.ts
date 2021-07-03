@@ -7,7 +7,7 @@ const siteConfig = {
     blobUrl: `${baseUrl}/blob/main`,
   },
   seo: {
-    title: "Vechai UI",
+    title: "Collection of Accessible React UI Components using TailwindCSS.",
     titleTemplate: "%s - Vechai UI",
     description:
       "Collection of Accessible React UI Components using TailwindCSS.",
@@ -39,7 +39,7 @@ const siteConfig = {
           width: 1012,
           height: 506,
           alt:
-            "Chakra UI: Collection of Accessible React UI Components using TailwindCSS.",
+            "Vechai UI: Collection of Accessible React UI Components using TailwindCSS.",
         },
       ],
     },

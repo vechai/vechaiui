@@ -1,4 +1,5 @@
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -155,5 +156,10 @@ const contextComponent = {
 };
 
 export default function ContextMenu() {
-  return <DocumentBuilder component={contextComponent} />;
+  return (
+    <>
+      <SEO title="ContextMenu" description="Displays a menu located at the pointer, triggered by a right-click or a long-press." />
+      <DocumentBuilder component={contextComponent} />
+    </>
+  );
 }

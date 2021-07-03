@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const notificationPropTypes = [
   {
@@ -8,7 +9,8 @@ const notificationPropTypes = [
     type: ["number", "null"],
     default: 5000,
     values: [],
-    description: "Duration before dismiss in milliseconds, or `null` to never dismiss.",
+    description:
+      "Duration before dismiss in milliseconds, or `null` to never dismiss.",
   },
   {
     property: "closeable",
@@ -20,7 +22,7 @@ const notificationPropTypes = [
   {
     property: "onClose",
     type: ["() => void"],
-    default: '',
+    default: "",
     values: [],
     description: "Callback function to close the toast.",
   },
@@ -34,7 +36,7 @@ const notificationPropTypes = [
   {
     property: "onUndo",
     type: ["() => void"],
-    default: '',
+    default: "",
     values: [],
     description: "Callback function to undo the toast.",
   },
@@ -48,35 +50,35 @@ const notificationPropTypes = [
   {
     property: "title",
     type: ["string"],
-    default: '',
+    default: "",
     values: [],
     description: "The title of the toast",
   },
   {
     property: "description",
     type: ["string"],
-    default: '',
+    default: "",
     values: [],
     description: "The description of the toast",
   },
   {
     property: "status",
     type: ["info", "success", "error", "warning"],
-    default: '',
+    default: "",
     values: ["info", "success", "error", "warning"],
     description: "The status of the toast",
   },
   {
     property: "icon",
     type: ["React.ElementType"],
-    default: '',
+    default: "",
     values: [],
     description: "Custom icon",
   },
   {
     property: "closeIcon",
     type: ["React.ElementType"],
-    default: '',
+    default: "",
     values: [],
     description: "Custom close icon",
   },
@@ -137,5 +139,13 @@ const notificationComponent = {
 };
 
 export default function Notification() {
-  return <DocumentBuilder component={notificationComponent} />;
+  return (
+    <>
+      <SEO
+        title="Notification"
+        description="A way of informing the user of important changes in a prominent way."
+      />
+      <DocumentBuilder component={notificationComponent} />
+    </>
+  );
 }

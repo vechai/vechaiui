@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const badgePropTypes = [
   {
@@ -97,5 +98,13 @@ const badgeComponent = {
 };
 
 export default function Badge() {
-  return <DocumentBuilder component={badgeComponent} />;
+  return (
+    <>
+      <SEO 
+        title="Badge"
+        description="Badge normally appears in proximity to notifications or user avatars with eye-catching appeal, typically displaying unread messages count."
+      />
+      <DocumentBuilder component={badgeComponent} />
+    </>
+  );
 }

@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const radioPropTypes = [
   {
@@ -329,5 +330,13 @@ const radioComponent = {
 };
 
 export default function Radio() {
-  return <DocumentBuilder component={radioComponent} />;
+  return (
+    <>
+      <SEO
+        title="Radio"
+        description="Radio buttons allow a user to select a single option from a list of predefined options."
+      />
+      <DocumentBuilder component={radioComponent} />
+    </>
+  );
 }

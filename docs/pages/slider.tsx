@@ -1,4 +1,5 @@
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -7,10 +8,10 @@ const propList = [
     propTypes: [
       {
         extend: true,
-        path: 'https://www.radix-ui.com/primitives/docs/components/slider',
+        path: "https://www.radix-ui.com/primitives/docs/components/slider",
         external: true,
-        label: "See more `Slider` props."
-      }
+        label: "See more `Slider` props.",
+      },
     ],
   },
 ];
@@ -58,5 +59,13 @@ const sliderComponent = {
 };
 
 export default function Slider() {
-  return <DocumentBuilder component={sliderComponent} />;
+  return (
+    <>
+      <SEO
+        title="Slider"
+        description="A form control for choosing a value within a preset range of values."
+      />
+      <DocumentBuilder component={sliderComponent} />
+    </>
+  );
 }

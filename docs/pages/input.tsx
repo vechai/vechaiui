@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const inputPropTypes = [
   {
@@ -178,6 +179,11 @@ const inputComponent = {
   propList,
 };
 
-export default function FormControl() {
-  return <DocumentBuilder component={inputComponent} />;
+export default function Input() {
+  return (
+    <>
+      <SEO title="Input" description="A form control that accepts a single line of text." />
+      <DocumentBuilder component={inputComponent} />
+    </>
+  )
 }

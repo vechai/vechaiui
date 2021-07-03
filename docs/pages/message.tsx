@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const messagePropTypes = [
   {
@@ -8,7 +9,8 @@ const messagePropTypes = [
     type: ["number", "null"],
     default: 5000,
     values: [],
-    description: "Duration before dismiss in milliseconds, or `null` to never dismiss.",
+    description:
+      "Duration before dismiss in milliseconds, or `null` to never dismiss.",
   },
   {
     property: "position",
@@ -20,7 +22,7 @@ const messagePropTypes = [
   {
     property: "message",
     type: ["string"],
-    default: '',
+    default: "",
     values: [],
     description: "The message of the toast",
   },
@@ -78,7 +80,7 @@ const demoList = [
         readOnly: false,
       },
     ],
-    openEditor: true
+    openEditor: true,
   },
 ];
 
@@ -90,5 +92,13 @@ const messageComponent = {
 };
 
 export default function Message() {
-  return <DocumentBuilder component={messageComponent} />;
+  return (
+    <>
+      <SEO
+        title="Message"
+        description="A way of informing the user of important changes in a prominent way."
+      />
+      <DocumentBuilder component={messageComponent} />
+    </>
+  );
 }

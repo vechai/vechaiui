@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -143,5 +144,13 @@ const breadcrumbComponent = {
 };
 
 export default function Breadcrumb() {
-  return <DocumentBuilder component={breadcrumbComponent} />;
+  return (
+    <>
+      <SEO 
+        title="Breadcrumb"
+        description="A list of links showing the location of the current page in the navigational hierarchy."
+      />
+      <DocumentBuilder component={breadcrumbComponent} />
+    </>
+  );
 }

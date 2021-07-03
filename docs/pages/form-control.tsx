@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const formControlPropTypes = [
   {
@@ -75,5 +76,10 @@ const formControlComponent = {
 };
 
 export default function FormControl() {
-  return <DocumentBuilder component={formControlComponent} />;
+  return (
+    <>
+      <SEO title="FormControl" />
+      <DocumentBuilder component={formControlComponent} />
+    </>
+  );
 }

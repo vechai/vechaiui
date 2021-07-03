@@ -1,6 +1,8 @@
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
-const demo = `function App() {
+const demo =
+  `function App() {
   const items = [
     {
       value: "deployments",
@@ -36,17 +38,18 @@ const demo = `function App() {
               }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
                   text-xs px-4 py-1.5
-                  focus:outline-none` + "\n" 
-                  + "                  ${" 
-                  + "checked" 
-                  + "\n" 
-                  + '                     ? "bg-primary-500 text-white shadow"'
-                  + "\n"
-                  + '                     : "text-neutral-600 dark:text-neutral-400"'
-                  + "\n"
-                  + "                   }"
-                  + "\n"
-                  + `             \`}
+                  focus:outline-none` +
+  "\n" +
+  "                  ${" +
+  "checked" +
+  "\n" +
+  '                     ? "bg-primary-500 text-white shadow"' +
+  "\n" +
+  '                     : "text-neutral-600 dark:text-neutral-400"' +
+  "\n" +
+  "                   }" +
+  "\n" +
+  `             \`}
             >
               {item.name}
             </RadioGroup.Option>
@@ -66,17 +69,18 @@ const demo = `function App() {
               }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
                   text-xs px-4 py-1.5
-                  focus:outline-none` + "\n" 
-                  + "                  ${" 
-                  + "checked" 
-                  + "\n" 
-                  + '                     ? "bg-white text-neutral-900 shadow dark:bg-neutral-800 dark:text-white"'
-                  + "\n"
-                  + '                     : "text-neutral-600 dark:text-neutral-400"'
-                  + "\n"
-                  + "                   }"
-                  + "\n"
-                  + `             \`}
+                  focus:outline-none` +
+  "\n" +
+  "                  ${" +
+  "checked" +
+  "\n" +
+  '                     ? "bg-white text-neutral-900 shadow dark:bg-neutral-800 dark:text-white"' +
+  "\n" +
+  '                     : "text-neutral-600 dark:text-neutral-400"' +
+  "\n" +
+  "                   }" +
+  "\n" +
+  `             \`}
             >
               {item.name}
             </RadioGroup.Option>
@@ -88,7 +92,8 @@ const demo = `function App() {
   );
 }`;
 
-const demo2 = `function App() {
+const demo2 =
+  `function App() {
   const themes = [
     {
       value: "light",
@@ -123,17 +128,18 @@ const demo2 = `function App() {
               }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
                   text-xs px-4 py-1.5
-                  focus:outline-none` + "\n" 
-                  + "                  ${" 
-                  + "checked" 
-                  + "\n" 
-                  + '                     ? "bg-white text-primary-500 shadow dark:bg-neutral-800"'
-                  + "\n"
-                  + '                     : "text-neutral-600 dark:text-neutral-400"'
-                  + "\n"
-                  + "                   }"
-                  + "\n"
-                  + `             \`}
+                  focus:outline-none` +
+  "\n" +
+  "                  ${" +
+  "checked" +
+  "\n" +
+  '                     ? "bg-white text-primary-500 shadow dark:bg-neutral-800"' +
+  "\n" +
+  '                     : "text-neutral-600 dark:text-neutral-400"' +
+  "\n" +
+  "                   }" +
+  "\n" +
+  `             \`}
             >
               <Icon as={item.icon} className="w-4 h-4 mr-1" />
               <span>{item.name}</span>
@@ -152,10 +158,10 @@ const propList = [
     propTypes: [
       {
         extend: true,
-        path: 'https://headlessui.dev/react/radio-group',
+        path: "https://headlessui.dev/react/radio-group",
         external: true,
-        label: "See more `RadioGroup` props."
-      }
+        label: "See more `RadioGroup` props.",
+      },
     ],
   },
 ];
@@ -191,5 +197,13 @@ const radioGroupComponent = {
 };
 
 export default function RadioGroup() {
-  return <DocumentBuilder component={radioGroupComponent} />;
+  return (
+    <>
+      <SEO
+        title="RadioGroup"
+        description="Radio buttons allow a user to select a single option from a list of predefined options."
+      />
+      <DocumentBuilder component={radioGroupComponent} />
+    </>
+  );
 }

@@ -1,12 +1,13 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const tagPropTypes = [
   {
     property: "color",
     type: ["string"],
-    default: '',
+    default: "",
     values: [],
     description: "The color of tag",
   },
@@ -39,7 +40,7 @@ const propList = [
       {
         property: "iconClassName",
         type: ["string"],
-        default: '',
+        default: "",
         values: [],
         description: "The icon class name",
       },
@@ -150,5 +151,10 @@ const tagComponent = {
 };
 
 export default function Tag() {
-  return <DocumentBuilder component={tagComponent} />;
+  return (
+    <>
+      <SEO title="Tag" description="" />
+      <DocumentBuilder component={tagComponent} />
+    </>
+  );
 }

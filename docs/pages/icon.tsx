@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -54,7 +55,7 @@ const demoList = [
         readOnly: false,
       },
     ],
-    openEditor: true
+    openEditor: true,
   },
 ];
 
@@ -65,6 +66,14 @@ const iconComponent = {
   propList,
 };
 
-export default function Code() {
-  return <DocumentBuilder component={iconComponent} />;
+export default function Icon() {
+  return (
+    <>
+      <SEO
+        title="Icon"
+        description="An icon is a graphic symbol designed to visually indicate the purpose of an interface element."
+      />
+      <DocumentBuilder component={iconComponent} />
+    </>
+  );
 }

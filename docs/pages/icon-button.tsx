@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const iconButtonPropTypes = [
   {
@@ -93,5 +94,10 @@ const iconButtonComponent = {
 };
 
 export default function IconButton() {
-  return <DocumentBuilder component={iconButtonComponent} />;
+  return (
+    <>
+      <SEO title="IconButton" />
+      <DocumentBuilder component={iconButtonComponent} />
+    </>
+  );
 }

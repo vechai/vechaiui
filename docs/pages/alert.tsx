@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const alertPropTypes = [
   {
@@ -102,5 +103,13 @@ const alertComponent = {
 };
 
 export default function Alert() {
-  return <DocumentBuilder component={alertComponent} />;
+  return (
+    <>
+      <SEO 
+        title="Alert"
+        description="A way of informing the user of important changes in a prominent way."
+      />
+      <DocumentBuilder component={alertComponent} />;
+    </>
+  )
 }

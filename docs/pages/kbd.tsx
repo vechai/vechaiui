@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -36,5 +37,10 @@ const kbdComponent = {
 };
 
 export default function Kbd() {
-  return <DocumentBuilder component={kbdComponent} />;
+  return (
+    <>
+      <SEO title="Kbd" />
+      <DocumentBuilder component={kbdComponent} />
+    </>
+  );
 }

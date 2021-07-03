@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -74,5 +75,10 @@ const skeletonComponent = {
 };
 
 export default function Skeleton() {
-  return <DocumentBuilder component={skeletonComponent} />;
+  return (
+    <>
+      <SEO title="Skeleton" />
+      <DocumentBuilder component={skeletonComponent} />
+    </>
+  );
 }

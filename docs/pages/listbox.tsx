@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -276,5 +277,10 @@ const listboxComponent = {
 };
 
 export default function Listbox() {
-  return <DocumentBuilder component={listboxComponent} />;
+  return (
+    <>
+      <SEO title="Listbox" />
+      <DocumentBuilder component={listboxComponent} />
+    </>
+  );
 }

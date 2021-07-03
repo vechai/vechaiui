@@ -1,4 +1,5 @@
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -7,10 +8,10 @@ const propList = [
     propTypes: [
       {
         extend: true,
-        path: 'https://www.radix-ui.com/primitives/docs/components/tabs',
+        path: "https://www.radix-ui.com/primitives/docs/components/tabs",
         external: true,
-        label: "See more `Tabs` props."
-      }
+        label: "See more `Tabs` props.",
+      },
     ],
   },
 ];
@@ -403,5 +404,13 @@ const tabsComponent = {
 };
 
 export default function Tabs() {
-  return <DocumentBuilder component={tabsComponent} />;
+  return (
+    <>
+      <SEO
+        title="Tabs"
+        description="Tabbed interfaces are a way of navigating between multiple panels, reducing clutter and fitting more into a smaller space."
+      />
+      <DocumentBuilder component={tabsComponent} />
+    </>
+  );
 }

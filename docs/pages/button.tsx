@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 import { twFile } from "@utils/tw";
 
 const buttonPropTypes = [
- 
   {
     property: "color",
     type: ["string"],
@@ -268,5 +268,13 @@ const component = {
 };
 
 export default function Button() {
-  return <DocumentBuilder component={component} />;
+  return (
+    <>
+      <SEO
+        title="Button"
+        description="Buttons trigger an action such as submitting a form or showing/hiding an interface component."
+      />
+      <DocumentBuilder component={component} />
+    </>
+  );
 }

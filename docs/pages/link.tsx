@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const propList = [
   {
@@ -60,5 +61,10 @@ const linkComponent = {
 };
 
 export default function Link() {
-  return <DocumentBuilder component={linkComponent} />;
+  return (
+    <>
+      <SEO title="Link" description="A link is a reference to a resource." />
+      <DocumentBuilder component={linkComponent} />
+    </>
+  );
 }

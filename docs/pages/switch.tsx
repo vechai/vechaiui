@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const switchPropTypes = [
   {
@@ -72,7 +73,8 @@ const switchPropTypes = [
     type: ["React.ChangeEventHandler<HTMLInputElement>"],
     default: "",
     values: [],
-    description: "The callback invoked when the checked state of the `Switch` changes..",
+    description:
+      "The callback invoked when the checked state of the `Switch` changes..",
   },
   {
     property: "aria-label",
@@ -93,7 +95,8 @@ const switchPropTypes = [
     type: ["string"],
     default: "",
     values: [],
-    description: "Refers to the id of the element that labels the checkbox element.",
+    description:
+      "Refers to the id of the element that labels the checkbox element.",
   },
 ];
 
@@ -185,10 +188,16 @@ const switchComponent = {
   importer: 'import { Switch } from "@vechaiui/react"',
   demoList,
   propList,
-}
+};
 
 export default function Switch() {
   return (
-    <DocumentBuilder component={switchComponent} />
+    <>
+      <SEO
+        title="Swicth"
+        description="A control used to switch between two states: often on or off."
+      />
+      <DocumentBuilder component={switchComponent} />
+    </>
   );
 }

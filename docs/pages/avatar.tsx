@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
+import SEO from "@components/seo";
 
 const avatarPropTypes = [
   {
@@ -151,5 +152,13 @@ const avatarComponent = {
 };
 
 export default function Avatar() {
-  return <DocumentBuilder component={avatarComponent} />;
+  return (
+    <>
+      <SEO
+        title="Avatar"
+        description="A graphical representation of a user: usually a photo, illustration or initial."
+      />
+      <DocumentBuilder component={avatarComponent} />
+    </>
+  );
 }

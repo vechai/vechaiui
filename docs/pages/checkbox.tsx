@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const checkboxPropTypes = [
   {
@@ -315,6 +316,12 @@ const checkboxComponent = {
 
 export default function Checkbox() {
   return (
-    <DocumentBuilder component={checkboxComponent} />
+    <>
+      <SEO 
+        title="Checkbox"
+        description="An input for choosing from predefined options."
+      />
+      <DocumentBuilder component={checkboxComponent} />
+    </>
   );
 }

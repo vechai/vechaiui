@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const selectPropTypes = [
   {
@@ -136,5 +137,13 @@ const selectComponent = {
 };
 
 export default function Select() {
-  return <DocumentBuilder component={selectComponent} />;
+  return (
+    <>
+      <SEO
+        title="Select"
+        description="A form input used for selecting a value: when collapsed it shows the currently selected option and when expanded, it shows a scrollable list of predefined options for the user to choose from."
+      />
+      <DocumentBuilder component={selectComponent} />
+    </>
+  );
 }

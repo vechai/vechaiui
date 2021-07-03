@@ -2,6 +2,7 @@ import * as React from "react";
 
 import DocumentBuilder from "@components/document-builder";
 import { twFile } from "@utils/tw";
+import SEO from "@components/seo";
 
 const textareaPropTypes = [
   {
@@ -80,5 +81,10 @@ const textareaComponent = {
 };
 
 export default function Textarea() {
-  return <DocumentBuilder component={textareaComponent} />;
+  return (
+    <>
+      <SEO title="Textarea" description="A form control for editing multi-line text." />
+      <DocumentBuilder component={textareaComponent} />
+    </>
+  );
 }
