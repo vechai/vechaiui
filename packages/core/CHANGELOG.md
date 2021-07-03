@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.5](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.4...@vechaiui/core@0.3.5) (2021-07-03)
+
+
+### Bug Fixes
+
+* border color radio & checkbox ([2bd5071](https://github.com/vechai/vechaiui/commit/2bd50717849440c9ff583d7b19cc808469e77ce9))
+
+
+
+
+
 ## [0.3.4](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.3...@vechaiui/core@0.3.4) (2021-07-01)
 
 

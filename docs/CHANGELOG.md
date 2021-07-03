@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.5.0...@vechaiui/docs@0.6.0) (2021-07-03)
+
+
+### Bug Fixes
+
+* **docs:** responsive ([42c1592](https://github.com/vechai/vechaiui/commit/42c1592df6b0cf45c55d18885b6a9f22d50c722f))
+
+
+### Features
+
+* **docs:** add gtag ([397a011](https://github.com/vechai/vechaiui/commit/397a011c2fc32bb147cf4e813a6cb21d6bc16525))
+* **docs:** add seo ([3fc3d9a](https://github.com/vechai/vechaiui/commit/3fc3d9aa8786b08c0138091276dc3c15c9e877ba))
+* **docs:** add spinner document ([f8d6873](https://github.com/vechai/vechaiui/commit/f8d68739d32e854737d86f166a1ea7c3913367ae))
+
+
+
+
+
 # [0.5.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.4.0...@vechaiui/docs@0.5.0) (2021-07-02)
 
 
