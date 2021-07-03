@@ -27,7 +27,7 @@ const demoList = [
     files: [
       {
         name: "textarea.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Textarea placeholder="jon@gmail.com" />
 </div>`,
         readOnly: false,
@@ -39,7 +39,7 @@ const demoList = [
     files: [
       {
         name: "textarea.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Textarea color="orange" placeholder="jon@gmail.com" />
 </div>`,
         readOnly: false,
@@ -52,7 +52,7 @@ const demoList = [
     files: [
       {
         name: "textarea.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Textarea disabled placeholder="jon@gmail.com" />
 </div>`,
         readOnly: false,
@@ -64,7 +64,7 @@ const demoList = [
     files: [
       {
         name: "textarea.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Textarea invalid placeholder="jon@gmail.com" />;
 </div>`,
         readOnly: false,

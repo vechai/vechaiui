@@ -59,7 +59,7 @@ const demoList = [
     files: [
       {
         name: "tag.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
     <Tag>Default</Tag>
     <Tag>
       <Tag.Label>Default</Tag.Label>
@@ -83,7 +83,7 @@ const demoList = [
     files: [
       {
         name: "tag.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Tag variant="solid">Default</Tag>
   <Tag variant="solid">
     <Tag.Label>Default</Tag.Label>
@@ -107,7 +107,7 @@ const demoList = [
     files: [
       {
         name: "tag.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Tag variant="light">Default</Tag>
   <Tag variant="light">
     <Tag.Label>Default</Tag.Label>
@@ -131,7 +131,7 @@ const demoList = [
     files: [
       {
         name: "tag.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Tag size="sm">Default</Tag>
   <Tag size="md">Default</Tag>
   <Tag size="lg">Default</Tag>

@@ -1,6 +1,7 @@
 import { cx, IconButton } from "@vechaiui/react";
 import * as React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 import { mainNavigation, Navigation } from "@components/navigation";
 import {
@@ -19,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactElement }) {
   if (router.pathname === "/") classes = "";
   else if (isMainNavigation)
     classes =
-      "max-w-full px-20 py-12 pl-40 mx-auto prose dark:prose-dark text-gray-500";
+      "max-w-full px-4 pl-4 md:px-20 md:pl-20 xl:pl-40 py-12 mx-auto prose dark:prose-dark text-gray-500";
   else if (
     components[0].components.find(
       (component) => `/${component.key}` === router.pathname
@@ -70,6 +71,17 @@ function Header() {
             />
           </svg>
         </IconButton>
+        <div className="flex items-center justify-end flex-1">
+          <Link href="/getting-started" passHref>
+            <a className="relative inline-flex items-center justify-center flex-shrink-0 w-8 h-8 align-top rounded-base bg-neutral-800">
+              <img
+                className="object-cover w-full h-full rounded-base"
+                src="/vechai.svg"
+                alt="logo"
+              />
+            </a>
+          </Link>
+        </div>
       </div>
     </nav>
   );

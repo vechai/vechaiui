@@ -27,7 +27,7 @@ const demoList = [
     files: [
       {
         name: "select.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Select placeholder="Outline">
     <option>Option 1</option>
     <option>Option 2</option>
@@ -43,7 +43,7 @@ const demoList = [
     files: [
       {
         name: "select.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Select placeholder="Outline" color="orange">
     <option>Option 1</option>
     <option>Option 2</option>
@@ -60,7 +60,7 @@ const demoList = [
     files: [
       {
         name: "select.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Select disabled placeholder="Outline">
     <option>Option 1</option>
     <option>Option 2</option>
@@ -76,7 +76,7 @@ const demoList = [
     files: [
       {
         name: "select.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Select invalid placeholder="Outline">
     <option>Option 1</option>
     <option>Option 2</option>

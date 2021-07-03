@@ -194,7 +194,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Radio name="basic">First</Radio>
   <Radio name="basic" defaultChecked>
     Second
@@ -209,7 +209,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Radio name="basic" color="orange">First</Radio>
   <Radio name="basic" defaultChecked color="orange">
     Second
@@ -225,7 +225,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Radio invalid name="invalid">
     First
   </Radio>
@@ -242,7 +242,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Radio disabled name="disabled">
     First
   </Radio>
@@ -266,7 +266,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Radio size="sm" name="size">
     Radio
   </Radio>
@@ -289,7 +289,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Radio.Group defaultValue="2" className="space-x-4" inline>
     <Radio value="1">First</Radio>
     <Radio value="2">Second</Radio>
@@ -305,7 +305,7 @@ const demoList = [
     files: [
       {
         name: "radio.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <FormControl>
     <FormLabel>Radio Group</FormLabel>
     <Radio.Group defaultValue="2" className="space-x-4" inline>

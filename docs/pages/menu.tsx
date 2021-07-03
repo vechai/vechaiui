@@ -24,7 +24,7 @@ const demoList = [
     files: [
       {
         name: "menu.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Menu as="div" className="relative inline-block">
     <Menu.Button as={Button} variant="solid" color="primary">
       Profile
@@ -136,7 +136,7 @@ const demoList = [
     files: [
       {
         name: "menu.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Menu as="div" className="relative inline-block">
     <Menu.Button as={Button} variant="light" color="primary">
       Profile
@@ -248,7 +248,7 @@ const demoList = [
     files: [
       {
         name: "menu.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Menu as="div" className="relative inline-block">
     <Menu.Button as={Button} variant="solid">
       Actions

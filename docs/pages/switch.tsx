@@ -114,7 +114,7 @@ const demoList = [
     files: [
       {
         name: "switch.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Switch />
   <Switch defaultChecked />
 </div>`,
@@ -127,7 +127,7 @@ const demoList = [
     files: [
       {
         name: "switch.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Switch color="orange" />
   <Switch defaultChecked color="orange" />
 </div>`,
@@ -141,7 +141,7 @@ const demoList = [
     files: [
       {
         name: "switch.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Switch disabled />
   <Switch defaultChecked disabled />
 </div>`,
@@ -154,7 +154,7 @@ const demoList = [
     files: [
       {
         name: "switch.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Switch size="sm" />
   <Switch size="md" />
   <Switch size="lg" />
@@ -169,7 +169,7 @@ const demoList = [
     files: [
       {
         name: "switch.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <FormControl className="flex items-center">
     <FormLabel htmlFor="email-alerts" className="mb-0 mr-2">
       Enable email alerts?

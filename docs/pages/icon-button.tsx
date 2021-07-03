@@ -40,7 +40,7 @@ const demoList = [
     files: [
       {
         name: "icon-button.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <IconButton>
     <GiftIcon className="w-4 h-4" />
   </IconButton>
@@ -63,7 +63,7 @@ const demoList = [
     files: [
       {
         name: "icon-button.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <IconButton size="xs" variant="solid" color="primary">
     <GiftIcon className="w-3.5 h-3.5" />
   </IconButton>

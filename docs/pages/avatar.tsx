@@ -91,7 +91,7 @@ const demoList = [
     files: [
       {
         name: "avatar.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" size="2xs" />
   <Avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" size="xs" />
   <Avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" size="sm" />
@@ -110,7 +110,7 @@ const demoList = [
     files: [
       {
         name: "avatar.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Avatar name="Bruce Wayne" size="2xs" />
   <Avatar name="Bruce Wayne" size="xs" />
   <Avatar name="Bruce Wayne" size="sm" />
@@ -129,7 +129,7 @@ const demoList = [
     files: [
       {
         name: "avatar.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Avatar.Group size="lg" max={2}>
     <Avatar name="Bruce Wayne" src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3" />
     <Avatar name="Captain America " src="https://images.unsplash.com/photo-1569003339405-ea396a5a8a90" />

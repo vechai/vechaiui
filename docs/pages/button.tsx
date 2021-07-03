@@ -127,7 +127,7 @@ const demoList = [
     files: [
       {
         name: "button.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Button>Button</Button>
   <Button variant="solid">Button</Button>
   <Button variant="light">Button</Button>
@@ -144,7 +144,7 @@ const demoList = [
     files: [
       {
         name: "button.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Button color="primary">Button</Button>
   <Button variant="solid" color="primary">Button</Button>
   <Button variant="light" color="primary">Button</Button>
@@ -160,7 +160,7 @@ const demoList = [
     files: [
       {
         name: "button.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Button color="orange">Button</Button>
   <Button variant="solid" color="orange">Button</Button>
   <Button variant="light" color="orange">Button</Button>
@@ -177,7 +177,7 @@ const demoList = [
     files: [
       {
         name: "button.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Button size="xs" variant="solid" color="primary">
     Button
   </Button>
@@ -203,7 +203,7 @@ const demoList = [
     files: [
       {
         name: "button.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Button
     variant="solid"
     color="primary"
@@ -224,7 +224,7 @@ const demoList = [
     files: [
       {
         name: "button.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Button loading>Button</Button>
   <Button color="primary" loading loadingText="Loading...">
     Button

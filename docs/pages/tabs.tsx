@@ -45,7 +45,7 @@ const demoList = [
   ];
 
 return (
-  <div className="flex w-full p-8 space-x-4">
+  <div className="flex flex-wrap w-full p-8 space-x-4">
     <Tabs.Root className="flex flex-col" defaultValue="tab1">
       <Tabs.List
         aria-label="tabs example"
@@ -118,7 +118,7 @@ return (
   ];
 
 return (
-  <div className="flex w-full p-8 space-x-4">
+  <div className="flex flex-wrap w-full p-8 space-x-4">
     <Tabs.Root className="flex flex-col" defaultValue="tab1">
       <Tabs.List
         aria-label="tabs example"
@@ -195,7 +195,7 @@ return (
   ];
 
 return (
-  <div className="flex w-full p-8 space-x-4">
+  <div className="flex flex-wrap w-full p-8 space-x-4">
     <Tabs.Root className="flex flex-col" defaultValue="tab1">
       <Tabs.List
         aria-label="tabs example"
@@ -270,7 +270,7 @@ return (
   ];
 
 return (
-  <div className="flex w-full p-8 space-x-4">
+  <div className="flex flex-wrap w-full p-8 space-x-4">
     <Tabs.Root className="flex flex-col" defaultValue="tab1">
       <Tabs.List
         aria-label="tabs example"
@@ -349,7 +349,7 @@ return (
   ];
 
 return (
-  <div className="flex w-full p-8 space-x-4">
+  <div className="flex flex-wrap w-full p-8 space-x-4">
     <Tabs.Root className="flex flex-col" defaultValue="tab1">
       <Tabs.List
         aria-label="tabs example"

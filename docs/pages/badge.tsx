@@ -49,7 +49,7 @@ const demoList = [
     files: [
       {
         name: "badge.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Badge>1</Badge>
   <Badge variant="solid">1</Badge>
   <Badge color="primary">1</Badge>
@@ -64,7 +64,7 @@ const demoList = [
     files: [
       {
         name: "badge.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Badge color="orange">1</Badge>
   <Badge color="orange" variant="solid">1</Badge>
 </div>`,
@@ -78,7 +78,7 @@ const demoList = [
     files: [
       {
         name: "badge.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Badge size="sm">1</Badge>
   <Badge size="sm" variant="solid">
     1

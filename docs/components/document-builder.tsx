@@ -49,12 +49,12 @@ interface DocumentBuilderProps {
 export default function DocumentBuilder({ component }: DocumentBuilderProps) {
   return (
     <section className="">
-      <h1 className="px-20 pt-10 pl-20 mt-0 mb-3 text-3xl font-extrabold xl:pt-20 xl:pl-40">
+      <h1 className="px-4 pt-10 pl-4 mt-0 mb-3 text-3xl font-extrabold md:px-20 md:pl-20 xl:pt-20 xl:pl-40">
         {component.name}
       </h1>
       <div>
         <section className="flex flex-col items-start">
-          <div className="flex flex-row justify-between w-full px-20 pl-20 xl:pl-40">
+          <div className="flex flex-row justify-between w-full px-4 pl-4 md:px-20 md:pl-20 xl:pl-40">
             <div className="w-full max-w-2xl mr-0 xl:mr-20 flex-grow-1">
               <CodeBlock showClipBoard>
                 <code className="language-tsx">{component.importer}</code>
@@ -64,7 +64,7 @@ export default function DocumentBuilder({ component }: DocumentBuilderProps) {
         </section>
       </div>
       <div className="flex flex-col items-start">
-        <section className="flex flex-col justify-between w-full px-20 pl-20 xl:pl-40 xl:flex-row">
+        <section className="flex flex-col justify-between w-full px-4 pl-4 md:px-20 md:pl-20 xl:pl-40 xl:flex-row">
           <div className="w-full max-w-2xl mb-6 mr-0 leading-7 xl:mr-20 flex-grow-1">
             {component.demoList.map((demo: any, idx: any) => (
               <div key={idx} className="mb-10">
@@ -79,7 +79,7 @@ export default function DocumentBuilder({ component }: DocumentBuilderProps) {
             className="sticky top-0 self-start w-full max-w-full pr-0 prose-sm prose xl:pr-10 flex-grow-1 xl:w-auto dark:prose-dark dark:prose-dark-sm"
             style={{
               width: "400px",
-              maxWidth: "50vw",
+              // maxWidth: "50vw",
             }}
           >
             <h2 className="flex flex-wrap items-center pt-3 mt-6 mb-3 text-xl font-bold leading-10">

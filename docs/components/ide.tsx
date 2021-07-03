@@ -78,7 +78,7 @@ function Editor({
         >
           <Tabs.List
             onClick={(e) => {
-              if ((e.target as HTMLDivElement).getAttribute("role") === "tablist") {
+              if ((e.target as HTMLDivElement).getAttribute("role") === "tablist" || !openEditor) {
                 setOpenEditor((prev) => !prev)
               }
             }}

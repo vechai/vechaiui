@@ -22,7 +22,7 @@ const demoList = [
     files: [
       {
         name: "tooltip.tsx",
-        code: `<div className="flex w-full p-12 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-12 space-x-4">
   <Tooltip.Root delayDuration={0}>
     <Tooltip.Trigger>
       <Button>Hover Me</Button>

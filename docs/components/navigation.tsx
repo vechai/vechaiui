@@ -1,10 +1,19 @@
 import { Transition } from "@headlessui/react";
-import { ViewGridIcon, BeakerIcon, ColorSwatchIcon } from "@heroicons/react/outline";
-import { cx } from "@vechaiui/react";
+import {
+  ViewGridIcon,
+  BeakerIcon,
+  ColorSwatchIcon,
+} from "@heroicons/react/outline";
+import { Button, Link, cx } from "@vechaiui/react";
 import * as React from "react";
 
+import { Github, Twitter } from "@libs/react-feather";
+
 import { NavLink } from "./nav-link";
-import { NavigationContext, NavigationContextType } from "./navigation-provider";
+import {
+  NavigationContext,
+  NavigationContextType,
+} from "./navigation-provider";
 import { ThemSwitcher } from "./theme-switcher";
 import components from "./components";
 
@@ -27,7 +36,9 @@ export const mainNavigation = [
 ];
 
 export function Navigation() {
-  const { open, slideMode, setOpen } = React.useContext(NavigationContext) as NavigationContextType;
+  const { open, slideMode, setOpen } = React.useContext(
+    NavigationContext
+  ) as NavigationContextType;
 
   return (
     <Transition.Root show={open} as={React.Fragment}>
@@ -66,8 +77,39 @@ export function Navigation() {
             </div>
           )}
           <div className="flex flex-col h-full overflow-y-scroll">
-            <div>
+            <div className="space-y-4">
               <ThemSwitcher />
+              <div className="grid grid-cols-2 gap-2 dark">
+                <a
+                  href="https://github.com/vechai/vechaiui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    className="w-full"
+                    // variant="solid"
+                    // @ts-ignore
+                    leftIcon={<Github size={16} className="mr-2" />}
+                  >
+                    Github
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/vechai/vechaiui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    className="w-full"
+                    // @ts-ignore
+                    leftIcon={<Twitter size={16} className="mr-2" />}
+                    variant="solid"
+                    color="blue"
+                  >
+                    Twitter
+                  </Button>
+                </a>
+              </div>
             </div>
             <div className="flex flex-col flex-1 px-2 py-4 overflow-auto">
               <div className="flex flex-col mb-6 space-y-1">

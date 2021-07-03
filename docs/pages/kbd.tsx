@@ -17,7 +17,7 @@ const demoList = [
     files: [
       {
         name: "kbd.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Kbd>⌘</Kbd>
   <Kbd>shift</Kbd>
   <Kbd>.</Kbd>

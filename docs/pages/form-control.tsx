@@ -48,7 +48,7 @@ const demoList = [
     files: [
       {
         name: "form-control.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <FormControl>
     <FormLabel htmlFor="email" id="email-label">
       Email address

@@ -46,7 +46,7 @@ const demoList = [
     files: [
       {
         name: "icon.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Icon as={InfoIcon} label="info" className="w-6 h-6 text-blue-500" />
   <Icon as={CheckCircleIcon} label="check-circle" className="w-6 h-6 text-green-500" />
   <Icon as={XCricleIcon} label="x-circle" className="w-6 h-6 text-red-500" />

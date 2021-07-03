@@ -190,7 +190,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Checkbox>Checkbox</Checkbox>
   <Checkbox defaultChecked>Checkbox</Checkbox>
 </div>`,
@@ -203,7 +203,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Checkbox color="orange">Checkbox</Checkbox>
   <Checkbox color="orange" defaultChecked>Checkbox</Checkbox>
 </div>`,
@@ -217,7 +217,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Checkbox invalid>Checkbox</Checkbox>
   <Checkbox invalid defaultChecked>
     Checkbox
@@ -232,7 +232,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Checkbox disabled>Checkbox</Checkbox>
   <Checkbox disabled defaultChecked>
     Checkbox
@@ -251,7 +251,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Checkbox size="sm">Checkbox</Checkbox>
   <Checkbox size="md">Checkbox</Checkbox>
   <Checkbox size="lg">Checkbox</Checkbox>
@@ -266,7 +266,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Checkbox.Group
     className="space-x-4"
     inline
@@ -286,7 +286,7 @@ const demoList = [
     files: [
       {
         name: "checkbox.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <FormControl>
     <FormLabel>Checkbox Group</FormLabel>
     <Checkbox.Group

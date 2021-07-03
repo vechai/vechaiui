@@ -25,7 +25,7 @@ const demoList = [
     files: [
       {
         name: "spinner.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Spinner />
   <Spinner className="text-primary-500" />
 </div>`,
@@ -39,7 +39,7 @@ const demoList = [
     files: [
       {
         name: "spinner.tsx",
-        code: `<div className="flex w-full p-8 space-x-2">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-2">
   <Spinner size="xs" />
   <Spinner size="sm" />
   <Spinner size="md" />

@@ -28,7 +28,7 @@ export const size = () => (
 );
 
 export const element = () => (
-  <div className="flex w-full space-x-2">
+  <div className="flex flex-wrap w-full space-x-2">
     <Input.Group size="xs">
       <Input.LeftElement
         children="$"

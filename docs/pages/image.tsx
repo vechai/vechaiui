@@ -55,7 +55,7 @@ const demoList = [
     files: [
       {
         name: "image.tsx",
-        code: `<div className="flex w-full p-4 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-4 space-x-4">
   <Image
     alt="bruce wayne"
     htmlWidth={100}

@@ -81,7 +81,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@vechaiui/core")({
-      colors: ["orange", "red"],
+      colors: ["orange", "red", "blue"],
       cssBase: true,
     }),
   ],

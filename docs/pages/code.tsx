@@ -17,7 +17,7 @@ const demoList = [
     files: [
       {
         name: "code.tsx",
-        code: `<div className="flex w-full p-8 space-x-4">
+        code: `<div className="flex flex-wrap w-full p-8 space-x-4">
   <Code>New Issue</Code>
   <Code>Cmd/Ctrl</Code>
 </div>`,
