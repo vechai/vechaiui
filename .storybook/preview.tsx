@@ -15,7 +15,6 @@ const withVechai = (StoryFn: Function) => {
     () =>
       extendTheme({
         cursor: colorScheme === "light" ? "pointer" : "default",
-        rounded: "none",
         colorSchemes: {
           light,
           dark,

@@ -11,7 +11,7 @@ const siteConfig = {
     titleTemplate: "%s - Vechai UI",
     description:
       "Collection of Accessible React UI Components using TailwindCSS.",
-    siteUrl: "https://vechaiui.dev",
+    siteUrl: "https://vechaiui.com",
     twitter: {
       handle: "@vechaiui",
       site: "@vechaiui",
@@ -20,7 +20,7 @@ const siteConfig = {
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: "https://vechaiui.dev",
+      url: "https://vechaiui.com",
       title: "Vechai UI",
       description:
         "Collection of Accessible React UI Components using TailwindCSS.",
@@ -28,14 +28,14 @@ const siteConfig = {
         "Vechai UI: Collection of Accessible React UI Components using TailwindCSS.",
       images: [
         {
-          url: "https://vechaiui.dev/og-image.png",
+          url: "https://vechaiui.com/og-image.png",
           width: 1200,
           height: 627,
           alt:
             "Vechai UI: Collection of Accessible React UI Components using TailwindCSS.",
         },
         {
-          url: "https://vechaiui.dev/twitter-og-image.png",
+          url: "https://vechaiui.com/twitter-og-image.png",
           width: 1012,
           height: 506,
           alt:

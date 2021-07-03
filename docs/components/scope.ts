@@ -27,6 +27,7 @@ import {
   CheckCircleIcon,
   ExclamationIcon,
   Alert,
+  Spinner,
   useMessage,
   useNotification,
   cx,
@@ -113,6 +114,7 @@ const scope = {
   CheckCircleIcon,
   ExclamationIcon,
   Alert,
+  Spinner,
   useMessage,
   useNotification,
   // headlessui

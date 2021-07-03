@@ -99,6 +99,10 @@ const feedback = [
     key: "skeleton",
     title: "Skeleton",
   },
+  {
+    key: "spinner",
+    title: "Spinner",
+  },
 ];
 
 const headless = [
