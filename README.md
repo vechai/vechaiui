@@ -16,19 +16,19 @@ Collection of Accessible React UI Components using TailwindCSS.
 
 - 📦 A set of accessibility React components & pre-designed headlessui + radix-ui components.
 - 🛠️ Written in TypeScript.
-- 🌙 Buit-in dark mode.
+- 🌙 Built-in Dark mode.
 - 🌈 Powerful theme customization.
 
 ## Installation
 
 ```
-npm i @vechaiui/core @vechaiui/react
+npm i @vechaiui/core @vechaiui/react @tailwindcss/forms
 ```
 
 **Yarn**
 
 ```
-yarn add @vechaiui/core @vechaiui/react
+yarn add @vechaiui/core @vechaiui/react @tailwindcss/forms
 ```
 
 ## Development
@@ -47,7 +47,7 @@ All contributions are welcome. Even, if you notice wrong information, typos, or 
 
 ## Credit
 
-This open-source UI component library was heavily inspired [ChakraUI](chakra-ui.com). I'd like to thank all of them for their amazing work.
+This open-source UI component library was heavily inspired [PrimerCSS](https://primer.style/) & [ChakraUI](chakra-ui.com). I'd like to thank all of them for their amazing work.
 ## License
 
 MIT License © 2021 [pepelele](https://github.com/pepelele)
