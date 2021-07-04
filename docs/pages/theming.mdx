@@ -34,12 +34,12 @@ interface ColorScheme {
   type: "light" | "dark";
   colors: {
     bg: {
-      base: string,
-      fill: string;
+      base: string; // used for background
+      fill: string; // used for navbar, sidebar, header
     },
     text: {
-      foreground: string;
-      muted: string;
+      foreground: string; // text primary
+      muted: string; // text secondary
     },
     primary: Colors,
     neutral: Colors,
@@ -60,8 +60,7 @@ For a complete reference of available theme properties and their default values,
 
 ```jsx
 // 1. Import `extendTheme`
-import { extendTheme } from "@vechaiui/react";
-import colors from "@vechaiui/colors";
+import { extendTheme, colors } from "@vechaiui/react";
 
 // 2.Define new color scheme
 const cool: ColorScheme = {
@@ -117,6 +116,8 @@ function Usage() {
   return <Button color="primary">Welcome</Button>
 }
 ```
+
+[Browse some example themes](/themes-gallery)
 
 ## TypeScript
 

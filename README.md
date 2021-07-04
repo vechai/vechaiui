@@ -10,6 +10,44 @@ Collection of Accessible React UI Components using TailwindCSS.
 
 ![](docs/public/themes/screenshot.png)
 
--   Documentation: [vechaiui.com](https://www.vechaiui.com/getting-started)
--   NPM: [@vechaiui/react](https://www.npmjs.com/package/@vechaiui/react)
--   License: [MIT](./LICENSE)
+-  Documentation: [vechaiui.com](https://www.vechaiui.com/getting-started)
+-  NPM: [@vechaiui/react](https://www.npmjs.com/package/@vechaiui/react)
+## ✨ Features
+
+- 📦 A set of accessibility React components & pre-designed headlessui + radix-ui components.
+- 🛠️ Written in TypeScript.
+- 🌙 Buit-in dark mode.
+- 🌈 Powerful theme customization.
+
+## Installation
+
+```
+npm i @vechaiui/core @vechaiui/react
+```
+
+**Yarn**
+
+```
+yarn add @vechaiui/core @vechaiui/react
+```
+
+## Development
+
+**Prerequisites**: Node.js v12+, Yarn v1.22+
+
+After cloning this repo, run:
+
+1. `yarn boot` to install all dependencies & build all packages.
+2. `yarn start` to run storybook
+3. `yarn docs:dev` to run document website
+
+## Contributing
+
+All contributions are welcome. Even, if you notice wrong information, typos, or grammar mistake (English is not my primary language). Feel free to open an issue or create a pull request.
+
+## Credit
+
+This open-source UI component library was heavily inspired [ChakraUI](chakra-ui.com). I'd like to thank all of them for their amazing work.
+## License
+
+MIT License © 2021 [pepelele](https://github.com/pepelele)

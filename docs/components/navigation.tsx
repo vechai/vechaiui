@@ -4,7 +4,7 @@ import {
   BeakerIcon,
   ColorSwatchIcon,
 } from "@heroicons/react/outline";
-import { Button, Link, cx } from "@vechaiui/react";
+import { Button, Icon, cx } from "@vechaiui/react";
 import * as React from "react";
 
 import { Github, Twitter } from "@libs/react-feather";
@@ -27,6 +27,12 @@ export const mainNavigation = [
     icon: BeakerIcon,
     title: "Theming",
     path: "/theming",
+  },
+  {
+    icon: null,
+    title: "Themes Gallery",
+    path: "/themes-gallery",
+    hidden: true,
   },
   {
     icon: ColorSwatchIcon,
@@ -113,26 +119,30 @@ export function Navigation() {
             </div>
             <div className="flex flex-col flex-1 px-2 py-4 overflow-auto">
               <div className="flex flex-col mb-6 space-y-1">
-                {mainNavigation.map(({ icon: Icon, ...link }, idx) => (
-                  <NavLink key={idx} passHref href={link.path}>
-                    {(active: boolean) => (
-                      <a
-                        className={cx(
-                          "relative flex items-center w-full px-2 py-1.5 transition-colors duration-150 ease-in-out font-medium bg-transparent border-0 rounded cursor-base text-sm",
-                          active
-                            ? cx(
-                                "bg-primary-200 text-primary-200",
-                                "bg-opacity-15"
-                              )
-                            : "hover:text-white"
-                        )}
-                      >
-                        <Icon className="w-5 h-5 mr-2 text-primary-500" />
-                        <span>{link.title}</span>
-                      </a>
-                    )}
-                  </NavLink>
-                ))}
+                {mainNavigation.map((link, idx) => {
+                  if (link.hidden) return null;
+
+                  return (
+                    <NavLink key={idx} passHref href={link.path}>
+                      {(active: boolean) => (
+                        <a
+                          className={cx(
+                            "relative flex items-center w-full px-2 py-1.5 transition-colors duration-150 ease-in-out font-medium bg-transparent border-0 rounded cursor-base text-sm",
+                            active
+                              ? cx(
+                                  "bg-primary-200 text-primary-200",
+                                  "bg-opacity-15"
+                                )
+                              : "hover:text-white"
+                          )}
+                        >
+                          <Icon as={link.icon || undefined} label="" className="w-5 h-5 mr-2 text-primary-500" />
+                          <span>{link.title}</span>
+                        </a>
+                      )}
+                    </NavLink>
+                  )
+                })}
               </div>
 
               {components.map((comp, idx) => (
