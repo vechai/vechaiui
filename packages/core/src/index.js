@@ -50,7 +50,7 @@ const components = [
 const defaultColors = ["primary"];
 
 module.exports = plugin.withOptions(
-  function(options = { colors: [], cssBase: false }) {
+  function(options = { colors: [], cssBase: true }) {
     return function({
       addComponents,
       addVariant,
