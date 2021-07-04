@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.0...@vechaiui/docs@0.6.1) (2021-07-04)
+
+
+### Bug Fixes
+
+* **core:** default cssBase is true ([e400067](https://github.com/vechai/vechaiui/commit/e40006768edbcd6a83dab977a937efe35cae05a9))
+* **redme:** typo ([fe49946](https://github.com/vechai/vechaiui/commit/fe49946f340c9fa5d916eb33192d78ecfbd44c07))
+
+
+
+
+
 # [0.6.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.5.0...@vechaiui/docs@0.6.0) (2021-07-03)
 
 
