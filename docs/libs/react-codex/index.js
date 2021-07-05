@@ -184,7 +184,13 @@ export default class Editor extends React.Component {
             : { children: highlighted })}
         />
         {showClipBoard && (
-          <ClipBoardButton value={this._editor?.getValue?.() || value} className="absolute z-10 opacity-0 top-6 right-4 group-hover:opacity-100" />
+          <ClipBoardButton
+            style={{
+              top: "24px",
+            }}
+            value={this._editor?.getValue?.() || value}
+            className="absolute z-10 opacity-0 top-6 right-4 group-hover:opacity-100"
+          />
         )}
       </div>
     );

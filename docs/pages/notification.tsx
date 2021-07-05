@@ -42,7 +42,7 @@ const notificationPropTypes = [
   },
   {
     property: "position",
-    type: ["keyof typeof Position"],
+    type: ["top", "top-left", "top-right", "bottom", "bottom-left", "bottom-right"],
     default: "bottom",
     values: [],
     description: "One of toasted-notes positions.",
