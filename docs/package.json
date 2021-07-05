@@ -7,6 +7,7 @@
     "dev": "next dev",
     "deploy": "vercel --prod",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "@types/react": "17.0.11",
     "autoprefixer": "^10.2.6",
     "next-compose-plugins": "^2.2.1",
+    "next-sitemap": "^1.6.124",
     "postcss": "^8.3.4",
     "tailwindcss": "^2.2.4",
     "typescript": "4.3.2"
