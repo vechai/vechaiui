@@ -17,8 +17,8 @@ export default function Layout({ children }: { children: React.ReactElement }) {
   const isMainNavigation = !!mainNavigation.find(
     (nav) => nav.path === router.pathname
   );
-  if (router.pathname === "/") classes = "";
-  else if (isMainNavigation)
+  // if (router.pathname === "/") classes = "";
+  if (isMainNavigation)
     classes =
       "max-w-full px-4 pl-4 md:px-20 md:pl-20 xl:pl-40 py-12 mx-auto prose dark:prose-dark text-gray-500";
   else if (

@@ -21,7 +21,13 @@ export const mainNavigation = [
   {
     icon: ViewGridIcon,
     title: "Getting Started",
+    path: "/",
+  },
+  {
+    icon: ViewGridIcon,
+    title: "Getting Started",
     path: "/getting-started",
+    hidden: true,
   },
   {
     icon: BeakerIcon,
