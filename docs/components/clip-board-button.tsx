@@ -15,7 +15,7 @@ export function ClipBoardButton({ value = "", ...props }: ClipBoardButtonProps) 
   return(
     <IconButton variant="solid" onClick={setCopied} {...props}>
       {isCopied ? (
-        <Icon as={CheckIcon} className="w-5 h-5 text-teal-200" label="check" />
+        <Icon as={CheckIcon} className="w-5 h-5 text-primary-200" label="check" />
       ) : (
         <Icon as={DuplicateIcon} className="w-5 h-5" label="duplicate" />
       )}

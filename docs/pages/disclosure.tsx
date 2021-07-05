@@ -33,7 +33,7 @@ const demoList = [
               className={cx(
                 "w-5 h-5 rounded-full flex justify-center items-center text-primary-500 dark:text-primary-600",
                 open
-                  ? "bg-primary-50 dark:bg-teal-200 dark:bg-opacity-15"
+                  ? "bg-primary-50 dark:bg-primary-200 dark:bg-opacity-15"
                   : "bg-transparent"
               )}
             >
@@ -63,7 +63,7 @@ const demoList = [
               className={cx(
                 "w-5 h-5 rounded-full flex justify-center items-center text-primary-500 dark:text-primary-600",
                 open
-                  ? "bg-primary-50 dark:bg-teal-200 dark:bg-opacity-15"
+                  ? "bg-primary-50 dark:bg-primary-200 dark:bg-opacity-15"
                   : "bg-transparent"
               )}
             >
@@ -99,7 +99,7 @@ const demoList = [
           <Disclosure.Button
             className={cx(
               "flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base focus:outline-none",
-              "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-primary-200"
+              "bg-primary-50 text-primary-800 dark:bg-primary-200 dark:bg-opacity-15 dark:text-primary-200"
             )}
           >
             <span>What is Lorem Ipsum?</span>
@@ -125,7 +125,7 @@ const demoList = [
           <Disclosure.Button
             className={cx(
               "flex items-center justify-between w-full px-4 py-2 rounded-base cursor-base focus:outline-none",
-              "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-primary-200"
+              "bg-primary-50 text-primary-800 dark:bg-primary-200 dark:bg-opacity-15 dark:text-primary-200"
             )}
           >
             <span>Where does it come from?</span>

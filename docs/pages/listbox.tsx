@@ -232,7 +232,7 @@ const demoList = [
                           "flex items-center w-full px-4 pl-10 h-8 border-0 flex-shrink-0 text-sm text-left cursor-base font-normal focus:outline-none rounded-base",
                           active && "bg-neutral-100 dark:bg-neutral-700",
                           selected &&
-                            "bg-primary-50 text-primary-800 dark:bg-teal-200 dark:bg-opacity-15 dark:text-teal-200",
+                            "bg-primary-50 text-primary-800 dark:bg-primary-200 dark:bg-opacity-15 dark:text-primary-200",
                         )}
                       >
                         <span
