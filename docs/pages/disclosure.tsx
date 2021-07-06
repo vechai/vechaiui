@@ -39,6 +39,7 @@ const demoList = [
             >
               <Icon
                 as={ChevronUpIcon}
+                label="chevron-up"
                 className={cx("w-4 h-4", open ? "transform rotate-180" : "")}
               />
             </span>
@@ -69,6 +70,7 @@ const demoList = [
             >
               <Icon
                 as={ChevronUpIcon}
+                icon="chevron-up"
                 className={cx("w-4 h-4", open ? "transform rotate-180" : "")}
               />
             </span>
@@ -105,6 +107,7 @@ const demoList = [
             <span>What is Lorem Ipsum?</span>
             <Icon
               as={ChevronUpIcon}
+              label="chevron-up"
               className={cx(
                 "w-4 h-4",
                 open ? "transform rotate-180 text-primary-500" : ""
@@ -131,6 +134,7 @@ const demoList = [
             <span>Where does it come from?</span>
             <Icon
               as={ChevronUpIcon}
+              label="chevron-up"
               className={cx(
                 "w-4 h-4",
                 open ? "transform rotate-180 text-primary-500" : ""
@@ -168,6 +172,7 @@ const demoList = [
             <span>What is Lorem Ipsum?</span>
             <Icon
               as={ChevronUpIcon}
+              label="chevron-up"
               className={cx(
                 "w-4 h-4",
                 open ? "transform rotate-180 text-white" : ""
@@ -193,6 +198,7 @@ const demoList = [
             <span>Where does it come from?</span>
             <Icon
               as={ChevronUpIcon}
+              label="chevron-up"
               className={cx(
                 "w-4 h-4",
                 open ? "transform rotate-180 text-white" : ""
