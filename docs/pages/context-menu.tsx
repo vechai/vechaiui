@@ -31,7 +31,7 @@ const demoList = [
     </ContextMenu.Trigger>
     <ContextMenu.Content
       className={cx(
-        "z-40 w-56 py-1 rounded-md shadow-sm outline-none",
+        "z-40 w-56 min-w-max py-1 rounded-md shadow-sm outline-none",
         "bg-white border border-gray-200",
         "dark:bg-neutral-800 dark:border-gray-700"
       )}
@@ -44,8 +44,8 @@ const demoList = [
           "dark:focus:bg-neutral-700"
         )}
       >
-        <Icon as={ArrowsExpandIcon} className={cx("w-4 h-4 mr-2")} />
-        <span className="flex-1">Fullscreen</span>
+        <Icon as={ArrowsExpandIcon} label="arrows-expand" className="w-4 h-4 mr-2" />
+        <span className="flex-1 mr-2">Fullscreen</span>
         <Kbd>⌘F</Kbd>
       </ContextMenu.Item>
       <ContextMenu.Item
@@ -54,8 +54,8 @@ const demoList = [
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
-        <Icon as={DuplicateIcon} className={cx("w-4 h-4 mr-2")} />
-        <span className="flex-1">Copy</span>
+        <Icon as={DuplicateIcon} label="duplicate" className="w-4 h-4 mr-2" />
+        <span className="flex-1 mr-2">Copy</span>
         <Kbd>⌘⇧C</Kbd>
       </ContextMenu.Item>
       <ContextMenu.Item
@@ -64,8 +64,8 @@ const demoList = [
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
-        <Icon as={ShareIcon} className={cx("w-4 h-4 mr-2")} />
-        <span className="flex-1">Share</span>
+        <Icon as={ShareIcon} label="share" className="w-4 h-4 mr-2" />
+        <span className="flex-1 mr-2">Share</span>
       </ContextMenu.Item>
       <ContextMenu.Separator className="h-px my-1 bg-neutral-200 dark:bg-neutral-700" />
       <ContextMenu.Item
@@ -74,8 +74,8 @@ const demoList = [
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
-        <Icon as={CalendarIcon} className={cx("w-4 h-4 mr-2")} />
-        <span className="flex-1">Due Date</span>
+        <Icon as={CalendarIcon} label="calendar" className="w-4 h-4 mr-2" />
+        <span className="flex-1 mr-2">Due Date</span>
         <Kbd>⌘D</Kbd>
       </ContextMenu.Item>
 
@@ -86,13 +86,13 @@ const demoList = [
             "focus:bg-neutral-100 dark:focus:bg-neutral-700"
           )}
         >
-          <Icon as={TagIcon} className={cx("w-4 h-4 mr-2")} />
-          <span className="flex-1">Labels</span>
-          <Icon as={ChevronRightIcon} className={cx("w-3 h-3 ml-2")} />
+          <Icon as={TagIcon} label="tag" className="w-4 h-4 mr-2" />
+          <span className="flex-1 mr-2">Labels</span>
+          <Icon as={ChevronRightIcon} label="chevron-right" className="w-3 h-3 ml-2" />
         </ContextMenu.TriggerItem>
         <ContextMenu.Content
           className={cx(
-            "z-40 w-48 py-1 rounded-md shadow-sm outline-none",
+            "z-40 w-48 min-w-max py-1 rounded-md shadow-sm outline-none",
             "bg-white border border-gray-200",
             "dark:bg-neutral-800 dark:border-gray-700"
           )}
@@ -134,8 +134,8 @@ const demoList = [
           "focus:bg-neutral-100 dark:focus:bg-neutral-700"
         )}
       >
-        <Icon as={HashtagIcon} className={cx("w-4 h-4 mr-2")} />
-        <span className="flex-1">Unsubscribe</span>
+        <Icon as={HashtagIcon} label="hastag" className="w-4 h-4 mr-2" />
+        <span className="flex-1 mr-2">Unsubscribe</span>
         <Kbd>⌘⇧U</Kbd>
       </ContextMenu.Item>
     </ContextMenu.Content>
