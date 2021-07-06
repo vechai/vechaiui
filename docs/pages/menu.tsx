@@ -40,7 +40,7 @@ const demoList = [
     >
       <Menu.Items
         className={cx(
-          "absolute left-0 z-dropdown w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
+          "absolute left-0 z-dropdown w-56 min-w-max mt-2 origin-top-left rounded-md shadow-sm outline-none",
           "bg-white border border-gray-200",
           "dark:bg-neutral-800 dark:border-gray-700"
         )}
@@ -152,7 +152,7 @@ const demoList = [
     >
       <Menu.Items
         className={cx(
-          "absolute left-0 z-dropdown w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
+          "absolute left-0 z-dropdown w-56 min-w-max mt-2 origin-top-left rounded-md shadow-sm outline-none",
           "bg-white border border-gray-200",
           "dark:bg-neutral-800 dark:border-gray-700"
         )}
@@ -264,7 +264,7 @@ const demoList = [
     >
       <Menu.Items
         className={cx(
-          "absolute left-0 z-dropdown w-56 mt-2 origin-top-left rounded-md shadow-sm outline-none",
+          "absolute left-0 z-dropdown w-56 min-w-max mt-2 origin-top-left rounded-md shadow-sm outline-none",
           "bg-white border border-gray-200",
           "dark:bg-neutral-800 dark:border-gray-700"
         )}
@@ -284,9 +284,10 @@ const demoList = [
               >
                 <Icon
                   as={ArrowsExpandIcon}
+                  label="arrows-expand"
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
-                <span className="flex-1">Fullscreen</span>
+                <span className="flex-1 mr-2">Fullscreen</span>
                 <Kbd>⌘F</Kbd>
               </button>
             )}
@@ -305,9 +306,10 @@ const demoList = [
               >
                 <Icon
                   as={DuplicateIcon}
+                  label="duplicate"
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
-                <span className="flex-1">Copy</span>
+                <span className="flex-1 mr-2">Copy</span>
                 <Kbd>⌘⇧C</Kbd>
               </button>
             )}
@@ -326,6 +328,7 @@ const demoList = [
               >
                 <Icon
                   as={ShareIcon}
+                  label="share"
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
                 <span className="flex-1">Share</span>
@@ -350,9 +353,10 @@ const demoList = [
               >
                 <Icon
                   as={CalendarIcon}
+                  label="calendar"
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
-                <span className="flex-1">Due Date</span>
+                <span className="flex-1 mr-2">Due Date</span>
                 <Kbd>⌘D</Kbd>
               </button>
             )}
@@ -371,6 +375,7 @@ const demoList = [
               >
                 <Icon
                   as={TagIcon}
+                  label="tag"
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
                 <span className="flex-1">Priority</span>
@@ -391,9 +396,10 @@ const demoList = [
               >
                 <Icon
                   as={HashtagIcon}
+                  label="hastag"
                   className={cx("w-4 h-4 mr-2", active ? "" : "text-neutral-500")}
                 />
-                <span className="flex-1">Unsubscribe</span>
+                <span className="flex-1 mr-2">Unsubscribe</span>
                 <Kbd>⌘⇧U</Kbd>
               </button>
             )}
