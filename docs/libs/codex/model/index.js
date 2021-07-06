@@ -151,6 +151,11 @@ export default class Codex {
     this._onInput({ target: this.textarea });
   }
 
+  forceUpdate(value) {
+    this.textarea.value = value;
+    this._onInput({ target: this.textarea });
+  }
+
   select(from, to, length) {
     this.textarea.setSelectionRange(from, to || from + (length || 0));
   }

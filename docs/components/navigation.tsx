@@ -88,7 +88,7 @@ export function Navigation() {
               </button>
             </div>
           )}
-          <div className="flex flex-col h-full overflow-y-scroll">
+          <div className="flex flex-col h-full overflow-y-auto">
             <div className="space-y-4">
               <ThemSwitcher />
               <div className="grid grid-cols-2 gap-2 dark">
