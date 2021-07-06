@@ -31,7 +31,7 @@ export default class Editor extends React.Component {
 
     this._editor.on("change", this.handleChange);
     this._editor.on("scroll", this.syncScroll);
-    this.hydrate();
+    this.hydrate(true);
   }
 
   componentDidUpdate(prev) {
@@ -59,6 +59,7 @@ export default class Editor extends React.Component {
 
   initEditor = () => {
     if (this._input.current) {
+      this._input.current.blur();
       this._editor = fromTextarea(this._input.current);
       this.handleOptions();
     }
@@ -86,12 +87,17 @@ export default class Editor extends React.Component {
     });
   };
 
-  hydrate = () => {
+  hydrate = (init) => {
     const editorVal = this._editor.getValue();
     if (this.props.value !== editorVal) {
-      this._editor.edit((editBuilder) => {
-        editBuilder.replace(this.props.value, 0, editorVal.length);
-      });
+      if (init) {
+        this._editor.forceUpdate(this.props.value);
+      } else {
+        this._editor.edit((editBuilder) => {
+          editBuilder.replace(this.props.value, 0, editorVal.length);
+        });
+      }
+      
       this.setState({
         highlighted: this.props.highlight({
           code: this.props.value,
@@ -159,6 +165,7 @@ export default class Editor extends React.Component {
           autoCapitalize="off"
           autoComplete="off"
           autoCorrect="off"
+          autoFocus={false}
           spellCheck={false}
           data-gramm={false}
           readOnly={readOnly}
