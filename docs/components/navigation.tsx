@@ -88,7 +88,7 @@ export function Navigation() {
               </button>
             </div>
           )}
-          <div className="flex flex-col h-full overflow-y-auto">
+          <div className="flex flex-col h-full overflow-hidden">
             <div className="space-y-4">
               <ThemSwitcher />
               <div className="grid grid-cols-2 gap-2 dark">
@@ -107,7 +107,7 @@ export function Navigation() {
                   </Button>
                 </a>
                 <a
-                  href="https://github.com/vechai/vechaiui"
+                  href="https://twitter.com/vechaiui"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -141,6 +141,7 @@ export function Navigation() {
                                 )
                               : "hover:text-white"
                           )}
+                          onClick={() => slideMode && setOpen(false)}
                         >
                           <Icon as={link.icon || undefined} label="" className="w-5 h-5 mr-2 text-primary-500" />
                           <span>{link.title}</span>
@@ -165,6 +166,7 @@ export function Navigation() {
                               "relative flex items-center w-full px-2 py-1 bg-transparent border-0 rounded cursor-base text-sm",
                               active ? "text-primary-500" : "hover:text-white"
                             )}
+                            onClick={() => slideMode && setOpen(false)}
                           >
                             <span>{c.title}</span>
                           </a>
