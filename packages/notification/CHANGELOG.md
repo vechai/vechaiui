@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8](https://github.com/vechai/vechaiui/compare/@vechaiui/notification@0.1.7...@vechaiui/notification@0.1.8) (2021-07-07)
+
+
+### Bug Fixes
+
+* **notification & message:** icon ([5783822](https://github.com/vechai/vechaiui/commit/5783822320792e79501377cb4fb7f1f200f977ea))
+
+
+
+
+
 ## [0.1.7](https://github.com/vechai/vechaiui/compare/@vechaiui/notification@0.1.6...@vechaiui/notification@0.1.7) (2021-07-07)
 
 **Note:** Version bump only for package @vechaiui/notification

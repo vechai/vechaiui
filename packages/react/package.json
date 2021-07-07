@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/react",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -52,8 +52,8 @@
     "@vechaiui/image": "0.1.6",
     "@vechaiui/kbd": "0.1.5",
     "@vechaiui/link": "0.1.5",
-    "@vechaiui/message": "0.1.6",
-    "@vechaiui/notification": "0.1.7",
+    "@vechaiui/message": "0.1.7",
+    "@vechaiui/notification": "0.1.8",
     "@vechaiui/radio": "0.1.6",
     "@vechaiui/spinner": "0.1.5",
     "@vechaiui/switch": "0.1.6",
