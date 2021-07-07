@@ -10,12 +10,20 @@ import { cx as clsx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
 
 const statuses = {
-  info: { icon: InfoIcon, cx: "message-icon-info", label: "info" },
-  success: { icon: XCricleIcon, cx: "message-icon-success", label: "x-circle" },
-  error: {
+  info: {
+    icon: InfoIcon,
+    cx: "message-icon-info",
+    label: "info"
+  },
+  success: {
     icon: CheckCircleIcon,
+    cx: "message-icon-success",
+    label: "check-circle"
+  },
+  error: {
+    icon: XCricleIcon,
     cx: "message-icon-error",
-    label: "check-circle",
+    label: "x-circle"
   },
   warning: {
     icon: ExclamationIcon,
@@ -32,7 +40,7 @@ type OmittedTypes =
   | "undoText"
   | "description";
 
-export interface MessageProps extends Omit<useToastOptions, OmittedTypes> {}
+export interface MessageProps extends Omit<useToastOptions, OmittedTypes> { }
 
 const Message = React.forwardRef<HTMLDivElement, MessageProps>(
   ({ message, className, icon: customIcon, status = "" }, ref) => {
