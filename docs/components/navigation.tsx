@@ -124,7 +124,7 @@ export function Navigation() {
               </div>
             </div>
             <div className="flex flex-col flex-1 px-2 py-4 overflow-auto">
-              <div className="flex flex-col mb-6 space-y-1">
+              <div className="mb-6 space-y-1">
                 {mainNavigation.map((link, idx) => {
                   if (link.hidden) return null;
 
