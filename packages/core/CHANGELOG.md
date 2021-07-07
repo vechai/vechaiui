@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.7](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.6...@vechaiui/core@0.3.7) (2021-07-07)
+
+
+### Bug Fixes
+
+* **core:** hide build function ([914d431](https://github.com/vechai/vechaiui/commit/914d4314bd32cdab623c25f65b6bf0e86cf308bb))
+
+
+
+
+
 ## [0.3.6](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.5...@vechaiui/core@0.3.6) (2021-07-04)
 
 

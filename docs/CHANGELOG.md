@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.1...@vechaiui/docs@0.6.2) (2021-07-07)
+
+
+### Bug Fixes
+
+* **docs:** add icon label for example component ([60f700e](https://github.com/vechai/vechaiui/commit/60f700e93082d491ef8aacd7ca0159288db84ad8))
+* **docs:** change teal to primary color ([a5435eb](https://github.com/vechai/vechaiui/commit/a5435ebe05c8e91e9edfff68c6c93e83f1d27f05))
+* **docs:** clip board button position ([db16b2c](https://github.com/vechai/vechaiui/commit/db16b2c05162558f2f4910180cdb9d4589de9b9f))
+* **docs:** code-block auto select text in safari ([690afe9](https://github.com/vechai/vechaiui/commit/690afe9f4aef8f664360741d5011d8255d171e32))
+* **docs:** menu item with long text ([66853fb](https://github.com/vechai/vechaiui/commit/66853fb2814a116ca1295499254ce320b6d8a1bd))
+* **docs:** move getting-started to index ([54e88c9](https://github.com/vechai/vechaiui/commit/54e88c992c2c171aafcd2bedf04ee1acb42ff732))
+* **docs:** side navgation ([c65d4d7](https://github.com/vechai/vechaiui/commit/c65d4d74519bbd96428a7e85292ab373f309d09b))
+
+
+
+
+
 ## [0.6.1](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.0...@vechaiui/docs@0.6.1) (2021-07-04)
 
 

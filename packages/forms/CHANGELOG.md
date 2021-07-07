@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/vechai/vechaiui/compare/@vechaiui/forms@0.1.5...@vechaiui/forms@0.1.6) (2021-07-07)
+
+
+### Bug Fixes
+
+* **docs:** responsive ([42c1592](https://github.com/vechai/vechaiui/commit/42c1592df6b0cf45c55d18885b6a9f22d50c722f))
+
+
+
+
+
 ## [0.1.5](https://github.com/vechai/vechaiui/compare/@vechaiui/forms@0.1.4...@vechaiui/forms@0.1.5) (2021-07-02)
 
 **Note:** Version bump only for package @vechaiui/forms
