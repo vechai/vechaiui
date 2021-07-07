@@ -26,13 +26,16 @@ Breadcrumb.Item = BreadcrumbItem;
 Breadcrumb.Link = BreadcrumbLink;
 Breadcrumb.Separator = BreadcrumbSeparator;
 
+export type {
+  BreadcrumbProps,
+  BreadcrumbItemProps,
+  BreadcrumbLinkProps,
+  BreadcrumbSeparatorProps,
+};
+
 export {
   Breadcrumb,
-  BreadcrumbProps,
   BreadcrumbItem,
-  BreadcrumbItemProps,
   BreadcrumbLink,
-  BreadcrumbLinkProps,
   BreadcrumbSeparator,
-  BreadcrumbSeparatorProps,
 };

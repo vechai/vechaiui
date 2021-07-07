@@ -18,4 +18,6 @@ const Alert = InternalAlert as Alert;
 
 Alert.CloseButton = AlertCloseButton;
 
-export { Alert, AlertProps, AlertCloseButton, AlertCloseButtonProps };
+export type { AlertProps, AlertCloseButtonProps };
+
+export { Alert, AlertCloseButton };

@@ -22,11 +22,6 @@ const Tag = InternalTag as Tag;
 Tag.CloseButton = TagCloseButton;
 Tag.Label = TagLabel;
 
-export {
-  Tag,
-  TagProps,
-  TagLabel,
-  TagLabelProps,
-  TagCloseButton,
-  TagCloseButtonProps,
-};
+export type { TagProps, TagLabelProps, TagCloseButtonProps };
+
+export { Tag, TagLabel, TagCloseButton };

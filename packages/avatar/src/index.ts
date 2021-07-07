@@ -14,9 +14,7 @@ const Avatar = InternalAvatar as Avatar;
 
 Avatar.Group = AvatarGroup;
 
-export {
-  Avatar,
-  AvatarProps,
-  AvatarGroup,
-  AvatarGroupProps,
-};
+export type { AvatarProps };
+export type { AvatarGroupProps };
+
+export { Avatar, AvatarGroup };

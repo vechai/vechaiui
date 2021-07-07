@@ -34,10 +34,6 @@ Input.RightAddon = InputRightAddon;
 Input.LeftElement = InputLeftElement;
 Input.RightElement = InputRightElement;
 
-export {
-  Input,
-  InputProps,
-  InputGroupProps,
-  InputAddonProps,
-  InputElementProps,
-};
+export type { InputProps, InputGroupProps, InputAddonProps, InputElementProps }
+
+export { Input };
