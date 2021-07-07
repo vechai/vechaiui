@@ -14,4 +14,6 @@ const Checkbox = InternalCheckbox as Checkbox;
 
 Checkbox.Group = CheckboxGroup;
 
-export { Checkbox, CheckboxProps, CheckboxGroup, CheckboxGroupProps };
+export type { CheckboxProps, CheckboxGroupProps };
+
+export { Checkbox, CheckboxGroup };

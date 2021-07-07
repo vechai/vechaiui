@@ -14,4 +14,6 @@ const Button = InternalButton as Button;
 
 Button.Group = ButtonGroup;
 
-export { Button, IconButton, ButtonProps, ButtonGroupProps, IconButtonProps };
+export type { ButtonProps, ButtonGroupProps, IconButtonProps };
+
+export { Button, ButtonGroup, IconButton };

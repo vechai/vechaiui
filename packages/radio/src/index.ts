@@ -14,4 +14,6 @@ const Radio = InternalRadio as Radio;
 
 Radio.Group = RadioGroup;
 
-export { Radio, RadioProps, RadioGroup, RadioGroupProps };
+export type { RadioProps, RadioGroupProps };
+
+export { Radio, RadioGroup };
