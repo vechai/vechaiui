@@ -65,7 +65,7 @@ const demoList = [
       {
         name: "textarea.tsx",
         code: `<div className="flex flex-wrap w-full p-8 space-x-4">
-  <Textarea invalid placeholder="jon@gmail.com" />;
+  <Textarea invalid placeholder="jon@gmail.com" />
 </div>`,
         readOnly: false,
       },
