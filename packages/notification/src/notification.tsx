@@ -12,12 +12,20 @@ import { cx as clsx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
 
 const statuses = {
-  info: { icon: InfoIcon, cx: "notification-icon-info", label: "info" },
-  success: { icon: XCricleIcon, cx: "notification-icon-success", label: "x-circle" },
-  error: {
+  info: {
+    icon: InfoIcon,
+    cx: "notification-icon-info",
+    label: "info"
+  },
+  success: {
     icon: CheckCircleIcon,
-    cx: "notification-icon-error",
+    cx: "notification-icon-success",
     label: "check-circle",
+  },
+  error: {
+    icon: XCricleIcon,
+    cx: "notification-icon-error",
+    label: "x-circle"
   },
   warning: {
     icon: ExclamationIcon,
@@ -29,7 +37,7 @@ const statuses = {
 type OmittedTypes = "message";
 
 export interface NotificationProps
-  extends Omit<useToastOptions, OmittedTypes> {}
+  extends Omit<useToastOptions, OmittedTypes> { }
 
 const Notification = React.forwardRef<HTMLDivElement, NotificationProps>(
   (props, ref) => {
