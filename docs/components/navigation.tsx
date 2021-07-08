@@ -57,7 +57,7 @@ export function Navigation() {
       <Transition.Root show={open} as={React.Fragment}>
         <div
           className={cx(
-            "fixed inset-y-0 left-0 z-30 w-64 px-3 py-5 lg:block text-neutral-400 bg-neutral-900 lg:static"
+            "fixed inset-y-0 left-0 z-30 w-64 px-3 py-5 lg:block text-neutral-400 bg-neutral-900 lg:static h-full"
           )}
           aria-labelledby="slide-over-title"
           role="dialog"
