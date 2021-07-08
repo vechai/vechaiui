@@ -23,20 +23,20 @@ Vechai UI can be configed in `tailwind.config.js`:
 ```js
 // tailwind.config.js
 module.exports = {
+  mode: "jit",
+  purge: [
+    "./node_modules/@vechaiui/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
-    mode: "jit",
-    purge: [
-      //
-      "./node_modules/@vechaiui/**/*.{js,ts,jsx,tsx}", // path to vechaiui
-    ],
-    darkMode: "class",
-    // ...
+    extend: {},
   },
-  // add VechaiUI plugin
+  variants: {
+    extend: {},
+  },
   plugins: [
     require("@tailwindcss/forms"),
     require("@vechaiui/core"),
-    // ...
   ],
 };
 ```
