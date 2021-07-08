@@ -6,6 +6,7 @@ export type NavigationContextType = {
   open: boolean;
   slideMode: boolean;
   setOpen: (open: boolean) => void;
+  navRef: React.RefObject<HTMLElement | any>;
 };
 
 export const NavigationContext = React.createContext<
@@ -13,13 +14,28 @@ export const NavigationContext = React.createContext<
 >(undefined);
 
 export default function AppProvider({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
   const [open, setOpen] = React.useState(false);
   const [largeScreen, setLargeScreen] = React.useState(false);
   const prevOpen = React.useRef(open);
+  const navRef = React.useRef<HTMLElement>();
+
+  // close nav on click outside when viewport is less than 1024px
+  React.useEffect(() => {
+    function handleOutsideClick(e: any) {
+      if (window.innerWidth < 1024) {
+        if (!navRef.current?.contains(e.target)) {
+          if (!open) return;
+          setOpen(false);
+        }
+      }
+    }
+    window.addEventListener("click", handleOutsideClick);
+    return () => window.removeEventListener("click", handleOutsideClick);
+  }, [open, navRef]);
 
   React.useEffect(() => {
     function handleResize(e: any) {
@@ -28,12 +44,9 @@ export default function AppProvider({
       let open = false;
 
       if (first) {
-        if (large) open = false;
-        else open = true;
+        open = !large;
       } else {
-        if (large && !prevOpen.current) {
-          open = false;
-        } else open = true;
+        open = !(large && !prevOpen.current);
       }
       setLargeScreen(large);
       setOpen(open);
@@ -59,6 +72,7 @@ export default function AppProvider({
       open,
       slideMode: open && largeScreen,
       setOpen,
+      navRef
     }),
     [open, largeScreen, setOpen]
   );
