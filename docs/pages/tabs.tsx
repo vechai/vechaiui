@@ -1,5 +1,6 @@
 import DocumentBuilder from "@components/document-builder";
 import SEO from "@components/seo";
+import { tabsEndClosedTWFile } from "@utils/tw";
 
 const propList = [
   {
@@ -243,6 +244,7 @@ const demoList = [
 }`,
         readOnly: false,
       },
+      tabsEndClosedTWFile,
     ],
   },
   {
@@ -325,6 +327,7 @@ const demoList = [
 }`,
         readOnly: false,
       },
+      tabsEndClosedTWFile,
     ],
   },
   {
