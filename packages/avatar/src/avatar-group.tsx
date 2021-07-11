@@ -10,7 +10,7 @@ interface IAvatarGroupProps extends DefaultProps {
    */
   children: React.ReactNode;
   /**
-   * The maximum number of visible avatars
+   * The maximum number of visible avatars.
    */
   max?: number;
   /* Set all wrapped avatar size */
