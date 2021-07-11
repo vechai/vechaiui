@@ -274,7 +274,8 @@ const demoList = [
 
 const listboxComponent = {
   name: "Listbox",
-  importer: `import { Listbox } from "@headlessui/react"`,
+  importer: `import { Listbox, Transition } from "@headlessui/react";
+import { cx } from "@vechaiui/react";`,
   demoList,
   propList,
 };

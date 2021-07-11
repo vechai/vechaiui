@@ -193,7 +193,8 @@ const demoList = [
 
 const dialogComponent = {
   name: "Dialog",
-  importer: `import { Dialog } from "@headlessui/react"`,
+  importer: `import { Dialog, Transition } from "@headlessui/react";
+import { cx } from "@vechaiui/react";`,
   demoList,
   propList,
 };

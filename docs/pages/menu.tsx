@@ -418,7 +418,8 @@ const demoList = [
 
 const menuComponent = {
   name: "Menu",
-  importer: `import { Menu, Transition } from "@headlessui/react";`,
+  importer: `import { Menu, Transition } from "@headlessui/react";
+import { cx } from "@vechaiui/react";`,
   demoList,
   propList,
 };

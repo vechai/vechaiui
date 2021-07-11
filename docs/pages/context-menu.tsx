@@ -150,7 +150,8 @@ const demoList = [
 
 const contextComponent = {
   name: "ContextMenu",
-  importer: `import * as ContextMenu from "@radix-ui/react-context-menu";`,
+  importer: `import * as ContextMenu from "@radix-ui/react-context-menu";
+import { cx } from "@vechaiui/react";`,
   demoList,
   propList,
 };

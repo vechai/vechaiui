@@ -194,7 +194,7 @@ const demoList = [
 
 const radioGroupComponent = {
   name: "RadioGroup",
-  importer: `import { RadioGroup } from "@headlessui/react"`,
+  importer: `import { RadioGroup } from "@headlessui/react";`,
   demoList,
   propList,
 };

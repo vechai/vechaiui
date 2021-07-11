@@ -362,9 +362,7 @@ const demoList = [
       <Tabs.Root className="flex flex-col" defaultValue="tab1">
         <Tabs.List
           aria-label="tabs example"
-          className={cx(
-            "flex flex-row justify-start",
-          )}
+          className="flex flex-row justify-start"
         >
           {tabs.map((tab) => (
             <Tabs.Trigger
@@ -407,7 +405,8 @@ const demoList = [
 
 const tabsComponent = {
   name: "Tabs",
-  importer: `import * as Tabs from "@radix-ui/react-tooltip";`,
+  importer: `import * as Tabs from "@radix-ui/react-tabs";
+import { cx } from "@vechaiui/react";`,
   demoList,
   propList,
 };
