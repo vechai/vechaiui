@@ -222,7 +222,8 @@ const demoList = [
 
 const disclosureComponent = {
   name: "Disclosure",
-  importer: `import { Disclosure } from "@headlessui/react"`,
+  importer: `import { Disclosure } from "@headlessui/react";
+import { cx } from "@vechaiui/react";`,
   demoList,
   propList,
 };
