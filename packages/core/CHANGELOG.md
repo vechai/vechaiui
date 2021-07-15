@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.7...@vechaiui/core@0.4.0) (2021-07-15)
+
+
+### Features
+
+* **input:** add solid input variany ([6e88a2d](https://github.com/vechai/vechaiui/commit/6e88a2d86f46580b063d8807875d1ca462d7097a))
+
+
+
+
+
 ## [0.3.7](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.6...@vechaiui/core@0.3.7) (2021-07-07)
 
 

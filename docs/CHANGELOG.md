@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.4](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.3...@vechaiui/docs@0.6.4) (2021-07-15)
+
+
+### Bug Fixes
+
+* **docs:** missing border color config ([0141571](https://github.com/vechai/vechaiui/commit/0141571d396c0a7a422263b979a74e7e8555676e))
+* **docs:** missing cx function in import section ([ea22127](https://github.com/vechai/vechaiui/commit/ea221279328e0f96fbeefb908a772bf09dfb0140))
+* **docs:** overflow side nagivation ([7a6b5e3](https://github.com/vechai/vechaiui/commit/7a6b5e3f6021c6140cea10eba3b489ba224045ba))
+* **docs:** tailwind config ([5cee9be](https://github.com/vechai/vechaiui/commit/5cee9be973ee373f6ac0b88e2a000431bd26b735))
+
+
+
+
+
 ## [0.6.3](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.2...@vechaiui/docs@0.6.3) (2021-07-07)
 
 **Note:** Version bump only for package @vechaiui/docs

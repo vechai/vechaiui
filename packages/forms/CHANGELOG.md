@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/vechai/vechaiui/compare/@vechaiui/forms@0.1.6...@vechaiui/forms@0.2.0) (2021-07-15)
+
+
+### Features
+
+* **input:** add solid input variany ([6e88a2d](https://github.com/vechai/vechaiui/commit/6e88a2d86f46580b063d8807875d1ca462d7097a))
+
+
+
+
+
 ## [0.1.6](https://github.com/vechai/vechaiui/compare/@vechaiui/forms@0.1.5...@vechaiui/forms@0.1.6) (2021-07-07)
 
 
