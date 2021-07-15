@@ -19,7 +19,7 @@ export interface IInputProps<T = HTMLInputElement> extends DefaultProps {
   /* Size of the input */
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   /** Controls input appearance */
-  variant?: "outline" | "unstyled";
+  variant?: "outline" | "solid";
   /**
    * The element or component to use in place of `input`
    */

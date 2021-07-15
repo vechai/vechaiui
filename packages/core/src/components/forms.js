@@ -5,7 +5,6 @@ function fieldOutline(colors) {
       "@apply text-neutral-900 bg-white": {},
       "@apply hover:border-neutral-300": {},
       "&[aria-invalid=true]": {
-        // "@apply border-red-600 ring-1 ring-red-600": {},
         "--tw-border-opacity": "1",
         borderColor: "rgba(220, 38, 38, var(--tw-border-opacity))",
         "--tw-ring-offset-shadow":
@@ -23,7 +22,6 @@ function fieldOutline(colors) {
       "@apply dark:text-neutral-100 dark:bg-base": {},
       "@apply dark:hover:border-neutral-600": {},
       ".dark &[aria-invalid=true]": {
-        // "@apply dark:border-red-400 dark:ring-red-400": {},
         "--tw-border-opacity": "1",
         borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
         "--tw-ring-opacity": "1",
@@ -43,7 +41,59 @@ function fieldOutline(colors) {
           ...styles,
           [`&[data-color="${color}"]`]: {
             [`@apply focus:border-${color}-600 focus:ring-${color}-600`]: {},
-            [`@apply dark:focus:border-${color}-400 dark:focus:ring-${color}-400`]: {},
+            [`@apply dark:focus:border-${color}-300 dark:focus:ring-${color}-300`]: {},
+          },
+        }),
+        {}
+      ),
+    },
+  };
+}
+
+function fieldSolid(colors) {
+  return {
+    "&-solid": {
+      "@apply border border-transparent": {},
+      "@apply text-neutral-900 bg-gray-100": {},
+      "@apply hover:bg-gray-200": {},
+      "&[aria-invalid=true]": {
+        "--tw-border-opacity": "1",
+        borderColor: "rgba(220, 38, 38, var(--tw-border-opacity))",
+        "--tw-ring-offset-shadow":
+          "var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)",
+        "--tw-ring-shadow":
+          "var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)",
+        boxShadow:
+          "var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)",
+        "--tw-ring-opacity": "1",
+        "--tw-ring-color": "rgba(220, 38, 38, var(--tw-ring-opacity))",
+      },
+      "focus:ring-1": {},
+      /* dark mode */
+      // "@apply dark:border-whiteAlpha-50": {},
+      "@apply dark:text-neutral-100 dark:bg-whiteAlpha-50": {},
+      "@apply dark:hover:bg-whiteAlpha-100": {},
+      ".dark &[aria-invalid=true]": {
+        "--tw-border-opacity": "1",
+        borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
+        "--tw-ring-opacity": "1",
+        "--tw-ring-color": "rgba(248, 113, 113, var(--tw-ring-opacity))",
+      },
+      "@media (prefers-color-scheme: dark)": {
+        "&[aria-invalid=true]": {
+          "--tw-border-opacity": "1",
+          borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
+          "--tw-ring-opacity": "1",
+          "--tw-ring-color": "rgba(248, 113, 113, var(--tw-ring-opacity))",
+        },
+      },
+
+      ...colors.reduce(
+        (styles, color) => ({
+          ...styles,
+          [`&[data-color="${color}"]`]: {
+            [`@apply focus:border-${color}-600 focus:ring-${color}-600`]: {},
+            [`@apply dark:focus:border-${color}-300 dark:focus:ring-${color}-300`]: {},
           },
         }),
         {}
@@ -142,6 +192,7 @@ function formInputGroup() {
 module.exports = Forms = (colors) => ({
   ".form-field": {
     "@apply relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
+    "@apply transition-colors	duration-75 ease-out": {},
 
     "&-xs": {
       "@apply h-6 px-2 py-0 text-xs rounded-base": {},
@@ -171,6 +222,7 @@ module.exports = Forms = (colors) => ({
 
     // variants
     ...fieldOutline(colors),
+    ...fieldSolid(colors),
   },
 
   ".form-textarea": {

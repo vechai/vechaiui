@@ -12,8 +12,7 @@ module.exports = Checkbox = (colors) => ({
       "border-color": "rgba(220, 38, 38, var(--tw-border-opacity))",
     },
     // dark colors
-    "@apply dark:border-neutral-700": {},
-    "@apply dark:hover:border-neutral-600": {},
+    "@apply dark:border-neutral-500 dark:hover:border-neutral-400": {},
     ".dark &[aria-invalid=true]": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(248, 113, 113, var(--tw-border-opacity))",
@@ -42,7 +41,7 @@ module.exports = Checkbox = (colors) => ({
           [`@apply text-${color}-600`]: {},
           [`@apply focus:border-${color}-600 focus:ring-${color}-600`]: {},
           [`@apply dark:text-${color}-500`]: {},
-          [`@apply dark:focus:border-${color}-500 dark:focus:ring-${color}-500`]: {},
+          [`@apply dark:focus:border-${color}-400 dark:focus:ring-${color}-400`]: {},
         },
       }),
       {}
