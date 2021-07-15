@@ -21,9 +21,9 @@ const inputPropTypes = [
   },
   {
     property: "variant",
-    type: ["outline"],
+    type: ["outline", "solid"],
     default: "outline",
-    values: ["outline"],
+    values: ["outline", "solid"],
     description: "Controls input appearance",
   },
   {
@@ -87,6 +87,19 @@ const demoList = [
         code: `<div className="flex flex-col w-full p-8 space-y-4">
   <Input placeholder="jon@gmail.com" />
   <Input disabled placeholder="jon@gmail.com" />
+</div>`,
+        readOnly: false,
+      },
+    ],
+  },
+  {
+    name: "Variants",
+    files: [
+      {
+        name: "input.tsx",
+        code: `<div className="flex flex-col w-full p-8 space-y-4">
+  <Input placeholder="jon@gmail.com" />
+  <Input placeholder="jon@gmail.com" variant="solid" />
 </div>`,
         readOnly: false,
       },
