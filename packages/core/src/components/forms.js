@@ -70,7 +70,6 @@ function fieldSolid(colors) {
       },
       "focus:ring-1": {},
       /* dark mode */
-      // "@apply dark:border-whiteAlpha-50": {},
       "@apply dark:text-neutral-100 dark:bg-whiteAlpha-50": {},
       "@apply dark:hover:bg-whiteAlpha-100": {},
       ".dark &[aria-invalid=true]": {
