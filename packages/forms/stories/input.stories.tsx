@@ -11,11 +11,30 @@ export default {
 
 export const basic = () => <Input placeholder="jon@gmail.com" />;
 
-export const disabled = () => <Input disabled placeholder="jon@gmail.com" />;
+export const colored = () => (
+  <Input color="orange" placeholder="jon@gmail.com" />
+);
 
-export const invalid = () => <Input invalid placeholder="jon@gmail.com" />;
+export const disabled = () => (
+  <div className="flex space-x-2">
+    <Input placeholder="jon@gmail.com" disabled />
+    <Input placeholder="jon@gmail.com" disabled variant="solid" />
+  </div>
+);
 
-export const colored = () => <Input color="orange" placeholder="jon@gmail.com" />;
+export const invalid = () => (
+  <div className="flex space-x-2">
+    <Input placeholder="jon@gmail.com" invalid />
+    <Input placeholder="jon@gmail.com" invalid variant="solid" />
+  </div>
+);
+
+export const variant = () => (
+  <div className="flex space-x-2">
+    <Input placeholder="jon@gmail.com" />
+    <Input placeholder="jon@gmail.com" variant="solid" />
+  </div>
+);
 
 export const size = () => (
   <div className="flex space-x-2">

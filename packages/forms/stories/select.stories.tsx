@@ -40,6 +40,22 @@ export const colored = () => (
   </Select>
 );
 
+export const variant = () => (
+  <div className="flex space-x-2">
+    <Select placeholder="Outline">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
+
+    <Select placeholder="Outline" variant="solid">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
+  </div>
+);
+
 export const size = () => (
   <div className="flex space-x-2">
     <Select placeholder="Outline" size="xs">

@@ -4,6 +4,7 @@ import { cx } from "@vechaiui/utils";
 export const useInputClass = createMemoClass((props) => {
   const variantClasses = {
     outline: "form-field-outline",
+    solid: "form-field-solid",
   };
 
   const sizes = {

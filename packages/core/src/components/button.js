@@ -242,6 +242,7 @@ module.exports = Button = (colors) => ({
     "@apply font-medium leading-tight": {},
     transitionProperty:
       "background-color, border-color, color, fill, stroke, box-shadow",
+    "@apply	duration-75 ease-out": {},
     "@apply outline-none appearance-none cursor-base select-none whitespace-nowrap": {},
     "@apply focus:outline-none": {},
 
