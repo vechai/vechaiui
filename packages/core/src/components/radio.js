@@ -4,7 +4,6 @@ module.exports = Radio = (colors) => ({
     backgroundColor: "inherit",
     "@apply border-neutral-300 hover:border-neutral-300": {},
     "&[aria-invalid=true]": {
-      // "@apply border-red-600 hover:border-red-600": {},
       "--tw-border-opacity": "1",
       "borderColor": "rgba(220, 38, 38, var(--tw-border-opacity))",
     },
@@ -15,7 +14,6 @@ module.exports = Radio = (colors) => ({
     // dark colors
     "@apply dark:border-neutral-500 dark:hover:border-neutral-400": {},
     ".dark &[aria-invalid=true]": {
-      // "@apply dark:border-red-400 dark:hover:border-red-400": {},
       "--tw-border-opacity": "1",
       "borderColor": "rgba(248, 113, 113, var(--tw-border-opacity))",
     },
@@ -26,7 +24,6 @@ module.exports = Radio = (colors) => ({
 
     "@media (prefers-color-scheme: dark)": {
       "&[aria-invalid=true]": {
-        // "@apply border-red-600 hover:border-red-600": {},
         "--tw-border-opacity": "1",
         "borderColor": "rgba(220, 38, 38, var(--tw-border-opacity))",
       },
