@@ -207,11 +207,11 @@ const demoList = [
   <Button
     variant="solid"
     color="primary"
-    leftIcon={<GiftIcon className="w-4 h-4 mr-1 text-sm" />}
+    leftIcon={<Icon as={GiftIcon} label="gift" className="w-4 h-4 mr-1" />}
   >
     Button
   </Button>
-  <Button color="primary" rightIcon={<GiftIcon className="w-4 h-4 ml-1 text-sm" />}>
+  <Button color="primary" rightIcon={<Icon as={GiftIcon} label="gift" className="w-4 h-4 ml-1" />}>
     Button
   </Button>
 </div>`,

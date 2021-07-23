@@ -52,7 +52,7 @@ const demoList = [
     ],
   },
   {
-    name: "Adding icon",
+    name: "Adding color",
     files: [
       {
         name: "alert.tsx",
