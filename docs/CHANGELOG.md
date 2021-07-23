@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.4...@vechaiui/docs@0.7.0) (2021-07-23)
+
+
+### Bug Fixes
+
+* **docs:** use Icon component instead of svg icon ([e7c0d21](https://github.com/vechai/vechaiui/commit/e7c0d21d2999338a4e621bdd7d0e80e2ca7ab725))
+
+
+### Features
+
+* **docs:** add input variant ([7c5ce08](https://github.com/vechai/vechaiui/commit/7c5ce08a83c2df3b30f0322a4fd2505b1e704b7e))
+
+
+
+
+
 ## [0.6.4](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.3...@vechaiui/docs@0.6.4) (2021-07-15)
 
 

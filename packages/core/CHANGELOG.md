@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.4.0...@vechaiui/core@0.4.1) (2021-07-23)
+
+
+### Bug Fixes
+
+* **kbd:** background color ([fd20bd9](https://github.com/vechai/vechaiui/commit/fd20bd9bfd34627bc8281bb13d8c39e239c9cb59))
+
+
+
+
+
 # [0.4.0](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.3.7...@vechaiui/core@0.4.0) (2021-07-15)
 
 
