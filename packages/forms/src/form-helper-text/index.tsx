@@ -7,7 +7,7 @@ interface IFormHelperTextProps extends DefaultProps {
 }
 
 export interface FormHelperTextProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends React.HTMLAttributes<HTMLParagraphElement>,
     IFormHelperTextProps {}
 
 export const FormHelperText = React.forwardRef<
