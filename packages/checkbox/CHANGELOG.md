@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.6](https://github.com/vechai/vechaiui/compare/@vechaiui/checkbox@0.2.5...@vechaiui/checkbox@0.2.6) (2021-08-01)
+
+**Note:** Version bump only for package @vechaiui/checkbox
+
+
+
+
+
 ## [0.2.5](https://github.com/vechai/vechaiui/compare/@vechaiui/checkbox@0.2.4...@vechaiui/checkbox@0.2.5) (2021-07-15)
 
 **Note:** Version bump only for package @vechaiui/checkbox

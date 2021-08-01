@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.7.0...@vechaiui/docs@0.8.0) (2021-08-01)
+
+
+### Features
+
+* **docs:** example form-control using react hook form ([0b2cb36](https://github.com/vechai/vechaiui/commit/0b2cb367f4ce39f2e33dc1b26d5e234e9e1e76cd))
+
+
+
+
+
 # [0.7.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.6.4...@vechaiui/docs@0.7.0) (2021-07-23)
 
 

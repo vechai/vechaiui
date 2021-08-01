@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/vechai/vechaiui/compare/@vechaiui/forms@0.2.0...@vechaiui/forms@0.3.0) (2021-08-01)
+
+
+### Features
+
+* **form-control:** add form-error-message & required-indicator ([9b05d19](https://github.com/vechai/vechaiui/commit/9b05d1910375e8fc9df66891e43bbd8a74f5d30c))
+* **form-control:** id prop ([f0c469b](https://github.com/vechai/vechaiui/commit/f0c469b404ff449c76a9e11705bc4cbb7e1d92d1))
+
+
+
+
+
 # [0.2.0](https://github.com/vechai/vechaiui/compare/@vechaiui/forms@0.1.6...@vechaiui/forms@0.2.0) (2021-07-15)
 
 

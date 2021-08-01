@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.4.1...@vechaiui/core@0.5.0) (2021-08-01)
+
+
+### Features
+
+* **docs:** example form-control using react hook form ([0b2cb36](https://github.com/vechai/vechaiui/commit/0b2cb367f4ce39f2e33dc1b26d5e234e9e1e76cd))
+* **form-control:** add form-error-message & required-indicator ([9b05d19](https://github.com/vechai/vechaiui/commit/9b05d1910375e8fc9df66891e43bbd8a74f5d30c))
+
+
+
+
+
 ## [0.4.1](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.4.0...@vechaiui/core@0.4.1) (2021-07-23)
 
 
