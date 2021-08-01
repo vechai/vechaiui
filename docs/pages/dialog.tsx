@@ -159,11 +159,11 @@ const demoList = [
                   Once deleted this project will be unrecoverable.
                 </p>
 
-                <FormControl>
-                  <FormLabel htmlFor="name" id="name-label">
+                <FormControl id="name">
+                  <FormLabel>
                     Confirm name
                   </FormLabel>
-                  <Input ref={inputRef} id="name" color="red" />
+                  <Input ref={inputRef} color="red" />
                 </FormControl>
               </div>
               <Divider
