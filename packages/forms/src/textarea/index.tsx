@@ -24,11 +24,12 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       "aria-label": ariaLabel,
       "aria-describedby": ariaDescribedby,
       className,
+      id,
       ...rest
     } = props;
-    const { readOnly, disabled, invalid, required } = useFormControl(props);
-
+    const { readOnly, disabled, invalid, required, ...formControl } = useFormControl(props);
     const classes = useInputClass({ size, disabled, variant });
+    
     return (
       <Comp
         ref={ref}
@@ -43,6 +44,7 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         aria-describedby={ariaDescribedby}
         data-color={color ? color : undefined}
         className={cx("form-textarea", classes, className)}
+        id={id || formControl.id}
         {...rest}
       />
     );

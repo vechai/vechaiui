@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, Input, FormHelperText } from "../src";
+import { FormControl, FormLabel, Input, FormHelperText, FormErrorMessage } from "../src";
 
 export default {
   title: "FormControl",
@@ -9,11 +9,21 @@ export default {
 };
 
 export const basic = () => (
-  <FormControl>
-    <FormLabel htmlFor="email" id="email-label">
+  <FormControl id="email">
+    <FormLabel>
       Email address
     </FormLabel>
-    <Input id="email" />
+    <Input placeholder="jon@gmail.com" />
     <FormHelperText>We'll never share your email.</FormHelperText>
+  </FormControl>
+);
+
+export const required = () => (
+  <FormControl id="first-name" required>
+    <FormLabel>
+      First name
+    </FormLabel>
+    <Input placeholder="Enter your first name." aria-describedby="first-name-error" />
+    <FormErrorMessage>First name is required!</FormErrorMessage>
   </FormControl>
 );

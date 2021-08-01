@@ -16,7 +16,7 @@ export interface FormLabelProps
 
 export const FormLabel = React.forwardRef<HTMLLabelElement, FormLabelProps>(
   (props, ref) => {
-    const { children, className, ...rest } = props;
+    const { children, className, htmlFor, id, ...rest } = props;
     const formControl = useFormControl(rest);
 
     const classes = cx(
@@ -26,8 +26,15 @@ export const FormLabel = React.forwardRef<HTMLLabelElement, FormLabelProps>(
     );
 
     return (
-      <label ref={ref} className={classes} {...rest}>
+      <label
+        ref={ref}
+        className={classes}
+        htmlFor={htmlFor || formControl.id}
+        id={id || formControl.labelId}
+        {...rest}
+      >
         {children}
+        {formControl.required && <RequiredIndicator />}
       </label>
     );
   }
@@ -35,4 +42,26 @@ export const FormLabel = React.forwardRef<HTMLLabelElement, FormLabelProps>(
 
 if (__DEV__) {
   FormLabel.displayName = "FormLabel";
+}
+
+export const RequiredIndicator = React.forwardRef<
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
+>((props, ref) => {
+  const { className, ...rest } = props;
+  const classes = cx("form-required-indicator", className);
+
+  return (
+    <span
+      ref={ref}
+      className={classes}
+      aria-hidden="true"
+      children="*"
+      {...rest}
+    />
+  );
+});
+
+if (__DEV__) {
+  RequiredIndicator.displayName = "RequiredIndicator";
 }

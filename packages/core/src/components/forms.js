@@ -107,15 +107,33 @@ function formControl() {
       "@apply w-full relative": {},
     },
     ".form-helper-text": {
-      "@apply mt-2 leading-none text-xs text-neutral-500 dark:text-whiteAlpha-600": {},
+      "@apply mt-1.5 leading-none text-sm text-neutral-500 dark:text-whiteAlpha-600": {},
+    },
+    ".form-error-message": {
+      "@apply mt-1.5 leading-none flex items-center text-sm": {},
+      "--tw-text-opacity": "1",
+      color: "rgba(239, 68, 68, var(--tw-text-opacity))",
+      ".dark &": {
+        "--tw-text-opacity": "1",
+        color: "rgba(252, 165, 165, var(--tw-text-opacity))",
+      }
     },
     ".form-label": {
-      "@apply text-sm font-medium text-left align-middle block mb-2": {},
+      "@apply text-sm font-medium text-left align-middle block mb-1.5": {},
 
       "&-disabled": {
         "@apply opacity-60": {},
       },
     },
+    ".form-required-indicator": {
+      "@apply ml-1 text-sm": {},
+      "--tw-text-opacity": "1",
+      color: "rgba(239, 68, 68, var(--tw-text-opacity))",
+      ".dark &": {
+        "--tw-text-opacity": "1",
+        color: "rgba(252, 165, 165, var(--tw-text-opacity))",
+      }
+    }
   };
 }
 

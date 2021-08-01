@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useForm } from "react-hook-form";
 
 import {
   Button,
@@ -6,6 +7,8 @@ import {
   FormControl,
   FormLabel,
   FormHelperText,
+  FormErrorMessage,
+  RequiredIndicator,
   Divider,
   Input,
   IconButton,
@@ -93,6 +96,8 @@ const scope = {
   FormControl,
   FormLabel,
   FormHelperText,
+  FormErrorMessage,
+  RequiredIndicator,
   Divider,
   Input,
   IconButton,
@@ -132,6 +137,7 @@ const scope = {
   Slider,
   //
   React,
+  useForm,
 };
 
 export default scope;
