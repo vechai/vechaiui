@@ -37,6 +37,7 @@
     "react": "^17.0.2"
   },
   "dependencies": {
+    "@reach/auto-id": "^0.15.3",
     "@vechaiui/theme": "0.3.0",
     "@vechaiui/utils": "^0.1.0"
   },

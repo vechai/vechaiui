@@ -2,6 +2,7 @@ import { DefaultProps } from "@vechaiui/theme";
 import { cx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
 
+import { useFormControl } from "../form-control";
 interface IFormErrorMessageProps extends DefaultProps {
   children?: React.ReactNode;
 }
@@ -14,12 +15,20 @@ export const FormErrorMessage = React.forwardRef<
   HTMLParagraphElement,
   FormErrorMessageProps
 >((props, ref) => {
-  const { className, ...rest } = props;
+  const { className, id, ...rest } = props;
   const classes = cx("form-error-message", className);
+  const formControl = useFormControl({});
 
-  return <div ref={ref} className={classes} {...rest} />;
+  return (
+    <div
+      ref={ref}
+      className={classes}
+      id={id || formControl.errorId}
+      {...rest}
+    />
+  );
 });
 
 if (__DEV__) {
-    FormErrorMessage.displayName = "FormErrorMessage";
+  FormErrorMessage.displayName = "FormErrorMessage";
 }
