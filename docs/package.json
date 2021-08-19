@@ -25,7 +25,7 @@
     "@radix-ui/react-tooltip": "^0.0.20",
     "@vechaiui/core": "0.5.0",
     "@vechaiui/react": "0.1.11",
-    "next": "^11.0.1",
+    "next": "11.1.0",
     "next-seo": "^4.26.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
