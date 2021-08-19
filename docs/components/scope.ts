@@ -42,6 +42,7 @@ import {
   RadioGroup,
   Disclosure,
   Transition,
+  Tab,
 } from "@headlessui/react";
 import {
   GiftIcon,
@@ -129,6 +130,7 @@ const scope = {
   RadioGroup,
   Disclosure,
   Transition,
+  Tab,
   // Radix
   Popover,
   Tooltip,
