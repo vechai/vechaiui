@@ -122,10 +122,13 @@ const headless = [
     key: "radio-button-group",
     title: "Radio Button",
   },
-
   {
     key: "disclosure",
     title: "Disclosure",
+  },
+  {
+    key: "tab",
+    title: "Tab",
   },
 ];
 
