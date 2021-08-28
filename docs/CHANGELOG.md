@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.8.0...@vechaiui/docs@0.9.0) (2021-08-28)
+
+
+### Features
+
+* upgrade headless ui and add tab component ([38aab63](https://github.com/vechai/vechaiui/commit/38aab6312005938f674c0026d0992c57034b2bfc))
+
+
+
+
+
 # [0.8.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.7.0...@vechaiui/docs@0.8.0) (2021-08-01)
 
 
