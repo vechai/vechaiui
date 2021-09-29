@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.5.0...@vechaiui/core@0.5.1) (2021-09-29)
+
+
+### Bug Fixes
+
+* **button & checkbox:** better color in dark mode ([c6ba2c1](https://github.com/vechai/vechaiui/commit/c6ba2c1335511ac31a527b429e08b9684f5d40ff))
+
+
+
+
+
 # [0.5.0](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.4.1...@vechaiui/core@0.5.0) (2021-08-01)
 
 
