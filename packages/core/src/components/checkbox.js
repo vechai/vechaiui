@@ -1,8 +1,8 @@
 module.exports = Checkbox = (colors) => ({
   ".form-checkbox": {
-    "@apply rounded-base shadow-sm": {},
+    "@apply rounded shadow-sm": {},
     backgroundColor: "inherit",
-    "@apply border-neutral-300 hover:border-neutral-300": {},
+    "@apply border-neutral-300": {},
     "&[aria-invalid=true]": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(220, 38, 38, var(--tw-border-opacity))",
@@ -12,7 +12,7 @@ module.exports = Checkbox = (colors) => ({
       "border-color": "rgba(220, 38, 38, var(--tw-border-opacity))",
     },
     // dark colors
-    "@apply dark:border-neutral-500 dark:hover:border-neutral-400": {},
+    "@apply dark:border-neutral-400": {},
     ".dark &[aria-invalid=true]": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(248, 113, 113, var(--tw-border-opacity))",
@@ -31,6 +31,10 @@ module.exports = Checkbox = (colors) => ({
         "--tw-border-opacity": "1",
         "border-color": "rgba(220, 38, 38, var(--tw-border-opacity))",
       },
+    },
+
+    "&:checked": {
+      borderColor: "transparent",
     },
 
     // colors

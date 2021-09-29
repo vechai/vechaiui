@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
-    require("@vechaiui/core")({
+    require("./packages/core")({
       colors: ["orange"],
       cssBase: true
     }),

@@ -20,7 +20,7 @@ function buttonSolid(colors) {
       /* dark focus */
       "@apply dark:focus:border-primary-500": {},
       /* dark active */
-      "@apply dark:active:bg-neutral-600 dark:active:border-neutral-400": {},
+      "@apply dark:active:bg-neutral-900 dark:active:border-neutral-600": {},
 
       ...colors.reduce(
         (styles, color) => ({
@@ -45,7 +45,7 @@ function buttonSolid(colors) {
             [`@apply dark:focus:border-${color}-500`]: {},
             [`@apply dark:focus:ring-${color}-500`]: {},
             /* dark active */
-            [`@apply dark:active:bg-${color}-400`]: {},
+            [`@apply dark:active:bg-${color}-800 dark:active:border-${color}-600`]: {},
           },
         }),
         {}
@@ -76,7 +76,7 @@ function buttonOutline(colors) {
       /* dark focus */
       "@apply dark:focus:border-primary-500": {},
       /* dark active */
-      "@apply dark:active:bg-neutral-600 dark:active:border-neutral-400": {},
+      "@apply dark:active:bg-neutral-600 dark:active:border-neutral-600": {},
 
       ...colors.reduce(
         (styles, color) => ({
