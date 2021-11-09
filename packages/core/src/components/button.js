@@ -234,19 +234,9 @@ function buttonLink(colors) {
   };
 }
 
-module.exports = Button = (colors) => ({
-  ".btn": {
-    "@apply relative": {},
-    "@apply m-0": {},
-    "@apply inline-flex items-center justify-center flex-shrink-0 align-middle": {},
-    "@apply font-medium leading-tight": {},
-    transitionProperty:
-      "background-color, border-color, color, fill, stroke, box-shadow",
-    "@apply	duration-75 ease-out": {},
-    "@apply outline-none appearance-none cursor-base select-none whitespace-nowrap": {},
-    "@apply focus:outline-none": {},
-
-    // sizing
+// 24 / 28 / 32 / 40 / 48
+function buttonCompactSize() {
+  return {
     "&-xs": {
       "@apply px-2 text-xs rounded-base h-6": {},
       minWidth: "1.5rem",
@@ -271,6 +261,55 @@ module.exports = Button = (colors) => ({
       "@apply h-12 px-6 text-lg rounded-base": {},
       minWidth: "3rem",
     },
+  };
+}
+
+// 28 / 32 / 36 / 44 / 50
+function buttonComfortableSize() {
+  return {
+    "&-xs": {
+      "@apply px-3 text-xs rounded-base h-7": {},
+      minWidth: "1.75rem",
+    },
+
+    "&-sm": {
+      "@apply h-8 px-4 text-sm rounded-base": {},
+      minWidth: "2rem",
+    },
+
+    "&-md": {
+      "@apply h-9 px-4 text-sm rounded-base": {},
+      minWidth: "2.25rem",
+    },
+
+    "&-lg": {
+      "@apply h-11 px-4 text-base rounded-base": {},
+      minWidth: "2.75rem",
+    },
+
+    "&-xl": {
+      "@apply px-6 text-lg rounded-base": {},
+      height: "3.125rem",
+      minWidth: "3.125rem",
+    },
+  };
+}
+
+module.exports = Button = (colors, density) => ({
+  ".btn": {
+    "@apply relative": {},
+    "@apply m-0": {},
+    "@apply inline-flex items-center justify-center flex-shrink-0 align-middle": {},
+    "@apply font-medium leading-tight": {},
+    transitionProperty:
+      "background-color, border-color, color, fill, stroke, box-shadow",
+    "@apply	duration-75 ease-out": {},
+    "@apply outline-none appearance-none cursor-base select-none whitespace-nowrap": {},
+    "@apply focus:outline-none": {},
+
+    // sizing
+    ...(density === "compact" && buttonCompactSize()),
+    ...(density === "comfortable" && buttonComfortableSize()),
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},

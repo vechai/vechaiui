@@ -137,7 +137,57 @@ function formControl() {
   };
 }
 
-function formInputGroup() {
+function elementCompactSize() {
+  return {
+    "&-xs": {
+      "@apply text-xs h-6 w-6": {},
+    },
+
+    "&-sm": {
+      "@apply text-xs h-7 w-7": {},
+    },
+
+    "&-md": {
+      "@apply text-sm h-8 w-8": {},
+    },
+
+    "&-lg": {
+      "@apply text-base h-10 w-10": {},
+    },
+
+    "&-xl": {
+      "@apply text-lg h-12 w-12": {},
+    },
+  }
+}
+
+function elementComfortableSize() {
+  return {
+    "&-xs": {
+      "@apply text-xs h-7 w-7": {},
+    },
+
+    "&-sm": {
+      "@apply text-sm h-8 w-8": {},
+    },
+
+    "&-md": {
+      "@apply text-sm h-9 w-9": {},
+    },
+
+    "&-lg": {
+      "@apply text-base h-11 w-11": {},
+    },
+
+    "&-xl": {
+      "@apply text-lg": {},
+      height: "3.125rem",
+      width: "3.125rem",
+    },
+  }
+}
+
+function formInputGroup(density) {
   return {
     ".form-input-group": {
       "@apply flex relative": {},
@@ -146,25 +196,10 @@ function formInputGroup() {
     ".form-input-element": {
       "@apply flex items-center justify-center absolute z-base top-0": {},
 
-      "&-xs": {
-        "@apply text-xs h-6 w-6": {},
-      },
+      // sizing
+      ...(density === "compact" && elementCompactSize()),
+      ...(density === "comfortable" && elementComfortableSize()),
 
-      "&-sm": {
-        "@apply text-xs h-7 w-7": {},
-      },
-
-      "&-md": {
-        "@apply text-sm h-8 w-8": {},
-      },
-
-      "&-lg": {
-        "@apply text-base h-10 w-10": {},
-      },
-
-      "&-xl": {
-        "@apply text-lg h-12 w-12": {},
-      },
     },
 
     ".form-input-addon": {
@@ -206,11 +241,9 @@ function formInputGroup() {
   };
 }
 
-module.exports = Forms = (colors) => ({
-  ".form-field": {
-    "@apply relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
-    "@apply transition-colors	duration-75 ease-out": {},
-
+// 24 / 28 / 32 / 40 / 48
+function fieldCompactSize() {
+  return {
     "&-xs": {
       "@apply h-6 px-2 py-0 text-xs rounded-base": {},
     },
@@ -230,6 +263,43 @@ module.exports = Forms = (colors) => ({
     "&-xl": {
       "@apply h-12 px-4 py-0 text-lg rounded-base": {},
     },
+  }
+}
+
+// 28 / 32 / 36 / 44 / 50
+function fieldComfortableSize() {
+  return {
+    "&-xs": {
+      "@apply px-3 py-0 text-xs rounded-base h-7": {},
+    },
+
+    "&-sm": {
+      "@apply h-8 px-3 py-0 text-sm rounded-base": {},
+    },
+
+    "&-md": {
+      "@apply h-9 px-3 py-0 text-sm rounded-base": {},
+    },
+
+    "&-lg": {
+      "@apply h-11 px-4 py-0 text-base rounded-base": {},
+    },
+
+    "&-xl": {
+      "@apply px-4 py-0 text-lg rounded-base": {},
+      height: "3.125rem",
+    },
+  }
+}
+
+module.exports = Forms = (colors, density) => ({
+  ".form-field": {
+    "@apply relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
+    "@apply transition-colors	duration-75 ease-out": {},
+
+    // sizing
+    ...(density === "compact" && fieldCompactSize()),
+    ...(density === "comfortable" && fieldComfortableSize()),
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},
@@ -251,6 +321,6 @@ module.exports = Forms = (colors) => ({
     "@apply pr-10": {},
   },
 
-  ...formInputGroup(),
+  ...formInputGroup(density),
   ...formControl(),
 });

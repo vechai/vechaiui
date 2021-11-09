@@ -50,7 +50,7 @@ const components = [
 const defaultColors = ["primary"];
 
 module.exports = plugin.withOptions(
-  function(options = { colors: [], cssBase: true }) {
+  function(options = { colors: [], cssBase: true, density: "comfortable" }) {
     return function({
       addComponents,
       addVariant,
@@ -61,13 +61,14 @@ module.exports = plugin.withOptions(
       addUtilities,
     }) {
       const optionColors = [...defaultColors, ...(options.colors || [])];
+      const optionDensity = options.density || "comfortable";
 
       active({ addVariant, variants, e, theme, addUtilities });
       selected({ addVariant, variants, e, theme, addUtilities });
       disabled({ addVariant, variants, e, theme, addUtilities });
-
+      
       addComponents(
-        components.map((component) => component(optionColors)),
+        components.map((component) => component(optionColors, optionDensity)),
         {
           respectPrefix: false,
         }
