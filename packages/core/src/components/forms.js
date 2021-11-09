@@ -53,9 +53,10 @@ function fieldOutline(colors) {
 function fieldSolid(colors) {
   return {
     "&-solid": {
-      "@apply border border-transparent": {},
+      "@apply border border-neutral-300": {},
       "@apply text-neutral-900 bg-gray-100": {},
-      "@apply hover:bg-gray-200": {},
+      "@apply hover:bg-gray-200 hover:bg-opacity-80": {},
+      "@apply focus:bg-white": {},
       "&[aria-invalid=true]": {
         "--tw-border-opacity": "1",
         borderColor: "rgba(220, 38, 38, var(--tw-border-opacity))",
@@ -70,8 +71,10 @@ function fieldSolid(colors) {
       },
       "focus:ring-1": {},
       /* dark mode */
-      "@apply dark:text-neutral-100 dark:bg-whiteAlpha-50": {},
+      "@apply dark:border-neutral-600": {},
+      "@apply dark:text-white dark:bg-whiteAlpha-200": {},
       "@apply dark:hover:bg-whiteAlpha-100": {},
+      "@apply dark:focus:bg-neutral-900": {},
       ".dark &[aria-invalid=true]": {
         "--tw-border-opacity": "1",
         borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
