@@ -10,12 +10,12 @@ import { light, dark, midnight, pale, dawn, bee, cool } from "@utils/themes";
 export type ThemeContextType = {
   colorScheme?: string;
   radius?: string;
-  destiny?: VechaiProviderProps["destiny"];
+  density?: VechaiProviderProps["density"];
   cursorPointer?: boolean;
   setColorScheme: (colorScheme: string) => void;
   setRadius: (radius: string) => void;
   setCursorPointer: (cursorPointer: boolean) => void;
-  setDestiny: (destiny: VechaiProviderProps["destiny"]) => void;
+  setDensity: (density: VechaiProviderProps["density"]) => void;
 };
 
 const ThemeContext = React.createContext<ThemeContextType | null>(null);
@@ -84,7 +84,7 @@ function ThemeController({ children }: { children: React.ReactNode }) {
   const [cursorPointer, setCursorPointer] = React.useState(false);
   const [radius, setRadius] = React.useState(radiusItems[2].value);
   const [colorScheme, setColorScheme] = React.useState(themes[0].id);
-  const [destiny, setDestiny] = React.useState<VechaiProviderProps["destiny"]>("comfortable");
+  const [density, setDensity] = React.useState<VechaiProviderProps["density"]>("comfortable");
 
   const theme = React.useMemo(() => {
     return extendTheme({
@@ -108,14 +108,14 @@ function ThemeController({ children }: { children: React.ReactNode }) {
         colorScheme,
         radius,
         cursorPointer,
-        destiny,
+        density,
         setColorScheme,
         setRadius,
         setCursorPointer,
-        setDestiny,
+        setDensity,
       }}
     >
-      <VechaiProvider theme={theme} colorScheme={colorScheme} destiny={destiny}>
+      <VechaiProvider theme={theme} colorScheme={colorScheme} density={density}>
         {children}
       </VechaiProvider>
     </ThemeContext.Provider>
@@ -129,7 +129,7 @@ export const useTheme = (): ThemeContextType => React.useContext(ThemeContext) |
   setColorScheme: () => null,
   setRadius: () => null,
   setCursorPointer: () => null,
-  setDestiny: () => null,
+  setDensity: () => null,
 };
 
 export default ThemeController;

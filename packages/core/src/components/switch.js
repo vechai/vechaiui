@@ -1,16 +1,16 @@
 function switchCheckedSize() {
   return {
     ".form-switch-box-sm": {
-      "--tw-translate-x": "var(--vc-destiny-switch-checked-sm-translateX)",
+      "--tw-translate-x": "var(--vc-density-switch-checked-sm-translateX)",
     },
     ".form-switch-box-md": {
-      "--tw-translate-x": "var(--vc-destiny-switch-checked-md-translateX)",
+      "--tw-translate-x": "var(--vc-density-switch-checked-md-translateX)",
     },
     ".form-switch-box-lg": {
-      "--tw-translate-x": "var(--vc-destiny-switch-checked-lg-translateX)",
+      "--tw-translate-x": "var(--vc-density-switch-checked-lg-translateX)",
     },
     ".form-switch-box-xl": {
-      "--tw-translate-x": "var(--vc-destiny-switch-checked-xl-translateX)",
+      "--tw-translate-x": "var(--vc-density-switch-checked-xl-translateX)",
     },
   };
 }
@@ -19,23 +19,23 @@ function switchSize() {
   return {
     // sizing
     "&-sm": {
-      width: "var(--vc-destiny-switch-sm-width)",
-      height: "var(--vc-destiny-switch-sm-height)",
+      width: "var(--vc-density-switch-sm-width)",
+      height: "var(--vc-density-switch-sm-height)",
     },
 
     "&-md": {
-      width: "var(--vc-destiny-switch-md-width)",
-      height: "var(--vc-destiny-switch-md-height)",
+      width: "var(--vc-density-switch-md-width)",
+      height: "var(--vc-density-switch-md-height)",
     },
 
     "&-lg": {
-      width: "var(--vc-destiny-switch-lg-width)",
-      height: "var(--vc-destiny-switch-lg-height)",
+      width: "var(--vc-density-switch-lg-width)",
+      height: "var(--vc-density-switch-lg-height)",
     },
 
     "&-xl": {
-      width: "var(--vc-destiny-switch-xl-width)",
-      height: "var(--vc-destiny-switch-xl-height)",
+      width: "var(--vc-density-switch-xl-width)",
+      height: "var(--vc-density-switch-xl-height)",
     },
   };
 }
@@ -43,23 +43,23 @@ function switchSize() {
 function switchBoxSize() {
   return {
     "&-sm": {
-      width: "var(--vc-destiny-switch-box-sm-width)",
-      height: "var(--vc-destiny-switch-box-sm-height)",
+      width: "var(--vc-density-switch-box-sm-width)",
+      height: "var(--vc-density-switch-box-sm-height)",
     },
 
     "&-md": {
-      width: "var(--vc-destiny-switch-box-md-width)",
-      height: "var(--vc-destiny-switch-box-md-height)",
+      width: "var(--vc-density-switch-box-md-width)",
+      height: "var(--vc-density-switch-box-md-height)",
     },
 
     "&-lg": {
-      width: "var(--vc-destiny-switch-box-lg-width)",
-      height: "var(--vc-destiny-switch-box-lg-height)",
+      width: "var(--vc-density-switch-box-lg-width)",
+      height: "var(--vc-density-switch-box-lg-height)",
     },
 
     "&-xl": {
-      width: "var(--vc-destiny-switch-box-xl-width)",
-      height: "var(--vc-destiny-switch-box-xl-height)",
+      width: "var(--vc-density-switch-box-xl-width)",
+      height: "var(--vc-density-switch-box-xl-height)",
     },
   };
 }

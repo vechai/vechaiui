@@ -39,12 +39,12 @@ export interface ColorScheme {
   } & Colors;
 }
 
-export interface Destiny {}
+export interface Density {}
 export interface VechaiTheme {
   readonly cursor: "default" | "pointer";
   readonly rounded: string;
   readonly colorSchemes: Record<string, ColorScheme>;
-  readonly destiny: Record<"compact" | "comfortable" | "unset", Destiny>;
+  readonly density: Record<"compact" | "comfortable" | "unset", Density>;
   readonly config: Record<string, unknown>;
 }
 

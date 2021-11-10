@@ -1,4 +1,4 @@
-export const compactDestiny = {
+export const compactDensity = {
   button: {
     xs: {
       px: "0.5rem",
@@ -161,7 +161,7 @@ export const compactDestiny = {
   },
 };
 
-export const comfortableDestiny = {
+export const comfortableDensity = {
   button: {
     xs: {
       px: "0.75rem",

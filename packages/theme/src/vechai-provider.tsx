@@ -30,7 +30,7 @@ VechaiContext.displayName = "VechaiContext";
 export interface VechaiProviderProps {
   children: React.ReactNode;
   theme?: VechaiTheme;
-  destiny?: "compact" | "comfortable" | "unset";
+  density?: "compact" | "comfortable" | "unset";
   colorScheme?: string;
   cssVarsRoot?: string;
 }
@@ -38,12 +38,12 @@ export interface VechaiProviderProps {
 export function VechaiProvider({
   theme = defaultTheme,
   colorScheme = "light",
-  destiny = "comfortable",
+  density = "comfortable",
   cssVarsRoot = ":host, :root",
   children,
 }: VechaiProviderProps) {
   const computedTheme = useMemo(() => {
-    const omittedTheme = omit(theme, ["colorSchemes", "destiny"]);
+    const omittedTheme = omit(theme, ["colorSchemes", "density"]);
     const { colors, type } = theme.colorSchemes[colorScheme] || {};
     if (isBrowser) {
       if (type === "dark") document.documentElement.classList.add("dark");
@@ -58,12 +58,12 @@ export function VechaiProvider({
 
     const normalizedTheme = {
       ...omittedTheme,
-      destiny: theme.destiny[destiny],
+      density: theme.density[density],
       colors,
     };
 
     return toCSSVar(normalizedTheme);
-  }, [theme, colorScheme, destiny]);
+  }, [theme, colorScheme, density]);
 
   const value = useMemo(
     () => ({

@@ -12,8 +12,8 @@ export function ThemSwitcher() {
     setRadius,
     setCursorPointer,
     setColorScheme,
-    setDestiny,
-    destiny,
+    setDensity,
+    density,
   } = useTheme();
 
   return (
@@ -92,11 +92,11 @@ export function ThemSwitcher() {
 
                 <div role="group">
                   <div className="flex items-center justify-between flex-shrink-0 w-full h-8 space-x-6 text-sm text-left rounded cursor-base focus:outline-none">
-                    <span className="text-smm">Destiny</span>
+                    <span className="text-smm">Density</span>
                     <Select
-                      value={destiny}
+                      value={density}
                       size="xs"
-                      onChange={(e) => setDestiny(e.target.value as ThemeContextType["destiny"])}
+                      onChange={(e) => setDensity(e.target.value as ThemeContextType["density"])}
                     >
                       <option value="compact">Compact</option>
                       <option value="comfortable">Comfortable</option>

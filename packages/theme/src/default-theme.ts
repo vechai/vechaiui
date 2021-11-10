@@ -1,5 +1,5 @@
 import { colors } from "./colors";
-import { comfortableDestiny, compactDestiny } from "./destiny";
+import { comfortableDensity, compactDensity } from "./density";
 import { VechaiTheme, ColorScheme } from "./types";
 
 // light theme
@@ -45,9 +45,9 @@ export const defaultTheme: VechaiTheme = {
     light: lightScheme,
     dark: darkScheme,
   },
-  destiny: {
-    compact: compactDestiny,
-    comfortable: comfortableDestiny,
+  density: {
+    compact: compactDensity,
+    comfortable: comfortableDensity,
     unset: {},
   },
   config: {},
