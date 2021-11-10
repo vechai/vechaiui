@@ -53,9 +53,10 @@ function fieldOutline(colors) {
 function fieldSolid(colors) {
   return {
     "&-solid": {
-      "@apply border border-transparent": {},
+      "@apply border border-neutral-300": {},
       "@apply text-neutral-900 bg-gray-100": {},
-      "@apply hover:bg-gray-200": {},
+      "@apply hover:bg-gray-200 hover:bg-opacity-80": {},
+      "@apply focus:bg-white": {},
       "&[aria-invalid=true]": {
         "--tw-border-opacity": "1",
         borderColor: "rgba(220, 38, 38, var(--tw-border-opacity))",
@@ -70,8 +71,10 @@ function fieldSolid(colors) {
       },
       "focus:ring-1": {},
       /* dark mode */
-      "@apply dark:text-neutral-100 dark:bg-whiteAlpha-50": {},
+      "@apply dark:border-neutral-600": {},
+      "@apply dark:text-white dark:bg-whiteAlpha-200": {},
       "@apply dark:hover:bg-whiteAlpha-100": {},
+      "@apply dark:focus:bg-neutral-900": {},
       ".dark &[aria-invalid=true]": {
         "--tw-border-opacity": "1",
         borderColor: "rgba(248, 113, 113, var(--tw-border-opacity))",
@@ -116,7 +119,7 @@ function formControl() {
       ".dark &": {
         "--tw-text-opacity": "1",
         color: "rgba(252, 165, 165, var(--tw-text-opacity))",
-      }
+      },
     },
     ".form-label": {
       "@apply text-sm font-medium text-left align-middle block mb-1.5": {},
@@ -132,8 +135,47 @@ function formControl() {
       ".dark &": {
         "--tw-text-opacity": "1",
         color: "rgba(252, 165, 165, var(--tw-text-opacity))",
-      }
-    }
+      },
+    },
+  };
+}
+
+function elementSize() {
+  return {
+    "&-xs": {
+      fontSize: "var(--vc-density-form-element-xs-fontSize)",
+      lineHeight: "var(--vc-density-form-element-xs-lineHeight)",
+      height: "var(--vc-density-form-element-xs-height)",
+      width: "var(--vc-density-form-element-xs-width)",
+    },
+
+    "&-sm": {
+      fontSize: "var(--vc-density-form-element-sm-fontSize)",
+      lineHeight: "var(--vc-density-form-element-sm-lineHeight)",
+      height: "var(--vc-density-form-element-sm-height)",
+      width: "var(--vc-density-form-element-sm-width)",
+    },
+
+    "&-md": {
+      fontSize: "var(--vc-density-form-element-md-fontSize)",
+      lineHeight: "var(--vc-density-form-element-md-lineHeight)",
+      height: "var(--vc-density-form-element-md-height)",
+      width: "var(--vc-density-form-element-md-width)",
+    },
+
+    "&-lg": {
+      fontSize: "var(--vc-density-form-element-lg-fontSize)",
+      lineHeight: "var(--vc-density-form-element-lg-lineHeight)",
+      height: "var(--vc-density-form-element-lg-height)",
+      width: "var(--vc-density-form-element-lg-width)",
+    },
+
+    "&-xl": {
+      fontSize: "var(--vc-density-form-element-xl-fontSize)",
+      lineHeight: "var(--vc-density-form-element-xl-lineHeight)",
+      height: "var(--vc-density-form-element-xl-height)",
+      width: "var(--vc-density-form-element-xl-width)",
+    },
   };
 }
 
@@ -146,25 +188,8 @@ function formInputGroup() {
     ".form-input-element": {
       "@apply flex items-center justify-center absolute z-base top-0": {},
 
-      "&-xs": {
-        "@apply text-xs h-6 w-6": {},
-      },
-
-      "&-sm": {
-        "@apply text-xs h-7 w-7": {},
-      },
-
-      "&-md": {
-        "@apply text-sm h-8 w-8": {},
-      },
-
-      "&-lg": {
-        "@apply text-base h-10 w-10": {},
-      },
-
-      "&-xl": {
-        "@apply text-lg h-12 w-12": {},
-      },
+      // sizing
+      ...elementSize(),
     },
 
     ".form-input-addon": {
@@ -206,30 +231,63 @@ function formInputGroup() {
   };
 }
 
+function fieldSize() {
+  return {
+    "&-xs": {
+      paddingLeft: "var(--vc-density-form-field-xs-px)",
+      paddingRight: "var(--vc-density-form-field-xs-px)",
+      paddingTop: "var(--vc-density-form-field-xs-py)",
+      paddingBottom: "var(--vc-density-form-field-xs-py)",
+      fontSize: "var(--vc-density-form-field-xs-fontSize)",
+      lineHeight: "var(--vc-density-form-field-xs-lineHeight)",
+      height: "var(--vc-density-form-field-xs-height)",
+    },
+    "&-sm": {
+      paddingLeft: "var(--vc-density-form-field-sm-px)",
+      paddingRight: "var(--vc-density-form-field-sm-px)",
+      paddingTop: "var(--vc-density-form-field-sm-py)",
+      paddingBottom: "var(--vc-density-form-field-sm-py)",
+      fontSize: "var(--vc-density-form-field-sm-fontSize)",
+      lineHeight: "var(--vc-density-form-field-sm-lineHeight)",
+      height: "var(--vc-density-form-field-sm-height)",
+    },
+    "&-md": {
+      paddingLeft: "var(--vc-density-form-field-md-px)",
+      paddingRight: "var(--vc-density-form-field-md-px)",
+      paddingTop: "var(--vc-density-form-field-md-py)",
+      paddingBottom: "var(--vc-density-form-field-md-py)",
+      fontSize: "var(--vc-density-form-field-md-fontSize)",
+      lineHeight: "var(--vc-density-form-field-md-lineHeight)",
+      height: "var(--vc-density-form-field-md-height)",
+    },
+    "&-lg": {
+      paddingLeft: "var(--vc-density-form-field-lg-px)",
+      paddingRight: "var(--vc-density-form-field-lg-px)",
+      paddingTop: "var(--vc-density-form-field-lg-py)",
+      paddingBottom: "var(--vc-density-form-field-lg-py)",
+      fontSize: "var(--vc-density-form-field-lg-fontSize)",
+      lineHeight: "var(--vc-density-form-field-lg-lineHeight)",
+      height: "var(--vc-density-form-field-lg-height)",
+    },
+    "&-xl": {
+      paddingLeft: "var(--vc-density-form-field-xl-px)",
+      paddingRight: "var(--vc-density-form-field-xl-px)",
+      paddingTop: "var(--vc-density-form-field-xl-py)",
+      paddingBottom: "var(--vc-density-form-field-xl-py)",
+      fontSize: "var(--vc-density-form-field-xl-fontSize)",
+      lineHeight: "var(--vc-density-form-field-xl-lineHeight)",
+      height: "var(--vc-density-form-field-xl-height)",
+    },
+  };
+}
+
 module.exports = Forms = (colors) => ({
   ".form-field": {
-    "@apply relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
+    "@apply relative rounded-base w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
     "@apply transition-colors	duration-75 ease-out": {},
 
-    "&-xs": {
-      "@apply h-6 px-2 py-0 text-xs rounded-base": {},
-    },
-
-    "&-sm": {
-      "@apply px-3 py-0 text-xs rounded-base h-7": {},
-    },
-
-    "&-md": {
-      "@apply h-8 px-3 py-0 text-sm rounded-base": {},
-    },
-
-    "&-lg": {
-      "@apply h-10 px-4 py-0 text-base rounded-base": {},
-    },
-
-    "&-xl": {
-      "@apply h-12 px-4 py-0 text-lg rounded-base": {},
-    },
+    // sizing
+    ...fieldSize(),
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},

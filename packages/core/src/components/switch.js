@@ -1,3 +1,69 @@
+function switchCheckedSize() {
+  return {
+    ".form-switch-box-sm": {
+      "--tw-translate-x": "var(--vc-density-switch-checked-sm-translateX)",
+    },
+    ".form-switch-box-md": {
+      "--tw-translate-x": "var(--vc-density-switch-checked-md-translateX)",
+    },
+    ".form-switch-box-lg": {
+      "--tw-translate-x": "var(--vc-density-switch-checked-lg-translateX)",
+    },
+    ".form-switch-box-xl": {
+      "--tw-translate-x": "var(--vc-density-switch-checked-xl-translateX)",
+    },
+  };
+}
+
+function switchSize() {
+  return {
+    // sizing
+    "&-sm": {
+      width: "var(--vc-density-switch-sm-width)",
+      height: "var(--vc-density-switch-sm-height)",
+    },
+
+    "&-md": {
+      width: "var(--vc-density-switch-md-width)",
+      height: "var(--vc-density-switch-md-height)",
+    },
+
+    "&-lg": {
+      width: "var(--vc-density-switch-lg-width)",
+      height: "var(--vc-density-switch-lg-height)",
+    },
+
+    "&-xl": {
+      width: "var(--vc-density-switch-xl-width)",
+      height: "var(--vc-density-switch-xl-height)",
+    },
+  };
+}
+
+function switchBoxSize() {
+  return {
+    "&-sm": {
+      width: "var(--vc-density-switch-box-sm-width)",
+      height: "var(--vc-density-switch-box-sm-height)",
+    },
+
+    "&-md": {
+      width: "var(--vc-density-switch-box-md-width)",
+      height: "var(--vc-density-switch-box-md-height)",
+    },
+
+    "&-lg": {
+      width: "var(--vc-density-switch-box-lg-width)",
+      height: "var(--vc-density-switch-box-lg-height)",
+    },
+
+    "&-xl": {
+      width: "var(--vc-density-switch-box-xl-width)",
+      height: "var(--vc-density-switch-box-xl-height)",
+    },
+  };
+}
+
 module.exports = Switch = (colors) => ({
   ".form-switch-label": {
     "@apply inline-block align-middle": {},
@@ -8,18 +74,8 @@ module.exports = Switch = (colors) => ({
     "@apply hover:bg-neutral-300 dark:hover:bg-neutral-600": {},
     "input[type=checkbox]:checked + &, input[type=checkbox][aria-checked=mixed] + &": {
       backgroundColor: "currentColor",
-      ".form-switch-box-sm": {
-        "@apply translate-x-3.5": {},
-      },
-      ".form-switch-box-md": {
-        "@apply translate-x-4": {},
-      },
-      ".form-switch-box-lg": {
-        "@apply translate-x-6": {},
-      },
-      ".form-switch-box-xl": {
-        "@apply translate-x-7": {},
-      },
+      // sizing
+      ...switchCheckedSize(),
     },
     // "input[type=checkbox]:focus + &": {
     //   "@apply focus:ring-2 focus:ring-neutral-400": {},
@@ -52,41 +108,13 @@ module.exports = Switch = (colors) => ({
     },
 
     // sizing
-    "&-sm": {
-      "@apply w-7 h-3.5": {},
-    },
-
-    "&-md": {
-      "@apply w-8 h-4": {},
-    },
-
-    "&-lg": {
-      "@apply w-12 h-6": {},
-    },
-
-    "&-xl": {
-      "@apply w-14 h-7": {},
-    },
+    ...switchSize(),
   },
 
   ".form-switch-box": {
     "@apply transition-transform ease-in-out duration-150 transform bg-white rounded-full shadow translate-x-0": {},
 
     // sizing
-    "&-sm": {
-      "@apply w-2.5 h-2.5": {},
-    },
-
-    "&-md": {
-      "@apply w-3 h-3": {},
-    },
-
-    "&-lg": {
-      "@apply w-5 h-5": {},
-    },
-
-    "&-xl": {
-      "@apply w-6 h-6": {},
-    },
+    ...switchBoxSize(),
   },
 });

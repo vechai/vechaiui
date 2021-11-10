@@ -111,10 +111,27 @@ const theme = extendTheme({
 <VechaiProvider theme={theme} colorScheme="cool">
   <App />
 </VechaiProvider>
-// 4. Now you can use these colors in your components
+// 5. Now you can use these colors in your components
 function Usage() {
   return <Button color="primary">Welcome</Button>
 }
+```
+
+## Density mode
+
+Vechai provide two density mode to apply to size of component: `compact` and `comfortable`
+
+The following components have applyed density:
+
+- Button
+- Input
+- Select
+- Switch
+
+```jsx
+<VechaiProvider density="compact">
+  <App />
+</VechaiProvider>
 ```
 
 [Browse some example themes](/themes-gallery)

@@ -18,7 +18,7 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("./packages/core")({
       colors: ["orange"],
-      cssBase: true
+      cssBase: true,
     }),
   ],
 };

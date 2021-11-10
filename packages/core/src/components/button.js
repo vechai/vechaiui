@@ -40,10 +40,10 @@ function buttonSolid(colors) {
             [`@apply dark:border-${color}-500`]: {},
             [`@apply dark:bg-${color}-600`]: {},
             /* dark hover */
-            [`@apply dark:hover:border-${color}-400 dark:hover:bg-${color}-500`]: {},
+            [`@apply dark:hover:bg-${color}-700`]: {},
             /* dark focus */
-            [`@apply dark:focus:border-${color}-500`]: {},
-            [`@apply dark:focus:ring-${color}-500`]: {},
+            [`@apply dark:focus:border-${color}-600`]: {},
+            [`@apply dark:focus:ring-${color}-600`]: {},
             /* dark active */
             [`@apply dark:active:bg-${color}-800 dark:active:border-${color}-600`]: {},
           },
@@ -234,9 +234,61 @@ function buttonLink(colors) {
   };
 }
 
+function buttonSize() {
+  return {
+    "&-xs": {
+      paddingRight: "var(--vc-density-button-xs-px)",
+      paddingLeft: "var(--vc-density-button-xs-px)",
+      fontSize: "var(--vc-density-button-xs-fontSize)",
+      lineHeight: "var(--vc-density-button-xs-lineHeight)",
+      height: "var(--vc-density-button-xs-height)",
+      minWidth: "var(--vc-density-button-xs-minWidth)",
+    },
+
+    "&-sm": {
+      paddingRight: "var(--vc-density-button-sm-px)",
+      paddingLeft: "var(--vc-density-button-sm-px)",
+      fontSize: "var(--vc-density-button-sm-fontSize)",
+      lineHeight: "var(--vc-density-button-sm-lineHeight)",
+      height: "var(--vc-density-button-sm-height)",
+      minWidth: "var(--vc-density-button-sm-minWidth)",
+    },
+
+    "&-md": {
+      paddingRight: "var(--vc-density-button-md-px)",
+      paddingLeft: "var(--vc-density-button-md-px)",
+      px: "var(--vc-density-button-md-px)",
+      fontSize: "var(--vc-density-button-md-fontSize)",
+      lineHeight: "var(--vc-density-button-md-lineHeight)",
+      height: "var(--vc-density-button-md-height)",
+      minWidth: "var(--vc-density-button-md-minWidth)",
+    },
+
+    "&-lg": {
+      paddingRight: "var(--vc-density-button-lg-px)",
+      paddingLeft: "var(--vc-density-button-lg-px)",
+      px: "var(--vc-density-button-lg-px)",
+      fontSize: "var(--vc-density-button-lg-fontSize)",
+      lineHeight: "var(--vc-density-button-lg-lineHeight)",
+      height: "var(--vc-density-button-lg-height)",
+      minWidth: "var(--vc-density-button-lg-minWidth)",
+    },
+
+    "&-xl": {
+      paddingRight: "var(--vc-density-button-xl-px)",
+      paddingLeft: "var(--vc-density-button-xl-px)",
+      px: "var(--vc-density-button-xl-px)",
+      fontSize: "var(--vc-density-button-xl-fontSize)",
+      lineHeight: "var(--vc-density-button-xl-lineHeight)",
+      height: "var(--vc-density-button-xl-height)",
+      minWidth: "var(--vc-density-button-xl-minWidth)",
+    },
+  };
+}
+
 module.exports = Button = (colors) => ({
   ".btn": {
-    "@apply relative": {},
+    "@apply relative rounded-base": {},
     "@apply m-0": {},
     "@apply inline-flex items-center justify-center flex-shrink-0 align-middle": {},
     "@apply font-medium leading-tight": {},
@@ -247,30 +299,7 @@ module.exports = Button = (colors) => ({
     "@apply focus:outline-none": {},
 
     // sizing
-    "&-xs": {
-      "@apply px-2 text-xs rounded-base h-6": {},
-      minWidth: "1.5rem",
-    },
-
-    "&-sm": {
-      "@apply px-3 text-xs rounded-base h-7": {},
-      minWidth: "1.75rem",
-    },
-
-    "&-md": {
-      "@apply h-8 px-4 text-sm rounded-base": {},
-      minWidth: "2rem",
-    },
-
-    "&-lg": {
-      "@apply h-10 px-4 text-base rounded-base": {},
-      minWidth: "2.5rem",
-    },
-
-    "&-xl": {
-      "@apply h-12 px-6 text-lg rounded-base": {},
-      minWidth: "3rem",
-    },
+    ...buttonSize(),
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},

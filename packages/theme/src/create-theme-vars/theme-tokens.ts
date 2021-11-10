@@ -1,6 +1,6 @@
 import { Dict, pick } from "@vechaiui/utils";
 
-const tokens = ["colors", "cursor", "rounded"] as const;
+const tokens = ["colors", "cursor", "rounded", "density"] as const;
 
 export type ThemeScale =
   | typeof tokens[number]

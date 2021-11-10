@@ -2,6 +2,7 @@ import * as React from "react";
 import {
   VechaiProvider,
   extendTheme,
+  VechaiProviderProps,
 } from "@vechaiui/react";
 
 import { light, dark, midnight, pale, dawn, bee, cool } from "@utils/themes";
@@ -9,10 +10,12 @@ import { light, dark, midnight, pale, dawn, bee, cool } from "@utils/themes";
 export type ThemeContextType = {
   colorScheme?: string;
   radius?: string;
+  density?: VechaiProviderProps["density"];
   cursorPointer?: boolean;
   setColorScheme: (colorScheme: string) => void;
   setRadius: (radius: string) => void;
   setCursorPointer: (cursorPointer: boolean) => void;
+  setDensity: (density: VechaiProviderProps["density"]) => void;
 };
 
 const ThemeContext = React.createContext<ThemeContextType | null>(null);
@@ -75,16 +78,13 @@ export const radiusItems = [
     name: "md",
     value: "0.375rem",
   },
-  // {
-  //   name: "full",
-  //   value: "9999px",
-  // },
 ];
 
 function ThemeController({ children }: { children: React.ReactNode }) {
   const [cursorPointer, setCursorPointer] = React.useState(false);
   const [radius, setRadius] = React.useState(radiusItems[2].value);
   const [colorScheme, setColorScheme] = React.useState(themes[0].id);
+  const [density, setDensity] = React.useState<VechaiProviderProps["density"]>("comfortable");
 
   const theme = React.useMemo(() => {
     return extendTheme({
@@ -108,12 +108,14 @@ function ThemeController({ children }: { children: React.ReactNode }) {
         colorScheme,
         radius,
         cursorPointer,
+        density,
         setColorScheme,
         setRadius,
         setCursorPointer,
+        setDensity,
       }}
     >
-      <VechaiProvider theme={theme} colorScheme={colorScheme}>
+      <VechaiProvider theme={theme} colorScheme={colorScheme} density={density}>
         {children}
       </VechaiProvider>
     </ThemeContext.Provider>
@@ -127,6 +129,7 @@ export const useTheme = (): ThemeContextType => React.useContext(ThemeContext) |
   setColorScheme: () => null,
   setRadius: () => null,
   setCursorPointer: () => null,
+  setDensity: () => null,
 };
 
 export default ThemeController;
