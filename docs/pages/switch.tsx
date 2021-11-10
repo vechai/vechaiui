@@ -194,7 +194,7 @@ export default function Switch() {
   return (
     <>
       <SEO
-        title="Swicth"
+        title="Tailwind CSS Swicth"
         description="A control used to switch between two states: often on or off."
       />
       <DocumentBuilder component={switchComponent} />

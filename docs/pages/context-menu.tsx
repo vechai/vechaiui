@@ -8,10 +8,11 @@ const propList = [
     propTypes: [
       {
         extend: true,
-        path: 'https://www.radix-ui.com/primitives/docs/components/context-menu',
+        path:
+          "https://www.radix-ui.com/primitives/docs/components/context-menu",
         external: true,
-        label: "See more `ContextMenu` props."
-      }
+        label: "See more `ContextMenu` props.",
+      },
     ],
   },
 ];
@@ -159,7 +160,10 @@ import { cx } from "@vechaiui/react";`,
 export default function ContextMenu() {
   return (
     <>
-      <SEO title="ContextMenu" description="Displays a menu located at the pointer, triggered by a right-click or a long-press." />
+      <SEO
+        title="Tailwind CSS ContextMenu"
+        description="Displays a menu located at the pointer, triggered by a right-click or a long-press."
+      />
       <DocumentBuilder component={contextComponent} />
     </>
   );

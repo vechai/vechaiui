@@ -283,7 +283,7 @@ import { cx } from "@vechaiui/react";`,
 export default function Listbox() {
   return (
     <>
-      <SEO title="Listbox" />
+      <SEO title="Tailwind CSS Listbox" />
       <DocumentBuilder component={listboxComponent} />
     </>
   );

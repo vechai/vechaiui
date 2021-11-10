@@ -73,7 +73,7 @@ export default function Tooltip() {
   return (
     <>
       <SEO
-        title="Tooltip"
+        title="Tailwind CSS Tooltip"
         description="A means of displaying a description or extra information about an element, usually on hover, but can also be on click or tap."
       />
       <DocumentBuilder component={tooltipComponent} />

@@ -203,7 +203,7 @@ export default function Dialog() {
   return (
     <>
       <SEO
-        title="Dialog"
+        title="Tailwind CSS Dialog"
         description="A modal is an interface element that appears over other content. It requires an interaction from the user before they can return to whatever is underneath."
       />
       <DocumentBuilder component={dialogComponent} />

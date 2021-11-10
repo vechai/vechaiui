@@ -106,7 +106,7 @@ export default function Alert() {
   return (
     <>
       <SEO 
-        title="Alert"
+        title="Tailwind CSS Alert"
         description="A way of informing the user of important changes in a prominent way."
       />
       <DocumentBuilder component={alertComponent} />;

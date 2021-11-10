@@ -39,7 +39,7 @@ const kbdComponent = {
 export default function Kbd() {
   return (
     <>
-      <SEO title="Kbd" />
+      <SEO title="Tailwind CSS Kbd" />
       <DocumentBuilder component={kbdComponent} />
     </>
   );

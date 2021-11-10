@@ -147,7 +147,7 @@ export default function Breadcrumb() {
   return (
     <>
       <SEO 
-        title="Breadcrumb"
+        title="Tailwind CSS Breadcrumb"
         description="A list of links showing the location of the current page in the navigational hierarchy."
       />
       <DocumentBuilder component={breadcrumbComponent} />

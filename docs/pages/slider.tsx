@@ -62,7 +62,7 @@ export default function Slider() {
   return (
     <>
       <SEO
-        title="Slider"
+        title="Tailwind CSS Slider"
         description="A form control for choosing a value within a preset range of values."
       />
       <DocumentBuilder component={sliderComponent} />

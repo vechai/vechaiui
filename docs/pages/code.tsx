@@ -38,7 +38,7 @@ const codeComponent = {
 export default function Code() {
   return (
     <>
-      <SEO title="Code" />
+      <SEO title="Tailwind CSS Code" />
       <DocumentBuilder component={codeComponent} />
     </>
   )

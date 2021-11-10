@@ -81,7 +81,7 @@ const imageComponent = {
 export default function Image() {
   return (
     <>
-      <SEO title="Image" description="An element for embedding images." />
+      <SEO title="Tailwind CSS Image" description="An element for embedding images." />
       <DocumentBuilder component={imageComponent} />
     </>
   );

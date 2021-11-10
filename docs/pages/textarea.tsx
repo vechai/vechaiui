@@ -83,7 +83,7 @@ const textareaComponent = {
 export default function Textarea() {
   return (
     <>
-      <SEO title="Textarea" description="A form control for editing multi-line text." />
+      <SEO title="Tailwind CSS Textarea" description="A form control for editing multi-line text." />
       <DocumentBuilder component={textareaComponent} />
     </>
   );

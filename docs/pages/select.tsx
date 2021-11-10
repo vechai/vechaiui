@@ -140,7 +140,7 @@ export default function Select() {
   return (
     <>
       <SEO
-        title="Select"
+        title="Tailwind CSS Select"
         description="A form input used for selecting a value: when collapsed it shows the currently selected option and when expanded, it shows a scrollable list of predefined options for the user to choose from."
       />
       <DocumentBuilder component={selectComponent} />

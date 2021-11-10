@@ -195,7 +195,7 @@ const inputComponent = {
 export default function Input() {
   return (
     <>
-      <SEO title="Input" description="A form control that accepts a single line of text." />
+      <SEO title="Tailwind CSS Input" description="A form control that accepts a single line of text." />
       <DocumentBuilder component={inputComponent} />
     </>
   )

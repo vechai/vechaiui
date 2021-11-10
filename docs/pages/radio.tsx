@@ -333,7 +333,7 @@ export default function Radio() {
   return (
     <>
       <SEO
-        title="Radio"
+        title="Tailwind CSS Radio"
         description="Radio buttons allow a user to select a single option from a list of predefined options."
       />
       <DocumentBuilder component={radioComponent} />

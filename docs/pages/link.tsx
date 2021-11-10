@@ -63,7 +63,7 @@ const linkComponent = {
 export default function Link() {
   return (
     <>
-      <SEO title="Link" description="A link is a reference to a resource." />
+      <SEO title="Tailwind CSS Link" description="A link is a reference to a resource." />
       <DocumentBuilder component={linkComponent} />
     </>
   );

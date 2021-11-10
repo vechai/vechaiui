@@ -427,7 +427,7 @@ import { cx } from "@vechaiui/react";`,
 export default function Menu() {
   return (
     <>
-      <SEO title="Menu" description="A menu in which options are hidden by default, but can be shown by interacting with a button." />
+      <SEO title="Tailwind CSS Menu" description="A menu in which options are hidden by default, but can be shown by interacting with a button." />
       <DocumentBuilder component={menuComponent} />
     </>
   );

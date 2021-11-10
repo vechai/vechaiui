@@ -416,7 +416,7 @@ export default function Tabs() {
   return (
     <>
       <SEO
-        title="Tabs"
+        title="Tailwind CSS Tabs"
         description="Tabbed interfaces are a way of navigating between multiple panels, reducing clutter and fitting more into a smaller space."
       />
       <DocumentBuilder component={tabsComponent} />

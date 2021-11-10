@@ -153,7 +153,7 @@ const tagComponent = {
 export default function Tag() {
   return (
     <>
-      <SEO title="Tag" description="" />
+      <SEO title="Tailwind CSS Tag" description="" />
       <DocumentBuilder component={tagComponent} />
     </>
   );

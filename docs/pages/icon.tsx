@@ -70,7 +70,7 @@ export default function Icon() {
   return (
     <>
       <SEO
-        title="Icon"
+        title="Tailwind CSS Icon"
         description="An icon is a graphic symbol designed to visually indicate the purpose of an interface element."
       />
       <DocumentBuilder component={iconComponent} />

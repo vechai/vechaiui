@@ -318,7 +318,7 @@ export default function Checkbox() {
   return (
     <>
       <SEO 
-        title="Checkbox"
+        title="Tailwind CSS Checkbox"
         description="An input for choosing from predefined options."
       />
       <DocumentBuilder component={checkboxComponent} />

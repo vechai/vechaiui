@@ -105,12 +105,12 @@ const demoList = [
           </FormLabel>
           <Input.Group>
             <Input
-              className="pr-14"
+              className="pr-16"
               type={showPassword ? "text" : "password"}
               placeholder="Enter password"
               {...register("password", { required: true })}
             />
-            <Input.RightElement className="w-14">
+            <Input.RightElement className="w-16">
               <Button type="button" size="xs" variant="solid" onClick={handleToggleShowPassword}>
                 {showPassword ? "Hide" : "Show"}
               </Button>
@@ -157,7 +157,7 @@ const formControlComponent = {
 export default function FormControl() {
   return (
     <>
-      <SEO title="FormControl" />
+      <SEO title="Tailwind CSS FormControl" />
       <DocumentBuilder component={formControlComponent} />
     </>
   );

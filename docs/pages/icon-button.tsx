@@ -96,7 +96,7 @@ const iconButtonComponent = {
 export default function IconButton() {
   return (
     <>
-      <SEO title="IconButton" />
+      <SEO title="Tailwind CSS IconButton" />
       <DocumentBuilder component={iconButtonComponent} />
     </>
   );

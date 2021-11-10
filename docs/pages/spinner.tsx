@@ -63,7 +63,7 @@ const spinnerComponent = {
 export default function Spinner() {
   return (
     <>
-      <SEO title="Spinner" />
+      <SEO title="Tailwind CSS Spinner" />
       <DocumentBuilder component={spinnerComponent} />
     </>
   );

@@ -101,7 +101,7 @@ export default function Badge() {
   return (
     <>
       <SEO 
-        title="Badge"
+        title="Tailwind CSS Badge"
         description="Badge normally appears in proximity to notifications or user avatars with eye-catching appeal, typically displaying unread messages count."
       />
       <DocumentBuilder component={badgeComponent} />

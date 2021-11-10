@@ -142,7 +142,7 @@ export default function Notification() {
   return (
     <>
       <SEO
-        title="Notification"
+        title="Tailwind CSS Notification"
         description="A way of informing the user of important changes in a prominent way."
       />
       <DocumentBuilder component={notificationComponent} />

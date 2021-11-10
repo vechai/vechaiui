@@ -203,7 +203,7 @@ export default function RadioGroup() {
   return (
     <>
       <SEO
-        title="RadioGroup"
+        title="Tailwind CSS RadioGroup"
         description="Radio buttons allow a user to select a single option from a list of predefined options."
       />
       <DocumentBuilder component={radioGroupComponent} />

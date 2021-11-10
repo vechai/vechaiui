@@ -54,7 +54,7 @@ export default function Popover() {
   return (
     <>
       <SEO
-        title="Popover"
+        title="Tailwind CSS Popover"
         description="A means of displaying a description or extra information about an element, usually on hover, but can also be on click or tap."
       />
       <DocumentBuilder component={popoverComponent} />

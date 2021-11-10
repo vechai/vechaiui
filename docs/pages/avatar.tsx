@@ -155,7 +155,7 @@ export default function Avatar() {
   return (
     <>
       <SEO
-        title="Avatar"
+        title="Tailwind CSS Avatar"
         description="A graphical representation of a user: usually a photo, illustration or initial."
       />
       <DocumentBuilder component={avatarComponent} />

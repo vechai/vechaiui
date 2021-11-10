@@ -271,7 +271,7 @@ export default function Button() {
   return (
     <>
       <SEO
-        title="Button"
+        title="Tailwind CSS Button"
         description="Buttons trigger an action such as submitting a form or showing/hiding an interface component."
       />
       <DocumentBuilder component={component} />

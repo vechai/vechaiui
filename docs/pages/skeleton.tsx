@@ -77,7 +77,7 @@ const skeletonComponent = {
 export default function Skeleton() {
   return (
     <>
-      <SEO title="Skeleton" />
+      <SEO title="Tailwind CSS Skeleton" />
       <DocumentBuilder component={skeletonComponent} />
     </>
   );

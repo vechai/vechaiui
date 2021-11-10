@@ -95,7 +95,7 @@ export default function Message() {
   return (
     <>
       <SEO
-        title="Message"
+        title="Tailwind CSS Message"
         description="A way of informing the user of important changes in a prominent way."
       />
       <DocumentBuilder component={messageComponent} />
