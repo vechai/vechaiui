@@ -30,7 +30,7 @@ const demoList = [
     <Slider.Track className="relative w-full h-1 bg-neutral-200 dark:bg-whiteAlpha-300 flex-grow-1">
       <Slider.Range className="absolute h-full rounded-full bg-primary-500 dark:bg-primary-200" />
     </Slider.Track>
-    <Slider.Thumb className="block w-4 h-4 bg-white border rounded-full border-neutral-300 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
+    <Slider.Thumb className="block w-5 h-5 bg-white border rounded-full border-neutral-300 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
   </Slider.Root>
 
   <Slider.Root
@@ -40,8 +40,8 @@ const demoList = [
     <Slider.Track className="relative w-full h-1 bg-neutral-200 dark:bg-whiteAlpha-300 flex-grow-1">
       <Slider.Range className="absolute h-full rounded-full bg-primary-500 dark:bg-primary-200" />
     </Slider.Track>
-    <Slider.Thumb className="block w-4 h-4 bg-white border rounded-full border-neutral-300 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
-    <Slider.Thumb className="block w-4 h-4 bg-white border rounded-full border-neutral-300 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
+    <Slider.Thumb className="block w-5 h-5 bg-white border rounded-full border-neutral-300 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
+    <Slider.Thumb className="block w-5 h-5 bg-white border rounded-full border-neutral-300 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
   </Slider.Root>
 </div>`,
         readOnly: false,

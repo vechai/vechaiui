@@ -11,7 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.2",
+    "@headlessui/react": "1.4.0",
     "@heroicons/react": "^1.0.1",
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/mdx": "^1.6.22",
@@ -25,7 +25,7 @@
     "@radix-ui/react-tooltip": "^0.0.20",
     "@vechaiui/core": "0.5.1",
     "@vechaiui/react": "0.1.12",
-    "next": "^12.0.3",
+    "next": "11.1.0",
     "next-seo": "^4.26.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

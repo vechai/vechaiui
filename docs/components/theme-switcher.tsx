@@ -1,8 +1,8 @@
 import { Popover, RadioGroup, Transition } from "@headlessui/react";
-import { cx, Divider, Switch } from "@vechaiui/react";
+import { cx, Divider, Switch, Select } from "@vechaiui/react";
 import * as React from "react";
 
-import { useTheme, themes, radiusItems } from "./theme-controller";
+import { useTheme, themes, radiusItems, ThemeContextType } from "./theme-controller";
 
 export function ThemSwitcher() {
   const {
@@ -12,6 +12,8 @@ export function ThemSwitcher() {
     setRadius,
     setCursorPointer,
     setColorScheme,
+    setDestiny,
+    destiny,
   } = useTheme();
 
   return (
@@ -80,6 +82,25 @@ export function ThemSwitcher() {
                       checked={cursorPointer}
                       onChange={() => setCursorPointer(!cursorPointer)}
                     />
+                  </div>
+                </div>
+
+                <Divider
+                  orientation="horizontal"
+                  className="border-neutral-200 dark:border-neutral-700"
+                />
+
+                <div role="group">
+                  <div className="flex items-center justify-between flex-shrink-0 w-full h-8 space-x-6 text-sm text-left rounded cursor-base focus:outline-none">
+                    <span className="text-smm">Destiny</span>
+                    <Select
+                      value={destiny}
+                      size="xs"
+                      onChange={(e) => setDestiny(e.target.value as ThemeContextType["destiny"])}
+                    >
+                      <option value="compact">Compact</option>
+                      <option value="comfortable">Comfortable</option>
+                    </Select>
                   </div>
                 </div>
 

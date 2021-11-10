@@ -38,7 +38,7 @@ export interface VechaiProviderProps {
 export function VechaiProvider({
   theme = defaultTheme,
   colorScheme = "light",
-  destiny = "compact",
+  destiny = "comfortable",
   cssVarsRoot = ":host, :root",
   children,
 }: VechaiProviderProps) {

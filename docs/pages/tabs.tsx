@@ -52,7 +52,7 @@ const demoList = [
           aria-label="tabs example"
           className={cx(
             "flex flex-row justify-start",
-            "border-b border-neutral-200 dark:border-neutral-700"
+            "border-b border-neutral-300 dark:border-neutral-700"
           )}
         >
           {tabs.map((tab) => (
@@ -60,7 +60,7 @@ const demoList = [
               key={tab.value}
               value={tab.value}
               className={cx(
-                "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
+                "px-4 py-2 h-10 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
                 "text-neutral-900 bg-transparent border-b-2 border-transparent",
                 "hover:border-neutral-300",
                 "selected:border-primary-500 selected:text-primary-600",
@@ -128,7 +128,7 @@ const demoList = [
           aria-label="tabs example"
           className={cx(
             "flex flex-row justify-start",
-            "border-b border-neutral-200 dark:border-neutral-700"
+            "border-b border-neutral-300 dark:border-neutral-700"
           )}
         >
           {tabs.map((tab) => (
@@ -136,7 +136,7 @@ const demoList = [
               key={tab.value}
               value={tab.value}
               className={cx(
-                "flex items-center justify-center px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
+                "flex items-center justify-center px-4 py-2 h-10 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
                 "text-neutral-900 bg-transparent border-b-2 border-transparent",
                 "hover:border-neutral-300",
                 "selected:border-primary-500",
@@ -213,7 +213,7 @@ const demoList = [
               key={tab.value}
               value={tab.value}
               className={cx(
-                "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
+                "px-4 py-2 h-10 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
                 "flex-shrink-0 inline-block",
                 "text-neutral-600 bg-transparent border border-transparent",
                 "hover:text-neutral-900",
@@ -292,7 +292,7 @@ const demoList = [
               key={tab.value}
               value={tab.value}
               className={cx(
-                "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
+                "px-4 py-2 h-10 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
                 "flex-shrink-0 inline-block",
                 "text-neutral-600 bg-transparent border border-transparent",
                 "hover:text-neutral-900",
@@ -369,7 +369,8 @@ const demoList = [
               key={tab.value}
               value={tab.value}
               className={cx(
-                "px-3 py-2 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
+                "flex items-center justify-center",
+                "px-4 py-2 h-10 -mb-px text-sm text-center whitespace-nowrap cursor-base focus:outline-none",
                 "flex-shrink-0 inline-block rounded-md",
                 "text-neutral-600 bg-transparent",
                 "hover:text-neutral-900",

@@ -37,7 +37,7 @@ const demo =
                 checked,
               }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
-                  text-xs px-4 py-1.5
+                  text-xs px-4 py-2
                   focus:outline-none` +
   "\n" +
   "                  ${" +
@@ -68,7 +68,7 @@ const demo =
                 checked,
               }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
-                  text-xs px-4 py-1.5
+                  text-xs px-4 py-2
                   focus:outline-none` +
   "\n" +
   "                  ${" +
@@ -130,7 +130,7 @@ const demo2 =
                 checked,
               }) => \`inline-flex appearance-none items-center justify-center rounded-base cursor-base
                   select-none relative whitespace-nowrap align-middle outline-none font-semibold
-                  text-xs px-4 py-1.5
+                  text-xs px-4 py-2
                   focus:outline-none` +
   "\n" +
   "                  ${" +
