@@ -40,10 +40,10 @@ function buttonSolid(colors) {
             [`@apply dark:border-${color}-500`]: {},
             [`@apply dark:bg-${color}-600`]: {},
             /* dark hover */
-            [`@apply dark:hover:border-${color}-400 dark:hover:bg-${color}-500`]: {},
+            [`@apply dark:hover:bg-${color}-700`]: {},
             /* dark focus */
-            [`@apply dark:focus:border-${color}-500`]: {},
-            [`@apply dark:focus:ring-${color}-500`]: {},
+            [`@apply dark:focus:border-${color}-600`]: {},
+            [`@apply dark:focus:ring-${color}-600`]: {},
             /* dark active */
             [`@apply dark:active:bg-${color}-800 dark:active:border-${color}-600`]: {},
           },
