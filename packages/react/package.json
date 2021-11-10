@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/react",
-  "version": "0.1.12",
+  "version": "0.2.0",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
