@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/docs",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "private": true,
   "scripts": {
     "type-check": "tsc",
@@ -23,7 +23,7 @@
     "@radix-ui/react-slider": "^0.0.16",
     "@radix-ui/react-tabs": "^0.0.15",
     "@radix-ui/react-tooltip": "^0.0.20",
-    "@vechaiui/core": "0.5.1",
+    "@vechaiui/core": "0.6.0",
     "@vechaiui/react": "0.1.12",
     "next": "11.1.0",
     "next-seo": "^4.26.0",

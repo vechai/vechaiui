@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.5.1...@vechaiui/core@0.6.0) (2021-11-10)
+
+
+### Features
+
+* improve color for checkbox radio & button ([3949529](https://github.com/vechai/vechaiui/commit/3949529cc596328f7ee25790a9760d38c6fec8c8))
+* **theme:** destiny ([dcb12ed](https://github.com/vechai/vechaiui/commit/dcb12ed6082c9dce591bfbb598d9121ef3ab0821))
+* support density comfortable & compact ([77ea8c9](https://github.com/vechai/vechaiui/commit/77ea8c907dd18b1837e3788197730b1eed66fc9d))
+
+
+
+
+
 ## [0.5.1](https://github.com/vechai/vechaiui/compare/@vechaiui/core@0.5.0...@vechaiui/core@0.5.1) (2021-09-29)
 
 

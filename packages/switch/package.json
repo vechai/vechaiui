@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/switch",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,8 +37,8 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@vechaiui/forms": "0.3.1",
-    "@vechaiui/theme": "0.3.1",
+    "@vechaiui/forms": "0.3.2",
+    "@vechaiui/theme": "0.4.0",
     "@vechaiui/utils": "^0.1.0",
     "@vechaiui/visually-hidden": "^0.1.0"
   },

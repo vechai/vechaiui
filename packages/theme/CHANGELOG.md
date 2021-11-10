@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.3.1...@vechaiui/theme@0.4.0) (2021-11-10)
+
+
+### Features
+
+* upgrade docs to v0.2.0 ([46393e1](https://github.com/vechai/vechaiui/commit/46393e1c7a91b9562b89fe49680f3c3698fb37b9))
+* **theme:** destiny ([dcb12ed](https://github.com/vechai/vechaiui/commit/dcb12ed6082c9dce591bfbb598d9121ef3ab0821))
+
+
+
+
+
 ## [0.3.1](https://github.com/vechai/vechaiui/compare/@vechaiui/theme@0.3.0...@vechaiui/theme@0.3.1) (2021-08-28)
 
 **Note:** Version bump only for package @vechaiui/theme

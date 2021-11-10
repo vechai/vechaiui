@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/toasted-notes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",

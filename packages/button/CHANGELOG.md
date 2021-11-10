@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/vechai/vechaiui/compare/@vechaiui/button@0.1.7...@vechaiui/button@0.2.1) (2021-11-10)
+
+**Note:** Version bump only for package @vechaiui/button
+
+
+
+
+
 ## [0.1.7](https://github.com/vechai/vechaiui/compare/@vechaiui/button@0.1.6...@vechaiui/button@0.1.7) (2021-08-28)
 
 **Note:** Version bump only for package @vechaiui/button

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/vechai/vechaiui/compare/@vechaiui/notification@0.1.9...@vechaiui/notification@0.2.1) (2021-11-10)
+
+**Note:** Version bump only for package @vechaiui/notification
+
+
+
+
+
 ## [0.1.9](https://github.com/vechai/vechaiui/compare/@vechaiui/notification@0.1.8...@vechaiui/notification@0.1.9) (2021-08-28)
 
 **Note:** Version bump only for package @vechaiui/notification
