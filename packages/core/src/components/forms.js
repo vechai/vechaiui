@@ -119,7 +119,7 @@ function formControl() {
       ".dark &": {
         "--tw-text-opacity": "1",
         color: "rgba(252, 165, 165, var(--tw-text-opacity))",
-      }
+      },
     },
     ".form-label": {
       "@apply text-sm font-medium text-left align-middle block mb-1.5": {},
@@ -135,62 +135,51 @@ function formControl() {
       ".dark &": {
         "--tw-text-opacity": "1",
         color: "rgba(252, 165, 165, var(--tw-text-opacity))",
-      }
-    }
+      },
+    },
   };
 }
 
-function elementCompactSize() {
+function elementSize() {
   return {
     "&-xs": {
-      "@apply text-xs h-6 w-6": {},
+      fontSize: "var(--vc-destiny-form-element-xs-fontSize)",
+      lineHeight: "var(--vc-destiny-form-element-xs-lineHeight)",
+      height: "var(--vc-destiny-form-element-xs-height)",
+      width: "var(--vc-destiny-form-element-xs-width)",
     },
 
     "&-sm": {
-      "@apply text-xs h-7 w-7": {},
+      fontSize: "var(--vc-destiny-form-element-sm-fontSize)",
+      lineHeight: "var(--vc-destiny-form-element-sm-lineHeight)",
+      height: "var(--vc-destiny-form-element-sm-height)",
+      width: "var(--vc-destiny-form-element-sm-width)",
     },
 
     "&-md": {
-      "@apply text-sm h-8 w-8": {},
+      fontSize: "var(--vc-destiny-form-element-md-fontSize)",
+      lineHeight: "var(--vc-destiny-form-element-md-lineHeight)",
+      height: "var(--vc-destiny-form-element-md-height)",
+      width: "var(--vc-destiny-form-element-md-width)",
     },
 
     "&-lg": {
-      "@apply text-base h-10 w-10": {},
+      fontSize: "var(--vc-destiny-form-element-lg-fontSize)",
+      lineHeight: "var(--vc-destiny-form-element-lg-lineHeight)",
+      height: "var(--vc-destiny-form-element-lg-height)",
+      width: "var(--vc-destiny-form-element-lg-width)",
     },
 
     "&-xl": {
-      "@apply text-lg h-12 w-12": {},
+      fontSize: "var(--vc-destiny-form-element-xl-fontSize)",
+      lineHeight: "var(--vc-destiny-form-element-xl-lineHeight)",
+      height: "var(--vc-destiny-form-element-xl-height)",
+      width: "var(--vc-destiny-form-element-xl-width)",
     },
-  }
+  };
 }
 
-function elementComfortableSize() {
-  return {
-    "&-xs": {
-      "@apply text-xs h-7 w-7": {},
-    },
-
-    "&-sm": {
-      "@apply text-sm h-8 w-8": {},
-    },
-
-    "&-md": {
-      "@apply text-sm h-9 w-9": {},
-    },
-
-    "&-lg": {
-      "@apply text-base h-11 w-11": {},
-    },
-
-    "&-xl": {
-      "@apply text-lg": {},
-      height: "3.125rem",
-      width: "3.125rem",
-    },
-  }
-}
-
-function formInputGroup(density) {
+function formInputGroup() {
   return {
     ".form-input-group": {
       "@apply flex relative": {},
@@ -200,9 +189,7 @@ function formInputGroup(density) {
       "@apply flex items-center justify-center absolute z-base top-0": {},
 
       // sizing
-      ...(density === "compact" && elementCompactSize()),
-      ...(density === "comfortable" && elementComfortableSize()),
-
+      ...elementSize(),
     },
 
     ".form-input-addon": {
@@ -244,65 +231,63 @@ function formInputGroup(density) {
   };
 }
 
-// 24 / 28 / 32 / 40 / 48
-function fieldCompactSize() {
+function fieldSize() {
   return {
     "&-xs": {
-      "@apply h-6 px-2 py-0 text-xs rounded-base": {},
+      paddingLeft: "var(--vc-destiny-form-field-xs-px)",
+      paddingRight: "var(--vc-destiny-form-field-xs-px)",
+      paddingTop: "var(--vc-destiny-form-field-xs-py)",
+      paddingBottom: "var(--vc-destiny-form-field-xs-py)",
+      fontSize: "var(--vc-destiny-form-field-xs-fontSize)",
+      lineHeight: "var(--vc-destiny-form-field-xs-lineHeight)",
+      height: "var(--vc-destiny-form-field-xs-height)",
     },
-
     "&-sm": {
-      "@apply px-3 py-0 text-xs rounded-base h-7": {},
+      paddingLeft: "var(--vc-destiny-form-field-sm-px)",
+      paddingRight: "var(--vc-destiny-form-field-sm-px)",
+      paddingTop: "var(--vc-destiny-form-field-sm-py)",
+      paddingBottom: "var(--vc-destiny-form-field-sm-py)",
+      fontSize: "var(--vc-destiny-form-field-sm-fontSize)",
+      lineHeight: "var(--vc-destiny-form-field-sm-lineHeight)",
+      height: "var(--vc-destiny-form-field-sm-height)",
     },
-
     "&-md": {
-      "@apply h-8 px-3 py-0 text-sm rounded-base": {},
+      paddingLeft: "var(--vc-destiny-form-field-md-px)",
+      paddingRight: "var(--vc-destiny-form-field-md-px)",
+      paddingTop: "var(--vc-destiny-form-field-md-py)",
+      paddingBottom: "var(--vc-destiny-form-field-md-py)",
+      fontSize: "var(--vc-destiny-form-field-md-fontSize)",
+      lineHeight: "var(--vc-destiny-form-field-md-lineHeight)",
+      height: "var(--vc-destiny-form-field-md-height)",
     },
-
     "&-lg": {
-      "@apply h-10 px-4 py-0 text-base rounded-base": {},
+      paddingLeft: "var(--vc-destiny-form-field-lg-px)",
+      paddingRight: "var(--vc-destiny-form-field-lg-px)",
+      paddingTop: "var(--vc-destiny-form-field-lg-py)",
+      paddingBottom: "var(--vc-destiny-form-field-lg-py)",
+      fontSize: "var(--vc-destiny-form-field-lg-fontSize)",
+      lineHeight: "var(--vc-destiny-form-field-lg-lineHeight)",
+      height: "var(--vc-destiny-form-field-lg-height)",
     },
-
     "&-xl": {
-      "@apply h-12 px-4 py-0 text-lg rounded-base": {},
+      paddingLeft: "var(--vc-destiny-form-field-xl-px)",
+      paddingRight: "var(--vc-destiny-form-field-xl-px)",
+      paddingTop: "var(--vc-destiny-form-field-xl-py)",
+      paddingBottom: "var(--vc-destiny-form-field-xl-py)",
+      fontSize: "var(--vc-destiny-form-field-xl-fontSize)",
+      lineHeight: "var(--vc-destiny-form-field-xl-lineHeight)",
+      height: "var(--vc-destiny-form-field-xl-height)",
     },
-  }
+  };
 }
 
-// 28 / 32 / 36 / 44 / 50
-function fieldComfortableSize() {
-  return {
-    "&-xs": {
-      "@apply px-3 py-0 text-xs rounded-base h-7": {},
-    },
-
-    "&-sm": {
-      "@apply h-8 px-3 py-0 text-sm rounded-base": {},
-    },
-
-    "&-md": {
-      "@apply h-9 px-3 py-0 text-sm rounded-base": {},
-    },
-
-    "&-lg": {
-      "@apply h-11 px-4 py-0 text-base rounded-base": {},
-    },
-
-    "&-xl": {
-      "@apply px-4 py-0 text-lg rounded-base": {},
-      height: "3.125rem",
-    },
-  }
-}
-
-module.exports = Forms = (colors, density) => ({
+module.exports = Forms = (colors) => ({
   ".form-field": {
-    "@apply relative w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
+    "@apply relative rounded-base w-full min-w-0 inline-flex items-center appearance-none focus:outline-none": {},
     "@apply transition-colors	duration-75 ease-out": {},
 
     // sizing
-    ...(density === "compact" && fieldCompactSize()),
-    ...(density === "comfortable" && fieldComfortableSize()),
+    ...fieldSize(),
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},
@@ -324,6 +309,6 @@ module.exports = Forms = (colors, density) => ({
     "@apply pr-10": {},
   },
 
-  ...formInputGroup(density),
+  ...formInputGroup(),
   ...formControl(),
 });

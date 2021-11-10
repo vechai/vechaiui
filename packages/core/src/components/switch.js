@@ -1,120 +1,70 @@
-function switchCompactCheckedSize() {
+function switchCheckedSize() {
   return {
     ".form-switch-box-sm": {
-      "@apply translate-x-3.5": {},
+      "--tw-translate-x": "var(--vc-destiny-switch-checked-sm-translateX)",
     },
     ".form-switch-box-md": {
-      "@apply translate-x-4": {},
+      "--tw-translate-x": "var(--vc-destiny-switch-checked-md-translateX)",
     },
     ".form-switch-box-lg": {
-      "@apply translate-x-6": {},
+      "--tw-translate-x": "var(--vc-destiny-switch-checked-lg-translateX)",
     },
     ".form-switch-box-xl": {
-      "@apply translate-x-7": {},
-    },
-  }
-}
-
-function switchComfortableCheckedSize() {
-  return {
-    ".form-switch-box-sm": {
-      "@apply translate-x-4": {},
-    },
-    ".form-switch-box-md": {
-      "@apply translate-x-4": {},
-    },
-    ".form-switch-box-lg": {
-      "@apply translate-x-6": {},
-    },
-    ".form-switch-box-xl": {
-      "@apply translate-x-7": {},
-    },
-  }
-}
-
-function switchCompactSize() {
-  return {
-    // sizing
-    "&-sm": {
-      "@apply w-7 h-3.5": {},
-    },
-
-    "&-md": {
-      "@apply w-8 h-4": {},
-    },
-
-    "&-lg": {
-      "@apply w-12 h-6": {},
-    },
-
-    "&-xl": {
-      "@apply w-14 h-7": {},
+      "--tw-translate-x": "var(--vc-destiny-switch-checked-xl-translateX)",
     },
   };
 }
 
-function switchComfortableSize() {
+function switchSize() {
   return {
     // sizing
     "&-sm": {
-      "@apply w-8 h-4": {},
+      width: "var(--vc-destiny-switch-sm-width)",
+      height: "var(--vc-destiny-switch-sm-height)",
     },
 
     "&-md": {
-      "@apply w-9 h-5": {},
+      width: "var(--vc-destiny-switch-md-width)",
+      height: "var(--vc-destiny-switch-md-height)",
     },
 
     "&-lg": {
-      "@apply w-12 h-6": {},
+      width: "var(--vc-destiny-switch-lg-width)",
+      height: "var(--vc-destiny-switch-lg-height)",
     },
 
     "&-xl": {
-      "@apply w-14 h-7": {},
+      width: "var(--vc-destiny-switch-xl-width)",
+      height: "var(--vc-destiny-switch-xl-height)",
     },
   };
 }
 
-function switchBoxCompactSize() {
+function switchBoxSize() {
   return {
     "&-sm": {
-      "@apply w-2.5 h-2.5": {},
+      width: "var(--vc-destiny-switch-box-sm-width)",
+      height: "var(--vc-destiny-switch-box-sm-height)",
     },
 
     "&-md": {
-      "@apply w-3 h-3": {},
+      width: "var(--vc-destiny-switch-box-md-width)",
+      height: "var(--vc-destiny-switch-box-md-height)",
     },
 
     "&-lg": {
-      "@apply w-5 h-5": {},
+      width: "var(--vc-destiny-switch-box-lg-width)",
+      height: "var(--vc-destiny-switch-box-lg-height)",
     },
 
     "&-xl": {
-      "@apply w-6 h-6": {},
+      width: "var(--vc-destiny-switch-box-xl-width)",
+      height: "var(--vc-destiny-switch-box-xl-height)",
     },
-  }
+  };
 }
 
-function switchBoxComfortableSize() {
-  return {
-    "&-sm": {
-      "@apply w-3 h-3": {},
-    },
-
-    "&-md": {
-      "@apply w-4 h-4": {},
-    },
-
-    "&-lg": {
-      "@apply w-5 h-5": {},
-    },
-
-    "&-xl": {
-      "@apply w-6 h-6": {},
-    },
-  }
-}
-
-module.exports = Switch = (colors, density) => ({
+module.exports = Switch = (colors) => ({
   ".form-switch-label": {
     "@apply inline-block align-middle": {},
   },
@@ -125,8 +75,7 @@ module.exports = Switch = (colors, density) => ({
     "input[type=checkbox]:checked + &, input[type=checkbox][aria-checked=mixed] + &": {
       backgroundColor: "currentColor",
       // sizing
-      ...(density === "compact" && switchCompactCheckedSize()),
-      ...(density === "comfortable" && switchComfortableCheckedSize()),
+      ...switchCheckedSize(),
     },
     // "input[type=checkbox]:focus + &": {
     //   "@apply focus:ring-2 focus:ring-neutral-400": {},
@@ -159,15 +108,13 @@ module.exports = Switch = (colors, density) => ({
     },
 
     // sizing
-    ...(density === "compact" && switchCompactSize()),
-    ...(density === "comfortable" && switchComfortableSize()),
+    ...switchSize(),
   },
 
   ".form-switch-box": {
     "@apply transition-transform ease-in-out duration-150 transform bg-white rounded-full shadow translate-x-0": {},
 
     // sizing
-    ...(density === "compact" && switchBoxCompactSize()),
-    ...(density === "comfortable" && switchBoxComfortableSize()),
+    ...switchBoxSize(),
   },
 });

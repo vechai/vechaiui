@@ -234,70 +234,61 @@ function buttonLink(colors) {
   };
 }
 
-// 24 / 28 / 32 / 40 / 48
-function buttonCompactSize() {
+function buttonSize() {
   return {
     "&-xs": {
-      "@apply px-2 text-xs rounded-base h-6": {},
-      minWidth: "1.5rem",
+      paddingRight: "var(--vc-destiny-button-xs-px)",
+      paddingLeft: "var(--vc-destiny-button-xs-px)",
+      fontSize: "var(--vc-destiny-button-xs-fontSize)",
+      lineHeight: "var(--vc-destiny-button-xs-lineHeight)",
+      height: "var(--vc-destiny-button-xs-height)",
+      minWidth: "var(--vc-destiny-button-xs-minWidth)",
     },
 
     "&-sm": {
-      "@apply px-3 text-xs rounded-base h-7": {},
-      minWidth: "1.75rem",
+      paddingRight: "var(--vc-destiny-button-sm-px)",
+      paddingLeft: "var(--vc-destiny-button-sm-px)",
+      fontSize: "var(--vc-destiny-button-sm-fontSize)",
+      lineHeight: "var(--vc-destiny-button-sm-lineHeight)",
+      height: "var(--vc-destiny-button-sm-height)",
+      minWidth: "var(--vc-destiny-button-sm-minWidth)",
     },
 
     "&-md": {
-      "@apply h-8 px-4 text-sm rounded-base": {},
-      minWidth: "2rem",
+      paddingRight: "var(--vc-destiny-button-md-px)",
+      paddingLeft: "var(--vc-destiny-button-md-px)",
+      px: "var(--vc-destiny-button-md-px)",
+      fontSize: "var(--vc-destiny-button-md-fontSize)",
+      lineHeight: "var(--vc-destiny-button-md-lineHeight)",
+      height: "var(--vc-destiny-button-md-height)",
+      minWidth: "var(--vc-destiny-button-md-minWidth)",
     },
 
     "&-lg": {
-      "@apply h-10 px-4 text-base rounded-base": {},
-      minWidth: "2.5rem",
+      paddingRight: "var(--vc-destiny-button-lg-px)",
+      paddingLeft: "var(--vc-destiny-button-lg-px)",
+      px: "var(--vc-destiny-button-lg-px)",
+      fontSize: "var(--vc-destiny-button-lg-fontSize)",
+      lineHeight: "var(--vc-destiny-button-lg-lineHeight)",
+      height: "var(--vc-destiny-button-lg-height)",
+      minWidth: "var(--vc-destiny-button-lg-minWidth)",
     },
 
     "&-xl": {
-      "@apply h-12 px-6 text-lg rounded-base": {},
-      minWidth: "3rem",
+      paddingRight: "var(--vc-destiny-button-xl-px)",
+      paddingLeft: "var(--vc-destiny-button-xl-px)",
+      px: "var(--vc-destiny-button-xl-px)",
+      fontSize: "var(--vc-destiny-button-xl-fontSize)",
+      lineHeight: "var(--vc-destiny-button-xl-lineHeight)",
+      height: "var(--vc-destiny-button-xl-height)",
+      minWidth: "var(--vc-destiny-button-xl-minWidth)",
     },
   };
 }
 
-// 28 / 32 / 36 / 44 / 50
-function buttonComfortableSize() {
-  return {
-    "&-xs": {
-      "@apply px-3 text-xs rounded-base h-7": {},
-      minWidth: "1.75rem",
-    },
-
-    "&-sm": {
-      "@apply h-8 px-4 text-sm rounded-base": {},
-      minWidth: "2rem",
-    },
-
-    "&-md": {
-      "@apply h-9 px-4 text-sm rounded-base": {},
-      minWidth: "2.25rem",
-    },
-
-    "&-lg": {
-      "@apply h-11 px-4 text-base rounded-base": {},
-      minWidth: "2.75rem",
-    },
-
-    "&-xl": {
-      "@apply px-6 text-lg rounded-base": {},
-      height: "3.125rem",
-      minWidth: "3.125rem",
-    },
-  };
-}
-
-module.exports = Button = (colors, density) => ({
+module.exports = Button = (colors) => ({
   ".btn": {
-    "@apply relative": {},
+    "@apply relative rounded-base": {},
     "@apply m-0": {},
     "@apply inline-flex items-center justify-center flex-shrink-0 align-middle": {},
     "@apply font-medium leading-tight": {},
@@ -308,8 +299,7 @@ module.exports = Button = (colors, density) => ({
     "@apply focus:outline-none": {},
 
     // sizing
-    ...(density === "compact" && buttonCompactSize()),
-    ...(density === "comfortable" && buttonComfortableSize()),
+    ...buttonSize(),
 
     "&-disabled": {
       "@apply disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-60": {},

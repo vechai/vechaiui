@@ -9,10 +9,10 @@ import {
 import * as React from "react";
 import { createContext, useContext, useMemo } from "react";
 import set from "lodash.set";
+import { Global } from "@emotion/react";
 
 import { defaultTheme } from "./default-theme";
 import { toCSSVar } from "./create-theme-vars";
-import { useSafeEffect } from "./use-safe-effect";
 import { isBrowser } from "./utils";
 import { VechaiTheme, VechaiThemeOverride } from "./types";
 
@@ -30,16 +30,20 @@ VechaiContext.displayName = "VechaiContext";
 export interface VechaiProviderProps {
   children: React.ReactNode;
   theme?: VechaiTheme;
+  destiny?: "compact" | "comfortable" | "unset";
   colorScheme?: string;
+  cssVarsRoot?: string;
 }
 
 export function VechaiProvider({
   theme = defaultTheme,
   colorScheme = "light",
+  destiny = "compact",
+  cssVarsRoot = ":host, :root",
   children,
 }: VechaiProviderProps) {
   const computedTheme = useMemo(() => {
-    const omittedTheme = omit(theme, ["colorSchemes"]);
+    const omittedTheme = omit(theme, ["colorSchemes", "destiny"]);
     const { colors, type } = theme.colorSchemes[colorScheme] || {};
     if (isBrowser) {
       if (type === "dark") document.documentElement.classList.add("dark");
@@ -54,15 +58,12 @@ export function VechaiProvider({
 
     const normalizedTheme = {
       ...omittedTheme,
+      destiny: theme.destiny[destiny],
       colors,
     };
 
     return toCSSVar(normalizedTheme);
-  }, [theme, colorScheme]);
-
-  useSafeEffect(() => {
-    if (isBrowser) updateThemeVariables(computedTheme.__cssVars);
-  }, [computedTheme]);
+  }, [theme, colorScheme, destiny]);
 
   const value = useMemo(
     () => ({
@@ -72,24 +73,12 @@ export function VechaiProvider({
   );
 
   return (
-    <VechaiContext.Provider value={value}>{children}</VechaiContext.Provider>
+    <VechaiContext.Provider value={value}>
+      {/* FIXME: Emotion alernative */}
+      <Global styles={() => ({ [cssVarsRoot]: computedTheme.__cssVars })} />
+      {children}
+    </VechaiContext.Provider>
   );
-}
-
-function setStyleVariable(name: string, value: string) {
-  const rootStyle = document.documentElement.style;
-  rootStyle.setProperty(name, value);
-}
-
-function updateStyleHelper(_themeKey: string, style: string) {
-  const themeKey = _themeKey.startsWith("--") ? _themeKey : `--${_themeKey}`;
-  setStyleVariable(themeKey, style);
-}
-
-function updateThemeVariables(vars: Record<string, string>) {
-  Object.entries(vars).forEach(([key, val]) => {
-    updateStyleHelper(key, val);
-  });
 }
 
 export function useVechai<T extends object = Dict>() {

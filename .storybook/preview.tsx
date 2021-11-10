@@ -28,8 +28,10 @@ const withVechai = (StoryFn: Function) => {
     [colorScheme]
   );
 
+  const destiny = colorScheme === "light" ? "comfortable" : "compact";
+
   return (
-    <VechaiProvider theme={theme} colorScheme={colorScheme}>
+    <VechaiProvider theme={theme} colorScheme={colorScheme} destiny={destiny}>
       <div
         id="story-wrapper"
         className="space-y-4"

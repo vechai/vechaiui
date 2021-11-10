@@ -38,10 +38,13 @@ export interface ColorScheme {
     neutral: ColorHues;
   } & Colors;
 }
+
+export interface Destiny {}
 export interface VechaiTheme {
   readonly cursor: "default" | "pointer";
   readonly rounded: string;
   readonly colorSchemes: Record<string, ColorScheme>;
+  readonly destiny: Record<"compact" | "comfortable" | "unset", Destiny>;
   readonly config: Record<string, unknown>;
 }
 
