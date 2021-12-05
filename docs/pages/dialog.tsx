@@ -28,12 +28,12 @@ const demoList = [
   const [showDialog, setShowDialog] = React.useState(false);
   const completeButtonRef = React.useRef(null);
 
-  const hanldeOpen = () => setShowDialog(true);
+  const handleOpen = () => setShowDialog(true);
   const handleClose = () => setShowDialog(false);
 
   return (
     <div className="p-8">
-      <Button onClick={hanldeOpen}>Show Dialog</Button>
+      <Button onClick={handleOpen}>Show Dialog</Button>
       <Transition show={showDialog} as={React.Fragment}>
         <Dialog
           initialFocus={completeButtonRef}
@@ -106,12 +106,12 @@ const demoList = [
   const [showDialog, setShowDialog] = React.useState(false);
   const inputRef = React.useRef(null);
 
-  const hanldeOpen = () => setShowDialog(true);
+  const handleOpen = () => setShowDialog(true);
   const handleClose = () => setShowDialog(false);
 
   return (
     <div className="p-8">
-      <Button onClick={hanldeOpen} color="red">Delete Account</Button>
+      <Button onClick={handleOpen} color="red">Delete Account</Button>
       <Transition show={showDialog} as={React.Fragment}>
         <Dialog
           initialFocus={inputRef}
