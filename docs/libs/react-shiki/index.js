@@ -3,7 +3,7 @@ import { getHighlighter, setCDN } from "shiki";
 
 import useForceUpdate from "./useForceUpdate";
 
-setCDN("https://unpkg.com/shiki@0.9.3/");
+setCDN("https://unpkg.com/shiki@0.9.7/");
 
 const defaultToTokens = (code) => {
   const tokens = code
@@ -20,7 +20,7 @@ export default function useShiki(props = {}) {
   useEffect(() => {
     async function fetchHljs() {
       const hljs = await getHighlighter({
-        theme: "material-theme-ocean",
+        theme: "material-ocean",
         langs: ["tsx"],
       });
 
