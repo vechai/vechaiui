@@ -3,14 +3,6 @@ import * as React from "react";
 import DocumentBuilder from "@components/document-builder";
 import SEO from "@components/seo";
 
-const propList = [
-  {
-    name: "Kbd",
-    value: "kbd",
-    propTypes: [],
-  },
-];
-
 const demoList = [
   {
     name: "Basic usage",
@@ -33,7 +25,6 @@ const kbdComponent = {
   name: "Kbd",
   importer: `import { Kbd } from "@vechaiui/react"`,
   demoList,
-  propList,
 };
 
 export default function Kbd() {

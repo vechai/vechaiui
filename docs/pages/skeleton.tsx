@@ -3,14 +3,6 @@ import * as React from "react";
 import DocumentBuilder from "@components/document-builder";
 import SEO from "@components/seo";
 
-const propList = [
-  {
-    name: "Skeleton",
-    value: "skeleton",
-    propTypes: [],
-  },
-];
-
 const demoList = [
   {
     name: "Basic usage",
@@ -69,9 +61,7 @@ const demoList = [
 
 const skeletonComponent = {
   name: "Skeleton",
-  importer: "",
   demoList,
-  propList,
 };
 
 export default function Skeleton() {
