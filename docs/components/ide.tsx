@@ -102,12 +102,14 @@ function Editor({
             ))}
 
             <span
+              role="tablist"
               className={cx(
                 "w-5 h-5 absolute right-2.5 top-2.5 rounded-full flex justify-center items-center text-primary-600",
                 openEditor ? "bg-primary-200 bg-opacity-15" : "bg-transparent"
               )}
             >
               <Icon
+                role="tablist"
                 as={ChevronUpIcon}
                 label="chevron-up"
                 className={cx(
