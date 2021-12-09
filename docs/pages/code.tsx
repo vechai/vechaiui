@@ -3,14 +3,6 @@ import * as React from "react";
 import DocumentBuilder from "@components/document-builder";
 import SEO from "@components/seo";
 
-const propList = [
-  {
-    name: "Code",
-    value: "code",
-    propTypes: [],
-  },
-];
-
 const demoList = [
   {
     name: "Basic usage",
@@ -32,7 +24,6 @@ const codeComponent = {
   name: "Code",
   importer: `import { Code } from "@vechaiui/react"`,
   demoList,
-  propList,
 };
 
 export default function Code() {
