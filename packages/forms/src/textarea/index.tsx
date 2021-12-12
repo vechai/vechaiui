@@ -17,6 +17,7 @@ export type TextareaProps<T = HTMLTextAreaElement> = IInputProps<T> &
 export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   (props, ref) => {
     const {
+      resize = "both",
       size = "md",
       variant = "outline",
       color = "primary",
@@ -28,7 +29,7 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       ...rest
     } = props;
     const { readOnly, disabled, invalid, required, ...formControl } = useFormControl(props);
-    const classes = useInputClass({ size, disabled, variant });
+    const classes = useInputClass({ size, disabled, variant, resize });
     
     return (
       <Comp

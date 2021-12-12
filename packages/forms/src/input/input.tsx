@@ -20,6 +20,8 @@ export interface IInputProps<T = HTMLInputElement> extends DefaultProps {
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   /** Controls input appearance */
   variant?: "outline" | "solid";
+  /** Textarea element is resizable, and if so, in which directions */
+  resize?: "none" | "both" | "horizontal" | "vertical"
   /**
    * The element or component to use in place of `input`
    */
@@ -49,7 +51,7 @@ export type InputHTMLAttributes = Omit<
   OmittedTypes
 >;
 
-export type InputProps<T = HTMLElement> = IInputProps &
+export type InputProps<T = HTMLElement> = Omit<IInputProps, 'resize'> &
   InputHTMLAttributes &
   React.RefAttributes<T>;
 

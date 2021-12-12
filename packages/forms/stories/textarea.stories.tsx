@@ -24,3 +24,12 @@ export const variant = () => (
 export const colored = () => (
   <Textarea placeholder="jon@gmail.com" color="orange" />
 );
+
+export const resizes = () => (
+  <div className="flex flex-col space-y-4">
+    <Textarea placeholder="None" resize="none" />
+    <Textarea placeholder="Both" resize="both" />
+    <Textarea placeholder="Vertical" resize="vertical" />
+    <Textarea placeholder="Horizontal" resize="horizontal" />
+  </div>
+);
