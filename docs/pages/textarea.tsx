@@ -87,8 +87,8 @@ const demoList = [
   const [resize, setResize] = React.useState("both");
 
   return (
-    <div className="p-8">
-      <div className="flex flex-wrap w-full">
+    <div className="flex flex-wrap p-8">
+      <div className="w-full">
         <Radio.Group onChange={(e) => setResize(e.target.value)} defaultValue={resize} className="space-x-4" inline>
           <Radio value="horizontal">Horizontal</Radio>
           <Radio value="vertical">Vertical</Radio>
@@ -96,7 +96,7 @@ const demoList = [
           <Radio value="none">None</Radio>
         </Radio.Group>
       </div>
-      <div className="flex flex-wrap w-full">
+      <div className="w-full">
         <Textarea resize={resize} />
       </div>
     </div>
