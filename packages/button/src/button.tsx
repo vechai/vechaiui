@@ -28,6 +28,10 @@ interface IButtonProps extends DefaultProps {
   variant?: "link" | "solid" | "outline" | "light" | "ghost";
   /* React node */
   children?: React.ReactNode;
+  /* Form input name */
+  name?: string;
+  /* Form input value */
+  value?: string | number;
 }
 
 export interface ButtonProps
