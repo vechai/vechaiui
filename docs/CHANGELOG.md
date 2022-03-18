@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.10.0...@vechaiui/docs@0.11.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* **docs:** typo name constants ([6a89277](https://github.com/vechai/vechaiui/commit/6a89277ba7587700980f4caaa640d6972349e06f))
+* **docs:** void click chevron up button ([5834ab1](https://github.com/vechai/vechaiui/commit/5834ab122f2b2171b2cb33b63549976a205f9987))
+* form-control button padding ([0c4cc59](https://github.com/vechai/vechaiui/commit/0c4cc595045740bef614f5631d9a320b9f9ef8d5))
+* property name correction ([89efdc4](https://github.com/vechai/vechaiui/commit/89efdc48b13ab928e2ceaa1ad0dd57f8ae1ea72e))
+
+
+### Features
+
+* **docs:** optional rendering `importer` and `propList` ([5ea65da](https://github.com/vechai/vechaiui/commit/5ea65dac6cbd9e5144aaa81030873f28ba82b472))
+
+
+
+
+
 # [0.10.0](https://github.com/vechai/vechaiui/compare/@vechaiui/docs@0.9.1...@vechaiui/docs@0.10.0) (2021-11-10)
 
 

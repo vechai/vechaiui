@@ -1,6 +1,6 @@
 {
   "name": "@vechaiui/react",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -43,7 +43,7 @@
     "@vechaiui/badge": "0.1.6",
     "@vechaiui/breadcrumb": "0.1.7",
     "@vechaiui/button": "0.1.7",
-    "@vechaiui/checkbox": "0.2.8",
+    "@vechaiui/checkbox": "0.2.9",
     "@vechaiui/code": "0.1.6",
     "@vechaiui/divider": "0.1.6",
     "@vechaiui/dot": "0.1.6",
