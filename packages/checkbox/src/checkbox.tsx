@@ -95,9 +95,9 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
 
     useEffect(() => {
       // @ts-ignore
-      if (_ref.current) {
+      if (ownRef.current) {
         // @ts-ignore
-        _ref.current.indeterminate = Boolean(indeterminate);
+        ownRef.current.indeterminate = Boolean(indeterminate);
       }
     }, [indeterminate, _ref]);
 
