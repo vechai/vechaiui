@@ -31,7 +31,7 @@ interface IButtonProps extends DefaultProps {
 }
 
 export interface ButtonProps
-  extends React.HTMLAttributes<HTMLButtonElement>,
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     IButtonProps {}
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
