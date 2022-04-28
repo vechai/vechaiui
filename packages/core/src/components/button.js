@@ -257,7 +257,6 @@ function buttonSize() {
     "&-md": {
       paddingRight: "var(--vc-density-button-md-px)",
       paddingLeft: "var(--vc-density-button-md-px)",
-      px: "var(--vc-density-button-md-px)",
       fontSize: "var(--vc-density-button-md-fontSize)",
       lineHeight: "var(--vc-density-button-md-lineHeight)",
       height: "var(--vc-density-button-md-height)",
@@ -267,7 +266,6 @@ function buttonSize() {
     "&-lg": {
       paddingRight: "var(--vc-density-button-lg-px)",
       paddingLeft: "var(--vc-density-button-lg-px)",
-      px: "var(--vc-density-button-lg-px)",
       fontSize: "var(--vc-density-button-lg-fontSize)",
       lineHeight: "var(--vc-density-button-lg-lineHeight)",
       height: "var(--vc-density-button-lg-height)",
@@ -277,7 +275,6 @@ function buttonSize() {
     "&-xl": {
       paddingRight: "var(--vc-density-button-xl-px)",
       paddingLeft: "var(--vc-density-button-xl-px)",
-      px: "var(--vc-density-button-xl-px)",
       fontSize: "var(--vc-density-button-xl-fontSize)",
       lineHeight: "var(--vc-density-button-xl-lineHeight)",
       height: "var(--vc-density-button-xl-height)",
