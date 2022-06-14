@@ -31,17 +31,29 @@ export default function Layout({ children }: { children: React.ReactElement }) {
   if (router.pathname === "/gallery") return children;
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden lg:flex-row bg-neutral-900 dark:bg-fill">
-      <Header />
-      <Navigation />
-      <div className="relative left-0 flex-1 p-0 overflow-auto lg:py-6 lg:pr-6 xl:overflow-hidden">
-        <div
-          className={cx(
-            "h-full rounded-none bg-base lg:rounded max-w-screen-2xl",
-            isMainNavigation && "overflow-auto"
-          )}
+    <div>
+      <p className="bg-primary-500 w-full h-9 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
+        <a
+          href="https://github.com/vechai/tails-devtools"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
         >
-          <div className={cx(classes, "overflow-auto")}>{children}</div>
+          Try Tails Devtools - Browser extension for Tailwind CSS Developer
+        </a>
+      </p>
+      <div className="flex flex-col h-screen overflow-hidden lg:flex-row bg-neutral-900 dark:bg-fill">
+        <Header />
+        <Navigation />
+        <div className="relative left-0 flex-1 p-0 overflow-auto lg:py-6 lg:pr-6 xl:overflow-hidden">
+          <div
+            className={cx(
+              "h-full rounded-none bg-base lg:rounded max-w-screen-2xl",
+              isMainNavigation && "overflow-auto"
+            )}
+          >
+            <div className={cx(classes, "overflow-auto")}>{children}</div>
+          </div>
         </div>
       </div>
     </div>

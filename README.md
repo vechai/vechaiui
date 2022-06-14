@@ -10,8 +10,13 @@ Collection of Accessible React UI Components using TailwindCSS.
 
 ![](docs/public/themes/screenshot.png)
 
--  Documentation: [vechaiui.com](https://www.vechaiui.com/getting-started)
--  NPM: [@vechaiui/react](https://www.npmjs.com/package/@vechaiui/react)
+- Documentation: [vechaiui.com](https://www.vechaiui.com/getting-started)
+- NPM: [@vechaiui/react](https://www.npmjs.com/package/@vechaiui/react)
+
+## Ads 👻
+
+Try [Tails Devtools](https://github.com/vechai/tails-devtools) - Browser extension for Tailwind CSS Developer
+
 ## ✨ Features
 
 - 📦 A set of accessibility React components & pre-designed headlessui + radix-ui components.
