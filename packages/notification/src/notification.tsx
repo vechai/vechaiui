@@ -10,6 +10,7 @@ import {
 import { createToast, useToastOptions } from "@vechaiui/toast";
 import { cx as clsx, __DEV__ } from "@vechaiui/utils";
 import * as React from "react";
+import { ReactNode } from 'react'
 
 const statuses = {
   info: {
@@ -60,7 +61,7 @@ const Notification = React.forwardRef<HTMLDivElement, NotificationProps>(
         {((icon && cx) || customIcon) && (
           <span className={clsx("notification-icon", cx)}>
             {customIcon ? (
-              customIcon
+              customIcon as ReactNode
             ) : (
               <Icon label={label} as={customIcon || icon} className="w-5 h-5" />
             )}
@@ -92,7 +93,7 @@ const Notification = React.forwardRef<HTMLDivElement, NotificationProps>(
               className="notification-action-close-button"
             >
               {customCloseIcon ? (
-                customCloseIcon
+                customCloseIcon as ReactNode
               ) : (
                 <Icon
                   as={XIcon}

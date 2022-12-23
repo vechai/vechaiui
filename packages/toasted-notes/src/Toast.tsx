@@ -1,4 +1,4 @@
-import * as ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client'
 import * as React from "react";
 import ToastManager, { MessageOptionalOptions } from "./ToastManager";
 import { MessageProp, PositionsType } from "./Message";
@@ -31,11 +31,10 @@ class Toaster {
       }
       portalElement = el;
     }
-
-    ReactDOM.render(
-      <ToastManager notify={this.bindNotify as any} />,
-      portalElement
-    );
+    const root = createRoot(portalElement);
+    root.render(
+      <ToastManager notify={this.bindNotify as any} />
+    )
   }
 
   closeAll = () => {
