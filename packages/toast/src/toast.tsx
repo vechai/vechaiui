@@ -47,11 +47,11 @@ interface IToast extends DefaultProps {
   /**
    * Custom icon
    */
-  icon?: React.ElementType;
+  icon?: React.ReactNode;
   /**
    * Custom close icon
    */
-  closeIcon?: React.ElementType;
+  closeIcon?: React.ReactNode;
 }
 
 interface RenderOption {
